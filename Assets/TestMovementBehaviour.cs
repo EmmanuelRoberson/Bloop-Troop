@@ -14,7 +14,7 @@ public class TestMovementBehaviour : MonoBehaviour
     private float yDrag;
     
     private float xDrag;
-    private float dragTolerance = 0.005f;
+    private float dragTolerance;
 
     Vector3 velocity = new Vector3(0,0,0);
     private void Awake()
@@ -25,7 +25,7 @@ public class TestMovementBehaviour : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        dragTolerance = Time.fixedDeltaTime;
     }
 
     // Update is called once per frame
@@ -47,7 +47,10 @@ public class TestMovementBehaviour : MonoBehaviour
             }
             else
             {
-                yDrag = 1;
+                if (yDrag < 1)
+                {
+                    yDrag += dragTolerance;
+                }
             }
         }
         else
@@ -71,14 +74,17 @@ public class TestMovementBehaviour : MonoBehaviour
             }
             else
             {
-                xDrag = 1;
+                if (xDrag < 1)
+                {
+                    xDrag += dragTolerance;
+                }
             }
         }
         else
         {
             if (Math.Abs(xDrag) < 0)
             {
-                xDrag -= 0.001f;
+                xDrag -= dragTolerance;
             }
             else
             {
@@ -86,8 +92,8 @@ public class TestMovementBehaviour : MonoBehaviour
             }
         }
 
-        velocity.x *= 1 - xDrag;
-        velocity.y *= 1 - yDrag;
+        velocity.x *= 0.5f - xDrag;
+        velocity.y *= 5 - yDrag;
         
         rb.velocity = (speed * speed * speedMultiplier) * Time.fixedDeltaTime * velocity;
 
