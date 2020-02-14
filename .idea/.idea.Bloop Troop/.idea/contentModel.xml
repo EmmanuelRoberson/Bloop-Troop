@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
     <e p="C:\Users\s188038\.Rider2019.2\system\extResources" t="IncludeRecursive" />
@@ -53,6 +53,11 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="Flocking" t="Include">
+            <e p="Flock.cs" t="Include" />
+            <e p="FlockAgent.cs" t="Include" />
+            <e p="FlockBehaviour.cs" t="Include" />
+          </e>
           <e p="PlayerMovementBehaviour.cs" t="Include" />
           <e p="Structures" t="Include">
             <e p="MovementPhysicsGroup.cs" t="Include" />
@@ -67,6 +72,7 @@
         <e p="TestGroupDataBehaviour.cs" t="Include" />
         <e p="TestMovementBehaviour.cs" t="Include" />
         <e p="TestSpawnBehavoiur.cs" t="Include" />
+        <e p="TestSwarmBehaviour.cs" t="Include" />
       </e>
       <e p="Bloop Troop.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />

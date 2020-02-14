@@ -92,8 +92,8 @@ public class TestMovementBehaviour : MonoBehaviour
             }
         }
 
-        velocity.x *= 0.5f - xDrag;
-        velocity.y *= 5 - yDrag;
+        velocity.x *= 1 - xDrag;
+        velocity.y *= 1 - yDrag;
         
         rb.velocity = (speed * speed * speedMultiplier) * Time.fixedDeltaTime * velocity;
 
