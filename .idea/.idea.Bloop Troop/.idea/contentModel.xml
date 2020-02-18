@@ -53,7 +53,16 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
+          <e p="CameraScrollerBehaviour.cs" t="Include" />
           <e p="Flocking" t="Include">
+            <e p="Behaviour Scripts" t="Include">
+              <e p="AlignmentBehaviour.cs" t="Include" />
+              <e p="AvoidanceBehaviour.cs" t="Include" />
+              <e p="CohesionBehaviour.cs" t="Include" />
+            </e>
+            <e p="CustomGrouping" t="Include">
+              <e p="Group.cs" t="Include" />
+            </e>
             <e p="Flock.cs" t="Include" />
             <e p="FlockAgent.cs" t="Include" />
             <e p="FlockBehaviour.cs" t="Include" />
@@ -66,6 +75,7 @@
             <e p="MovementPhysicsSystem.cs" t="Include" />
           </e>
           <e p="Test" t="Include">
+            <e p="ChangeDirectionBehaviour.cs" t="Include" />
             <e p="RespondToRhythm.cs" t="Include" />
           </e>
         </e>

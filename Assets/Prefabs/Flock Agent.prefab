@@ -90,6 +90,8 @@ GameObject:
   - component: {fileID: 5534430291309979402}
   - component: {fileID: 5534430291309979405}
   - component: {fileID: 749562703556038679}
+  - component: {fileID: 4155636038767521294}
+  - component: {fileID: 1772365673}
   m_Layer: 0
   m_Name: Flock Agent
   m_TagString: Untagged
@@ -104,7 +106,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5534430291309979404}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -122,10 +124,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 1.1726911
-  m_Height: 5.3222837
+  m_Radius: 1.1
+  m_Height: 5.5
   m_Direction: 0
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0.03266585, z: 0}
 --- !u!114 &749562703556038679
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138,3 +140,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e42c6a4d18adeec49995888695757a71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!54 &4155636038767521294
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5534430291309979404}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 2.3
+  m_AngularDrag: 1.7
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
+--- !u!145 &1772365673
+SpringJoint:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5534430291309979404}
+  m_ConnectedBody: {fileID: 0}
+  m_Anchor: {x: 0, y: 1, z: 0}
+  m_AutoConfigureConnectedAnchor: 1
+  m_ConnectedAnchor: {x: -5.62, y: 0.98, z: 0}
+  serializedVersion: 2
+  m_Spring: 10
+  m_Damper: 0.2
+  m_MinDistance: 0
+  m_MaxDistance: 0
+  m_Tolerance: 0.025
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_EnableCollision: 0
+  m_EnablePreprocessing: 1
+  m_MassScale: 1
+  m_ConnectedMassScale: 1
