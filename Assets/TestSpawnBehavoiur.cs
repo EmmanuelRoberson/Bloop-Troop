@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class TestSpawnBehavoiur : MonoBehaviour
 {
@@ -19,7 +17,6 @@ public class TestSpawnBehavoiur : MonoBehaviour
         if (timer > 5)
         {
             var obj = Instantiate(test);
-            obj.AddComponent<TestGroupDataBehaviour>();
             timer = 0f;
         }
 
