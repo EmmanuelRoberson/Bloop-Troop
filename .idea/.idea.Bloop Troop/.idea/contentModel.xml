@@ -4,75 +4,22 @@
     <e p="C:\Users\s188038\.Rider2019.2\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\s188038\.Rider2019.2\system\resharper-host\local\Transient\ReSharperHost\v192\SolutionCaches\_Bloop Troop.-1833724898.00" t="ExcludeRecursive" />
     <e p="C:\Users\s188038\Documents\Unity\FishGame Testing\Game Repos\Bloop Troop" t="IncludeRecursive">
-      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="BaseStructures" t="Include">
-          <e p="IGroupData.cs" t="Include" />
-        </e>
-        <e p="MovementPhysicsUpdateBehaviour.cs" t="Include" />
-        <e p="RhythmTool" t="Include">
-          <e p="Editor" t="Include">
-            <e p="EditorAnalyzer.cs" t="Include" />
-          </e>
-          <e p="Examples" t="Include">
-            <e p="Misc" t="Include">
-              <e p="UnlitColorTransparent.shader" t="Include" />
-            </e>
-            <e p="Readme.txt" t="Include" />
-            <e p="Scripts" t="Include">
-              <e p="AudioClipSelector.cs" t="Include" />
-              <e p="Line.cs" t="Include" />
-              <e p="Visualizer.cs" t="Include" />
-            </e>
-            <e p="Songs" t="Include">
-              <e p="Example songs.txt" t="Include" />
-            </e>
-          </e>
-          <e p="Scripts" t="Include">
-            <e p="Analysis.cs" t="Include" />
-            <e p="BeatTrack.cs" t="Include" />
-            <e p="BeatTracker.cs" t="Include" />
-            <e p="Chromagram.cs" t="Include" />
-            <e p="ChromaTrack.cs" t="Include" />
-            <e p="DebugDrawer.cs" t="Include" />
-            <e p="IFeature.cs" t="Include" />
-            <e p="LomontFFT.cs" t="Include" />
-            <e p="OnsetDetector.cs" t="Include" />
-            <e p="OnsetTrack.cs" t="Include" />
-            <e p="RhythmAnalyzer.cs" t="Include" />
-            <e p="RhythmData.cs" t="Include" />
-            <e p="RhythmEventProvider.cs" t="Include" />
-            <e p="RhythmPlayer.cs" t="Include" />
-            <e p="RhythmTarget.cs" t="Include" />
-            <e p="Segmenter.cs" t="Include" />
-            <e p="Track.cs" t="Include" />
-            <e p="Util.cs" t="Include" />
-            <e p="ValueTrack.cs" t="Include" />
-            <e p="VolumeSampler.cs" t="Include" />
-          </e>
-        </e>
         <e p="Scripts" t="Include">
-          <e p="Objects" t="Include">
-            <e p="JointDataObject.cs" t="Include" />
-          </e>
-          <e p="PlayerMovementBehaviour.cs" t="Include" />
-          <e p="Structures" t="Include">
-            <e p="MovementPhysicsGroup.cs" t="Include" />
-          </e>
-          <e p="Systems" t="Include">
-            <e p="MovementPhysicsSystem.cs" t="Include" />
-          </e>
-          <e p="Test" t="Include">
-            <e p="ChangeDirectionBehaviour.cs" t="Include" />
-            <e p="RespondToRhythm.cs" t="Include" />
-            <e p="SchoolingBehaviour.cs" t="Include" />
+          <e p="Emmanuel" t="Include">
+            <e p="Objects" t="Include">
+              <e p="JointDataObject.cs" t="Include" />
+            </e>
+            <e p="Test" t="Include">
+              <e p="ChangeDirectionBehaviour.cs" t="Include" />
+              <e p="SchoolingBehaviour.cs" t="Include" />
+            </e>
+            <e p="TestSpringBehaviour.cs" t="Include" />
           </e>
         </e>
-        <e p="TestGroupDataBehaviour.cs" t="Include" />
         <e p="TestMovementBehaviour.cs" t="Include" />
         <e p="TestSpawnBehavoiur.cs" t="Include" />
-        <e p="TestSwarmBehaviour.cs" t="Include" />
       </e>
       <e p="Bloop Troop.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />
