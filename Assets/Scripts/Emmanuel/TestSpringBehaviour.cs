@@ -1,33 +1,32 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using Unity.Collections;
 using UnityEngine;
 
 public class TestSpringBehaviour : MonoBehaviour
 {
-    public GameObject connectedBody;
-    public Rigidbody connectedRb;
+    private bool connected = false;
     
-    [ReadOnly] public JointDataObject jointData;
+    private SpringJoint jointData;
     // Start is called before the first frame update
     void Start()
     {
-        
+        jointData = GetComponent<SpringJoint>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        var distance = Vector3.Distance(transform.position, connectedBody.transform.position);
-        
-        
         
     }
 
-    public void InitializeComponents()
+    private void OnCollisionEnter(Collision other)
     {
-        connectedRb = connectedBody.GetComponent<Rigidbody>();
+        if (!connected && other.gameObject.CompareTag("Player"))
+        {
+            jointData.connectedBody = other.rigidbody;
+            connected = true;
+        }
     }
-    
-    
 }
