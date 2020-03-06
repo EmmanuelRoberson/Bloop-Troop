@@ -8,18 +8,29 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="Emmanuel" t="Include">
+            <e p="Event System" t="Include">
+              <e p="GameEvent.cs" t="Include" />
+              <e p="GameEventListener.cs" t="Include" />
+              <e p="GameEventResponse.cs" t="Include" />
+              <e p="IListener.cs" t="Include" />
+              <e p="IReactable.cs" t="Include" />
+              <e p="ISubscribeable.cs" t="Include" />
+            </e>
             <e p="Objects" t="Include">
               <e p="JointDataObject.cs" t="Include" />
             </e>
             <e p="Test" t="Include">
               <e p="ChangeDirectionBehaviour.cs" t="Include" />
+              <e p="SchoolCollectBehaviour.cs" t="Include" />
               <e p="SchoolingBehaviour.cs" t="Include" />
+              <e p="TestSpawnBehavoiur.cs" t="Include" />
+              <e p="TestSpringBehaviour.cs" t="Include" />
             </e>
-            <e p="TestSpringBehaviour.cs" t="Include" />
           </e>
         </e>
-        <e p="TestMovementBehaviour.cs" t="Include" />
-        <e p="TestSpawnBehavoiur.cs" t="Include" />
+        <e p="Sprites" t="Include">
+          <e p="TestMovementBehaviour.cs" t="Include" />
+        </e>
       </e>
       <e p="Bloop Troop.sln" t="IncludeFlat" />
       <e p="obj" t="ExcludeRecursive" />
