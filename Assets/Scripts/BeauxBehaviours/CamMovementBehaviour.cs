@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CamMovementBehaviour : MonoBehaviour
 {
+    [SerializeField]
+    MusicAdjusterBehaviour mab;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,5 +17,7 @@ public class CamMovementBehaviour : MonoBehaviour
     {
         transform.position = new Vector3(transform.position.x + 0.001f, transform.position.y, 
             transform.position.z);
+
+        mab.ObjectOfRef.floatObj = transform.position.x;
     }
 }
