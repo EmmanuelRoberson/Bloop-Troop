@@ -43,6 +43,8 @@ public class TestMovBehaviour : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        CamMovementBehaviour cmb = other.GetComponentInParent<CamMovementBehaviour>();
+
         //Check trigger for bool, call SpdUp with specific argument for the bool check
     }
 }
