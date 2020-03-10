@@ -12,4 +12,5 @@ public struct GroupNode
     
     public List<GroupNode> children;
     public List<GroupNode> parents;
+    
 }

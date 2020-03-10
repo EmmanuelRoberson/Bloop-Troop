@@ -6,6 +6,18 @@
     <e p="C:\Users\s188038\Documents\Unity\FishGame Testing\Game Repos\Bloop Troop" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Character" t="Include">
+          <e p="ReadMe.txt" t="Include" />
+        </e>
+        <e p="Environment" t="Include">
+          <e p="ReadMe.txt" t="Include" />
+        </e>
+        <e p="Particles" t="Include">
+          <e p="ReadMe.txt" t="Include" />
+        </e>
+        <e p="Resources" t="Include">
+          <e p="ReadMe.txt" t="Include" />
+        </e>
         <e p="Scripts" t="Include">
           <e p="BeauxBehaviours" t="Include">
             <e p="CamMovementBehaviour.cs" t="Include" />
@@ -38,10 +50,12 @@
               <e p="TestSpawnBehavoiur.cs" t="Include" />
               <e p="TestSpringBehaviour.cs" t="Include" />
             </e>
+            <e p="TestCollectBehaviour.cs" t="Include" />
+            <e p="TestMovementBehaviour.cs" t="Include" />
           </e>
         </e>
-        <e p="Sprites" t="Include">
-          <e p="TestMovementBehaviour.cs" t="Include" />
+        <e p="Shaders" t="Include">
+          <e p="ReadMe.txt" t="Include" />
         </e>
       </e>
       <e p="Bloop Troop.sln" t="IncludeFlat" />
