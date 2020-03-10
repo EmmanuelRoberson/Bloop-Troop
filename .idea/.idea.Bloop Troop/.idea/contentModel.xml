@@ -21,6 +21,10 @@
             </e>
             <e p="Test" t="Include">
               <e p="ChangeDirectionBehaviour.cs" t="Include" />
+              <e p="FishManagerBehaviour.cs" t="Include" />
+              <e p="School Management" t="Include">
+                <e p="IGroupable.cs" t="Include" />
+              </e>
               <e p="SchoolCollectBehaviour.cs" t="Include" />
               <e p="SchoolingBehaviour.cs" t="Include" />
               <e p="TestSpawnBehavoiur.cs" t="Include" />
