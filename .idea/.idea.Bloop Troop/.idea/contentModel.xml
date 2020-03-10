@@ -9,7 +9,9 @@
         <e p="Scripts" t="Include">
           <e p="BeauxBehaviours" t="Include">
             <e p="CamMovementBehaviour.cs" t="Include" />
+            <e p="CamTriggerSetBehaviour.cs" t="Include" />
             <e p="MusicAdjusterBehaviour.cs" t="Include" />
+            <e p="TestMovBehaviour.cs" t="Include" />
           </e>
           <e p="Emmanuel" t="Include">
             <e p="Event System" t="Include">

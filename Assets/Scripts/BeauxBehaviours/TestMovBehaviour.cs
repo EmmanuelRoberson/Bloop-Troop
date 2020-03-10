@@ -9,23 +9,23 @@ public class TestMovBehaviour : MonoBehaviour
 
     public void SpeedChange(int spdLvl)
     {
-        cmb.stop = false;
-        cmb.slow = false;
-        cmb.normal = false;
+        //cmb.stop = false;
+        //cmb.slow = false;
+        //cmb.normal = false;
 
         if (spdLvl == 0)
         {
-            stop = true;
+            //stop = true;
         }
 
         if (spdLvl == 1)
         {
-            slow == true;
+            //slow == true;
         }
 
         if (spdLvl == 2)
         {
-            normal == true;
+            //normal == true;
         }
     }
 
