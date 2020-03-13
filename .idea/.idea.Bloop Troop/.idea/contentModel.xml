@@ -26,6 +26,8 @@
             <e p="TestMovBehaviour.cs" t="Include" />
           </e>
           <e p="Emmanuel" t="Include">
+            <e p="ChainCoupler.cs" t="Include" />
+            <e p="ChainSystem.cs" t="Include" />
             <e p="Event System" t="Include">
               <e p="GameEvent.cs" t="Include" />
               <e p="GameEventListener.cs" t="Include" />
@@ -38,15 +40,16 @@
               <e p="JointDataObject.cs" t="Include" />
             </e>
             <e p="School Management" t="Include">
+              <e p="ChainNode.cs" t="Include" />
               <e p="Group System Implementations" t="Include">
                 <e p="SchoolAgentSystem.cs" t="Include" />
               </e>
-              <e p="GroupNode.cs" t="Include" />
               <e p="GroupNodeSystem.cs" t="Include" />
               <e p="IGroupable.cs" t="Include" />
             </e>
             <e p="Test" t="Include">
               <e p="ChangeDirectionBehaviour.cs" t="Include" />
+              <e p="TestFishCollectionBehaviour.cs" t="Include" />
               <e p="TestSpawnBehavoiur.cs" t="Include" />
               <e p="TestSpringBehaviour.cs" t="Include" />
             </e>

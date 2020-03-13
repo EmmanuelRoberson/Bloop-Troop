@@ -5,7 +5,7 @@ using UnityEngine;
 
 public abstract class GroupNodeSystem
 {
-    public GroupNode rootNode;
+    public ChainNode rootNode;
 
     
 }
