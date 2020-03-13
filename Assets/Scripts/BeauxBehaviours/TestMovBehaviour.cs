@@ -5,28 +5,35 @@ using UnityEngine;
 public class TestMovBehaviour : MonoBehaviour
 {
     [SerializeField]
+    int spdLvl;
+
+    [SerializeField]
     CamMovementBehaviour cmb;
 
-    public void SpeedChange(int spdLvl)
+    public void SpeedChange(int spdLvl, Collider Cmb)
     {
         //cmb.stop = false;
         //cmb.slow = false;
         //cmb.normal = false;
 
-        if (spdLvl == 0)
-        {
-            //stop = true;
-        }
+        //if (spdLvl == 0)
+        //{
+        //    Cmb.GetComponentInParent<CamMovementBehaviour>().stop = true;
 
-        if (spdLvl == 1)
-        {
-            //slow == true;
-        }
+        //    //stop = true;
+        //}
 
-        if (spdLvl == 2)
-        {
-            //normal == true;
-        }
+        //if (spdLvl == 1)
+        //{
+        //    Cmb.GetComponentInParent<CamMovementBehaviour>().slow = true;
+        //    //slow == true;
+        //}
+
+        //if (spdLvl == 2)
+        //{
+        //    Cmb.GetComponentInParent<CamMovementBehaviour>().normal = true;
+        //    //normal == true;
+        //}
     }
 
     // Start is called before the first frame update
@@ -41,10 +48,31 @@ public class TestMovBehaviour : MonoBehaviour
 
     }
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerStay(Collider other)
     {
-        CamMovementBehaviour cmb = other.GetComponentInParent<CamMovementBehaviour>();
 
+        if (spdLvl == 0)
+        {
+            other.gameObject.GetComponentInParent<CamMovementBehaviour>().stop = true;
+
+            //stop = true;
+        }
+
+        if (spdLvl == 1)
+        {
+            other.gameObject.GetComponentInParent<CamMovementBehaviour>().slow = true;
+            //slow == true;
+        }
+
+        if (spdLvl == 2)
+        {
+            other.gameObject.GetComponentInParent<CamMovementBehaviour>().normal = true;
+            //normal == true;
+        }
+
+
+        //SpeedChange(spdLvl, other);
         //Check trigger for bool, call SpdUp with specific argument for the bool check
     }
+
 }
