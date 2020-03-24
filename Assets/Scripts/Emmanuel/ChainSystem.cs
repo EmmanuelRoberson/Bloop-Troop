@@ -5,56 +5,32 @@ using UnityEngine;
 
 namespace Emmanuel
 {
-    public abstract class ChainSystem
+    //class that controls the ChainNode instantiation
+    public class ChainSystem<T>
     {
-        /*
-         *        //object held in the root node of the system 
-        protected Object rootNodeObject;
+        //object held in the root node of the system 
+        private T originNodeObject;
         
         //root node of the web system
-        protected  ChainNode rootNode;
+        private ChainNode<T> originNode;
         
         //context node for traversing through the system
-        private ChainNode contextNode;
+        private ChainNode<T> contextNode;
 
         //list of all the nodes childed from the root node
-        private List<ChainNode> allNodes;
-         */
+        private List<ChainNode<T>> allNodes;
+        
         //constructor
-        public ChainSystem(ChainNode root) {}
-
-        public virtual void CompleteJob(){}
-
-        public virtual void ScheduleJob(JobHandle dependentHandle) {}
-
-        /*
-        public void TestFunction()
+        public ChainSystem(T originObject)
         {
-            //NativeArray<ChainNode> result = new NativeArray<ChainNode>(allNodes.Count, Allocator.TempJob);
-
-            TestJob ParallelJob = new TestJob(result);
-
-            JobHandle handle = ParallelJob.Schedule(result.Length, 5);
-        }
-        */
-    }
-
-    /*
-    struct TestJob : IJobParallelFor
-    {
-
-        private NativeArray<ChainNode> resultNodes;
-
-        public TestJob(NativeArray<ChainNode> resultNodes)
-        {
-            this.resultNodes = resultNodes;
+            originNodeObject = originObject;
+            originNode = new ChainNode<T>(originObject);
         }
 
-        public void Execute(int index)
+        public void BeginNewChain(T newObject, int chainID)
         {
-            throw new System.NotImplementedException();
+            
         }
     }
-    */
 }
 
