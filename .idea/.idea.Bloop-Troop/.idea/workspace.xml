@@ -22,8 +22,8 @@
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/School Management/GroupNodeSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/ChainNode.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/ChainSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/ChainCoupler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/ChainSystem.cs" />
       </list>
     </option>
   </component>
@@ -81,7 +81,7 @@
       <option name="presentableId" value="Default" />
       <updated>1585065510304</updated>
       <workItem from="1585065524149" duration="665000" />
-      <workItem from="1585066640620" duration="6420000" />
+      <workItem from="1585066640620" duration="8766000" />
     </task>
     <servers />
   </component>

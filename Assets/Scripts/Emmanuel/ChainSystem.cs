@@ -18,7 +18,7 @@ namespace Emmanuel
         private ChainNode<T> contextNode;
 
         //list of all the nodes childed from the root node
-        private List<ChainNode<T>> allNodes;
+        private List<ChainCoupler<T>> allCouplers;
         
         //constructor
         public ChainSystem(T originObject)
@@ -27,9 +27,9 @@ namespace Emmanuel
             originNode = new ChainNode<T>(originObject);
         }
 
-        public void BeginNewChain(T newObject, int chainID)
+        public void AddNewChain(T newObject, int chainID)
         {
-            
+            ChainCoupler<T> nnerCoupler = new ChainCoupler<T>(originNode);
         }
     }
 }
