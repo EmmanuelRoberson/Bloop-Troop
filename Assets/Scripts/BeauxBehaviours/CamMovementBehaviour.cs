@@ -23,13 +23,13 @@ public class CamMovementBehaviour : MonoBehaviour
     {
         if (normal == true)
         {
-            transform.position=new Vector3(transform.position.x+(Time.fixedDeltaTime / 10),
+            transform.position=new Vector3(transform.position.x+(Time.fixedDeltaTime / 3),
                 transform.position.y, transform.position.z);
         }
 
         if (slow == true)
         {
-            transform.position=new Vector3(transform.position.x+(Time.fixedDeltaTime / 15),
+            transform.position=new Vector3(transform.position.x+(Time.fixedDeltaTime / 8),
                 transform.position.y, transform.position.z);
         }
 
