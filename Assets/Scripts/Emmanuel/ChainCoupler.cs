@@ -7,6 +7,16 @@
     public class ChainCoupler<T>
     {
         /// <summary>
+        /// maximum length of the chain
+        /// </summary>
+        private int maxChainLength;
+
+        /// <summary>
+        /// keeps track of number of nodes in the chain
+        /// </summary>
+        private int currentChainLength;
+        
+        /// <summary>
         /// the origin node, beginning of the whole chain system
         /// </summary>
         private ChainNode<T> originNode;
@@ -20,15 +30,19 @@
         /// end of the linked chain
         /// </summary>
         public ChainNode<T> endOfChain;
-
-    
+ 
         /// <summary>
-        /// conctructor
+        /// constructor
         /// </summary>
-        /// <param name="origin"></param>
-        public ChainCoupler(ChainNode<T> origin)
+        /// <param name="chainLength"></param>
+        /// <param name="originNodeData"></param>
+        /// <param name="beginningChainData"></param>
+        public ChainCoupler(int chainLength , ChainNode<T> existingOriginNode, T beginningChainData)
         {
-            originNode = origin;
+            originNode = existingOriginNode;
+            maxChainLength = chainLength;
+            currentChainLength = 0;
+            LinkNewChain(beginningChainData);
         }
 
         /// <summary>
@@ -38,19 +52,36 @@
         /// <param name="chainData"></param>
         public void LinkNewChain(T chainData)
         {
-            beginningOfChain = new ChainNode<T>(chainData);
+            if (currentChainLength <= maxChainLength)
+            {
+                beginningOfChain = new ChainNode<T>(chainData);
+                currentChainLength++;
+            }
         }
 
         /// <summary>
         /// adds a chain node to the end, then it updates the end of the chain
         /// </summary>
         /// <param name="newNodeData"></param>
-        public void AddChainNode(T newNodeData)
+        public void AddNode(T newNodeData)
         {
             ChainNode<T> newEndNode = new ChainNode<T>(newNodeData);
             endOfChain.childNode = newEndNode;
             endOfChain = endOfChain.childNode;
         }
+        
+        /// <summary>
+        /// removes a node from the end of the chain
+        /// </summary>
+        public void RemoveNode()
+        {
+            endOfChain = endOfChain.parentNode;
+            endOfChain.childNode = null;
+        }
 
+        public ChainNode<T> EndOfChain
+        {
+            get => endOfChain;
+        }
     }
 }

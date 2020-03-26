@@ -6,9 +6,6 @@ using Object = UnityEngine.Object;
 
 public class ChainNode<T>
 {
-    //used to identify the chain that the node is connected to
-    public int branchID;
-    
     //data stored in the node
     public T objectData;
     

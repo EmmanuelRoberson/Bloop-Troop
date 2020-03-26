@@ -40,6 +40,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunDashboard">
@@ -69,6 +70,10 @@
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Attach to Unity Editor.Attach to Unity Editor" />
+      <item itemvalue="Attach to Unity Editor.Attach to Unity Editor &amp; Play" />
+    </list>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -82,7 +87,7 @@
       <updated>1585065510304</updated>
       <workItem from="1585065524149" duration="665000" />
       <workItem from="1585066640620" duration="9364000" />
-      <workItem from="1585234853623" duration="4064000" />
+      <workItem from="1585234853623" duration="12270000" />
     </task>
     <servers />
   </component>
