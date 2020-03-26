@@ -23,13 +23,18 @@ namespace Emmanuel
         //constructor
         public ChainSystem(T originObject)
         {
+            allCouplers = new List<ChainCoupler<T>>();
+            
             originNodeObject = originObject;
             originNode = new ChainNode<T>(originObject);
+            
+            ChainCoupler<T> newCoupler = new ChainCoupler<T>(originNode);
+            allCouplers.Add(newCoupler);
         }
 
         public void AddNewChain(T newObject, int chainID)
         {
-            ChainCoupler<T> nnerCoupler = new ChainCoupler<T>(originNode);
+            ChainCoupler<T> newCoupler = new ChainCoupler<T>(originNode);
         }
     }
 }
