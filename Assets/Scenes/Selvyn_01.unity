@@ -121,7 +121,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &907314542
+--- !u!1001 &348416819
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -131,17 +131,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: e64280dca9b554e4ba822849ed427365,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.45112324
+      value: 2.463
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: e64280dca9b554e4ba822849ed427365,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.4309628
+      value: 0.67
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: e64280dca9b554e4ba822849ed427365,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.7499785
+      value: -10.379253
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: e64280dca9b554e4ba822849ed427365,
         type: 3}
@@ -188,6 +188,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 2aef670d6163e1a4a8c81ca6280877ed, type: 2}
+    - target: {fileID: -3903128524549516648, guid: e64280dca9b554e4ba822849ed427365,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: e64280dca9b554e4ba822849ed427365,
         type: 3}
       propertyPath: m_Name
