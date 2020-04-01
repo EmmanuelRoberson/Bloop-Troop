@@ -9,6 +9,7 @@ namespace Emmanuel
     public class ChainSystem<T>
     {
         private int numberOfCouplers;
+        private int maxNumberOfCouplers;
 
         private int chainLength;
         
@@ -23,6 +24,8 @@ namespace Emmanuel
 
         //list of all the nodes childed from the root node
         private List<ChainCoupler<T>> allCouplers;
+
+        private int longestChainLength;
         
         //constructor
         public ChainSystem(T originObject, int chainCouplerLimit, int chainLengthLimit)
@@ -41,6 +44,45 @@ namespace Emmanuel
         public void AddNewChain(T newObject)
         {
             ChainCoupler<T> newCoupler = new ChainCoupler<T>(chainLength, originNode, newObject);
+        }
+
+        /// <summary>
+        /// removes a chain from the end of the list
+        /// </summary>
+        public void RemoveChain()
+        {
+            allCouplers[allCouplers.Count - 1] = null;
+        }
+
+        public void AddNode(T objectData)
+        {
+            if (numberOfCouplers < maxNumberOfCouplers)
+            {
+                numberOfCouplers++;
+                AddNewChain(objectData);
+                return;
+            }
+            
+            //if all chains are at max length
+            if (longestChainLength < chainLength)
+            {
+                foreach (var coupler in allCouplers)
+                {
+                    if (coupler.CurrentChainLength < longestChainLength)
+                    {
+                        coupler.AddNode(objectData);
+                        return;
+                    }
+                }
+
+                allCouplers[0].AddNode(objectData);
+                longestChainLength++;
+            }
+        }
+
+        public void RemoveNode()
+        {
+            
         }
     }
 }

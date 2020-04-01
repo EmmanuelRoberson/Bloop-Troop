@@ -12,9 +12,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Emmanuel/TestCollectBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Emmanuel/School Management/GroupNodeSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Emmanuel/ChainNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Emmanuel/TestPlayerBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Emmanuel/TestFishBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Emmanuel/TestMovementBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Emmanuel/ChainSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Emmanuel/GlobalFishController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Emmanuel/ChainCoupler.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -24,6 +29,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/ChainNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/ChainCoupler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/ChainSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/GlobalFishController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/TestFishBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/TestPlayerBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/TestCollectBehaviour.cs" />
       </list>
     </option>
   </component>
@@ -87,7 +96,9 @@
       <updated>1585065510304</updated>
       <workItem from="1585065524149" duration="665000" />
       <workItem from="1585066640620" duration="9364000" />
-      <workItem from="1585234853623" duration="12270000" />
+      <workItem from="1585234853623" duration="13377000" />
+      <workItem from="1585331458382" duration="9718000" />
+      <workItem from="1585667011168" duration="9347000" />
     </task>
     <servers />
   </component>

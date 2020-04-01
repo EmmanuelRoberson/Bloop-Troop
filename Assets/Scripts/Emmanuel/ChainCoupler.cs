@@ -83,5 +83,9 @@
         {
             get => endOfChain;
         }
+        public int CurrentChainLength
+        {
+            get => currentChainLength;
+        }
     }
 }
