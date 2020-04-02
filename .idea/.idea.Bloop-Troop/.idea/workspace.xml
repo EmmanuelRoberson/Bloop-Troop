@@ -30,9 +30,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/ChainCoupler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/ChainSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/GlobalFishController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/TestFishBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/TestPlayerBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/TestCollectBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/TestPlayerBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/TestFishBehaviour.cs" />
       </list>
     </option>
   </component>
@@ -99,6 +99,7 @@
       <workItem from="1585234853623" duration="13377000" />
       <workItem from="1585331458382" duration="9718000" />
       <workItem from="1585667011168" duration="9347000" />
+      <workItem from="1585792702999" duration="6726000" />
     </task>
     <servers />
   </component>
