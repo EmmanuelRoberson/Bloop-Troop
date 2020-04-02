@@ -7,6 +7,9 @@ public class CamMovementBehaviour : MonoBehaviour
     [SerializeField]
     MusicAdjusterBehaviour mab;
 
+    [SerializeField]
+    float slowValue, normalValue;
+
     public bool stop, slow, normal = false;
 
     //[SerializeField]
@@ -23,13 +26,13 @@ public class CamMovementBehaviour : MonoBehaviour
     {
         if (normal == true)
         {
-            transform.position=new Vector3(transform.position.x+(Time.fixedDeltaTime / 3),
+            transform.position=new Vector3(transform.position.x+(Time.fixedDeltaTime / normalValue),
                 transform.position.y, transform.position.z);
         }
 
         if (slow == true)
         {
-            transform.position=new Vector3(transform.position.x+(Time.fixedDeltaTime / 8),
+            transform.position=new Vector3(transform.position.x+(Time.fixedDeltaTime / slowValue),
                 transform.position.y, transform.position.z);
         }
 
