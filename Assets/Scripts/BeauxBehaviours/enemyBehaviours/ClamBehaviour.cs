@@ -10,11 +10,15 @@ public class ClamBehaviour : MonoBehaviour
     [SerializeField]
     Transform fish;
 
+    [SerializeField]
+    GameObject pearl;
+
     float lastShotFired=0;
 
     void firePearl()
     {
-        ;
+       // GameObject pearlShot = Instantiate(pearl, this.transform.position, Quaternion.identity);
+        //pearlShot.PearlBehaviour.target = new Vector3(fish.transform.position.x, fish.transform.y, fish.transform.z);
     }
 
     // Start is called before the first frame update
