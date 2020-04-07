@@ -646,6 +646,7 @@ MonoBehaviour:
   nextSchoolPosition: {fileID: 320960155}
   nextSchoolPositionTwo: {fileID: 973530958}
   state: 0
+  direction: 0
   SpringConnected: 0
   fishEnd: {fileID: 0}
   speed: 1
@@ -814,6 +815,7 @@ MonoBehaviour:
   nextSchoolPosition: {fileID: 29851921}
   nextSchoolPositionTwo: {fileID: 1156368304}
   state: 0
+  direction: 0
   SpringConnected: 0
   fishEnd: {fileID: 0}
   speed: 1
@@ -948,6 +950,7 @@ MonoBehaviour:
   nextSchoolPosition: {fileID: 1364169536}
   nextSchoolPositionTwo: {fileID: 2106269541}
   state: 0
+  direction: 0
   SpringConnected: 0
   fishEnd: {fileID: 0}
   speed: 1
@@ -1305,6 +1308,7 @@ MonoBehaviour:
   nextSchoolPosition: {fileID: 1968688828}
   nextSchoolPositionTwo: {fileID: 441344276}
   state: 0
+  direction: 0
   SpringConnected: 0
   fishEnd: {fileID: 0}
   speed: 1
@@ -1506,14 +1510,14 @@ GameObject:
   m_Component:
   - component: {fileID: 378432290}
   - component: {fileID: 378432289}
-  - component: {fileID: 378432288}
   - component: {fileID: 378432287}
+  - component: {fileID: 378432288}
   m_Layer: 0
   m_Name: BackWall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!65 &378432287
 BoxCollider:
@@ -2513,6 +2517,7 @@ MonoBehaviour:
   nextSchoolPosition: {fileID: 1467651121}
   nextSchoolPositionTwo: {fileID: 652324555}
   state: 0
+  direction: 0
   SpringConnected: 0
   fishEnd: {fileID: 0}
   speed: 1
@@ -3312,6 +3317,7 @@ MonoBehaviour:
   nextSchoolPosition: {fileID: 1492200432}
   nextSchoolPositionTwo: {fileID: 1232957351}
   state: 0
+  direction: 0
   SpringConnected: 0
   fishEnd: {fileID: 0}
   speed: 1
@@ -3912,6 +3918,7 @@ MonoBehaviour:
   nextSchoolPosition: {fileID: 1911593823}
   nextSchoolPositionTwo: {fileID: 1404092990}
   state: 0
+  direction: 0
   SpringConnected: 0
   fishEnd: {fileID: 0}
   speed: 1
@@ -5008,6 +5015,7 @@ MonoBehaviour:
   nextSchoolPosition: {fileID: 1207878057}
   nextSchoolPositionTwo: {fileID: 1819856574}
   state: 0
+  direction: 0
   SpringConnected: 0
   fishEnd: {fileID: 0}
   speed: 1
@@ -6383,6 +6391,7 @@ MonoBehaviour:
   nextSchoolPosition: {fileID: 2113128710}
   nextSchoolPositionTwo: {fileID: 2128445175}
   state: 0
+  direction: 0
   SpringConnected: 0
   fishEnd: {fileID: 0}
   speed: 1
@@ -8338,6 +8347,7 @@ MonoBehaviour:
   nextSchoolPosition: {fileID: 125660162}
   nextSchoolPositionTwo: {fileID: 18178353}
   state: 1
+  direction: 0
   SpringConnected: 0
   fishEnd: {fileID: 0}
   speed: 1
