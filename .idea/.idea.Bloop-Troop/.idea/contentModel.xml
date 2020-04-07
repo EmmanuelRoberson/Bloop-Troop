@@ -21,7 +21,15 @@
         <e p="Scripts" t="Include">
           <e p="BeauxBehaviours" t="Include">
             <e p="CamMovementBehaviour.cs" t="Include" />
-            <e p="CamTriggerSetBehaviour.cs" t="Include" />
+            <e p="enemyBehaviours" t="Include">
+              <e p="ClamBehaviour.cs" t="Include" />
+              <e p="PearlBehaviour.cs" t="Include" />
+              <e p="PufferBehaviour.cs" t="Include" />
+              <e p="UrchinBehaviour.cs" t="Include" />
+            </e>
+            <e p="mayusel8r" t="Include">
+              <e p="CamTriggerSetBehaviour.cs" t="Include" />
+            </e>
             <e p="MusicAdjusterBehaviour.cs" t="Include" />
             <e p="TestMovBehaviour.cs" t="Include" />
           </e>
@@ -39,8 +47,10 @@
             </e>
             <e p="GlobalFishController.cs" t="Include" />
             <e p="Objects" t="Include">
+              <e p="FishPositionList.cs" t="Include" />
               <e p="JointDataObject.cs" t="Include" />
             </e>
+            <e p="PositionAssignmentBehaviour.cs" t="Include" />
             <e p="School Management" t="Include">
               <e p="Group System Implementations" t="Include">
                 <e p="SchoolAgentSystem.cs" t="Include" />

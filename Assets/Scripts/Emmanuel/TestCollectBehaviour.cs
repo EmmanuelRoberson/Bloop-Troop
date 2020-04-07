@@ -22,6 +22,12 @@ namespace Emmanuel
          3. WHEN THE FISH IS DETACHED, IT WILL FLIP UPSIDE DOWN
          4. WHEN IT IS FLIPPED UPSIDE DOWN, IT WILL FLOAT UPWARD
     
+        
+        
+        /// The fish wwill collecct in a pattern like
+        First layer - 6 fish, one directly up and down, two to the left and up and down
+                        (mid distance between directly up and to the sides)
+        Second Layer
          * */
          
         

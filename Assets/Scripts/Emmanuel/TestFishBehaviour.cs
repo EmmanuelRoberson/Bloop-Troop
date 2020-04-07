@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Numerics;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UIElements;
+using Vector3 = UnityEngine.Vector3;
 
 namespace Emmanuel
 {
@@ -12,6 +14,16 @@ namespace Emmanuel
         UNCOLLECTED = 0,
         COLLECTED = 1,
 
+    }
+
+    public enum POSITION_ASSIGN_DIRECTION
+    {
+        UP = 0,
+        UP_RIGHT,
+        DOWN_RIGHT,
+        DOWN,
+        DOWN_LEFT,
+        UP_LEFT
     }
 
 
@@ -23,10 +35,11 @@ namespace Emmanuel
         
         public GameObject nextSchoolPosition;
         public GameObject nextSchoolPositionTwo;
-        
+
         public FISH_STATE state;
+        public POSITION_ASSIGN_DIRECTION direction;
         
-        private GameObject parentFish;
+        
     
         private SpringJoint springJoint;
         public bool SpringConnected = false;
@@ -141,25 +154,49 @@ namespace Emmanuel
             }
         }
 
-        public void ConnectSpring(GameObject go)
+        public void ConnectSpring(GameObject gameObject)
         {
             if (!SpringConnected)
             {
-                transform.position = go.transform.position;
+                transform.position = gameObject.transform.position;
             
                 SpringConnected = true;
             
-                springJoint = gameObject.AddComponent<SpringJoint>();
+                springJoint = ((Component) this).gameObject.AddComponent<SpringJoint>();
                 springJoint.anchor = Vector3.zero;
-                springJoint.connectedBody = go.GetComponent<Rigidbody>();
-                springJoint.connectedAnchor = go.transform.position;
+                springJoint.connectedBody = gameObject.GetComponent<Rigidbody>();
+                springJoint.connectedAnchor = gameObject.transform.position;
                 springJoint.spring = 300;
                 springJoint.damper = 10;
                 springJoint.enableCollision = false;
                 springJoint.tolerance = 0.025f;
             }
         }
-    
+
+        public void SetPositionDirection(POSITION_ASSIGN_DIRECTION newDirection)
+        {
+            direction = newDirection;
+        }
+
+        public void PrepareNExtFishPositions()
+        {
+            
+            
+            GameObject firstPosition = Instantiate(new GameObject(), transform, false);
+            transform.position = transform.position += 
+
+            GameObject secondPosition = Instantiate(new GameObject());
+        }
+
+        public Vector3 NextSchoolPositionOffset
+        {
+            get
+            {
+                Vector3 offset = new Vector3();
+                return offset;
+            }
+        }
+
         private IEnumerator JoinTheSchoolRoutine()
         {
             yield return null;
