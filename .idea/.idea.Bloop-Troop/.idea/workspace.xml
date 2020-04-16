@@ -37,9 +37,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/TestCollectBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/Objects/FishPositionList.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/PositionAssignmentBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/GlobalFishController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/TestMovementBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/Test/TestSpawnBehavoiur.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/GlobalFishController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/TestFishBehaviour.cs" />
       </list>
     </option>
@@ -113,7 +113,7 @@
       <workItem from="1587046520297" duration="343000" />
       <workItem from="1587048947216" duration="8000" />
       <workItem from="1587049106600" duration="657000" />
-      <workItem from="1587065919914" duration="2504000" />
+      <workItem from="1587065919914" duration="11180000" />
     </task>
     <servers />
   </component>
