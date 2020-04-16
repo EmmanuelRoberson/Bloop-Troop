@@ -3,9 +3,6 @@ using UnityEngine;
 
 public class TestMovementBehaviour : MonoBehaviour
 {
-    public float MaximumYVelocity;
-    public float MaximumXVelocity;
-
     public float speed;
     public float speedMultiplier;
     

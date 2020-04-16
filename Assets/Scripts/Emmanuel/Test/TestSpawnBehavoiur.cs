@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Emmanuel;
+using UnityEngine;
 
 public class TestSpawnBehavoiur : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class TestSpawnBehavoiur : MonoBehaviour
         if (timer > 5)
         {
             var obj = Instantiate(test, transform.position, Quaternion.identity);
+
             timer = 0f;
         }
 
