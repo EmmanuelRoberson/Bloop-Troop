@@ -14,8 +14,10 @@
     "com.unity.test-framework": "1.1.11",
 =======
     "com.unity.probuilder": "4.2.3",
-    "com.unity.test-framework": "1.1.9",
->>>>>>> Taylor
+    "com.unity.progrids": "3.0.3-preview.5",
+    "com.unity.purchasing": "2.0.6",
+    "com.unity.render-pipelines.universal": "7.1.8",
+    "com.unity.test-framework": "1.1.11",
     "com.unity.textmeshpro": "2.0.1",
     "com.unity.timeline": "1.2.10",
     "com.unity.ugui": "1.0.0",
