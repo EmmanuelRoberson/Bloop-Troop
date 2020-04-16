@@ -12,11 +12,17 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Emmanuel/TestCollectBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Emmanuel/School Management/GroupNodeSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Emmanuel/GlobalFishController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Emmanuel/FishPositionBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Emmanuel/PositionAssignmentBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Emmanuel/ChainNode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Emmanuel/TestPlayerBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Emmanuel/TestFishBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Emmanuel/Objects/FishPositionList.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Emmanuel/TestMovementBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Emmanuel/ChainSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Emmanuel/GlobalFishController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Emmanuel/ChainCoupler.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -25,11 +31,11 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/ChainNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/ChainCoupler.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/ChainSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/GlobalFishController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/TestPlayerBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/TestCollectBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/Objects/FishPositionList.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/PositionAssignmentBehaviour.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/GlobalFishController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/TestFishBehaviour.cs" />
       </list>
     </option>
@@ -99,8 +105,6 @@
       <workItem from="1585667011168" duration="9347000" />
       <workItem from="1585792702999" duration="7578000" />
       <workItem from="1586271245065" duration="8491000" />
-      <workItem from="1586444369473" duration="9803000" />
-      <workItem from="1587046520297" duration="343000" />
     </task>
     <servers />
   </component>

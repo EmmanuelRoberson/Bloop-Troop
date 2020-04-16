@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
+using System.Numerics;
 using UnityEngine;
-using Random = UnityEngine.Random;
+using UnityEngine.Serialization;
+using UnityEngine.UIElements;
 using Vector3 = UnityEngine.Vector3;
 
 namespace Emmanuel
@@ -36,6 +39,8 @@ namespace Emmanuel
         public FISH_STATE state;
         public POSITION_ASSIGN_DIRECTION direction;
         
+        
+    
         private SpringJoint springJoint;
         public bool SpringConnected = false;
 
@@ -43,6 +48,7 @@ namespace Emmanuel
         {
             get { return (Vector3.Distance(transform.position, fishEnd.transform.position) > 0.005); }
         }
+    
         
         //where the fish will end up
         public GameObject fishEnd;
@@ -63,10 +69,13 @@ namespace Emmanuel
                 state = FISH_STATE.UNCOLLECTED;
             }
             
-             
-            
             fishAttached = 0;
             SpringConnected = false;
+
+            //System.Random rand1 = new System.Random((int)Time.time);
+            //Vector3 offset = new Vector3(rand1.Next(-5, 5), rand1.Next(-5, 5), 0);
+
+            //nextSchoolPosition.transform.position += offset;
         }
 
         // Update is called once per frame
@@ -82,6 +91,7 @@ namespace Emmanuel
             
             if (testBeh != null)
             {
+                parentFish = other.gameObject;
                 testBeh.TestPlayerFunction();
 
                 fishEnd = testBeh.nextSchoolPosition;
@@ -144,7 +154,6 @@ namespace Emmanuel
             }
         }
 
-        //teleports the gameobject to the position, then it connects a spring to it
         public void ConnectSpring(GameObject gameObject)
         {
             if (!SpringConnected)
@@ -164,108 +173,30 @@ namespace Emmanuel
             }
         }
 
-        //sets position direction
         public void SetPositionDirection(POSITION_ASSIGN_DIRECTION newDirection)
         {
             direction = newDirection;
         }
 
-        //Returns the offset vector that correlates with each direction of fish position
-        public Tuple<Vector3, Vector3> FishDirectionOffsetVector
+        public void PrepareNExtFishPositions()
+        {
+            
+            
+            GameObject firstPosition = Instantiate(new GameObject(), transform, false);
+            transform.position = transform.position += 
+
+            GameObject secondPosition = Instantiate(new GameObject());
+        }
+
+        public Vector3 NextSchoolPositionOffset
         {
             get
             {
-
-                switch(direction)
-                {
-                    case POSITION_ASSIGN_DIRECTION.UP:
-                    {
-                        Vector3 offset1;
-                        Vector3 offset2;
-                        
-                        offset1 = new Vector3(Random.Range(-3f, -1f), Random.Range(1.15f, 2.15f));
-                        offset2 = new Vector3(Random.Range(1f, 3f),Random.Range(1.15f, 2.15f));
-
-                        Tuple<Vector3, Vector3> positions = new Tuple<Vector3, Vector3>(offset1, offset2);
-                        return positions;
-                    }
-                    case POSITION_ASSIGN_DIRECTION.UP_RIGHT:
-                    {
-                        Vector3 offset1;
-                        Vector3 offset2;
-                        
-                        offset1 = new Vector3(Random.Range(1.5f, 2f), Random.Range(1.5f, 2.5f));
-                        offset2 = new Vector3(Random.Range(2.5f, 5f), Random.Range(-0.5f, 0.5f));
-
-                        Tuple<Vector3, Vector3> positions = new Tuple<Vector3, Vector3>(offset1, offset2);
-                        return positions;
-                    }
-                    case POSITION_ASSIGN_DIRECTION.DOWN_RIGHT:
-                    {
-                        Vector3 offset1;
-                        Vector3 offset2;
-                        
-                        offset1 = new Vector3(Random.Range(1.5f, 2f), Random.Range(-1.5f, -2.5f));
-                        offset2 = new Vector3(Random.Range(2.5f, 5f), Random.Range(-0.5f, 0.5f));
-
-                        Tuple<Vector3, Vector3> positions = new Tuple<Vector3, Vector3>(offset1, offset2);
-                        return positions;
-                    }
-                    case POSITION_ASSIGN_DIRECTION.DOWN:
-                    {
-                        Vector3 offset1;
-                        Vector3 offset2;
-                        
-                        offset1 = new Vector3(Random.Range(-3f, -1f), Random.Range(-1.15f, -2.15f));
-                        offset2 = new Vector3(Random.Range(1f, 3f),Random.Range(-1.15f, -2.15f));
-
-                        Tuple<Vector3, Vector3> positions = new Tuple<Vector3, Vector3>(offset1, offset2);
-                        return positions;
-                    }
-                    case POSITION_ASSIGN_DIRECTION.DOWN_LEFT:
-                    {
-                        Vector3 offset1;
-                        Vector3 offset2;
-                        
-                        offset1 = new Vector3(Random.Range(-1.5f, 2f), Random.Range(-1.5f, -2.5f));
-                        offset2 = new Vector3(Random.Range(-2.5f, 5f), Random.Range(-0.5f, 0.5f));
-
-                        Tuple<Vector3, Vector3> positions = new Tuple<Vector3, Vector3>(offset1, offset2);
-                        return positions;
-                    }
-                    case POSITION_ASSIGN_DIRECTION.UP_LEFT:
-                    {
-                        Vector3 offset1;
-                        Vector3 offset2;
-                        
-                        offset1 = new Vector3(Random.Range(-1.5f, 2f), Random.Range(1.5f, 2.5f));
-                        offset2 = new Vector3(Random.Range(-2.5f, 5f), Random.Range(-0.5f, 0.5f));
-
-                        Tuple<Vector3, Vector3> positions = new Tuple<Vector3, Vector3>(offset1, offset2);
-                        return positions;
-                    }
-                    default:
-                    {
-                        return null;
-                    }
-                }
+                Vector3 offset = new Vector3();
+                return offset;
             }
         }
 
-        //spawns in the next two positions for the next fish to go to
-        public void InstantiateNextFishPositions()
-        {
-            GameObject firstPosition = Instantiate(new GameObject(), transform, false);
-            transform.position = transform.position += FishDirectionOffsetVector.Item1;
-            firstPosition.name = "Fish Child 1";
-
-            GameObject secondPosition = Instantiate(new GameObject(), transform, false);
-            transform.position = transform.position += FishDirectionOffsetVector.Item2;
-            firstPosition.name = "Fish Child 2";
-        }
-
-        
-        //intended to be a routine that the fish activate when they are collected
         private IEnumerator JoinTheSchoolRoutine()
         {
             yield return null;
