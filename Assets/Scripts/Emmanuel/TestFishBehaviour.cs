@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
@@ -34,22 +35,14 @@ namespace Emmanuel
 
         public int playerFishAttached;
         
-        public GameObject nextSchoolPosition;
-        public GameObject nextSchoolPositionTwo;
+        public GameObject nextSchoolPosition = null;
+        public GameObject nextSchoolPositionTwo = null;
 
         public FISH_STATE state;
         [FormerlySerializedAs("direction")] public POSITION_ASSIGN_DIRECTION assignmentDirection;
         
         private SpringJoint springJoint;
         public bool SpringConnected = false;
-
-        public bool NotInPosition
-        {
-            get { return (Vector3.Distance(transform.position, currentPosition.transform.position) > 0.005); }
-        }
-        
-        //where the fish will end up
-        [FormerlySerializedAs("fishEnd")] public GameObject currentPosition;
 
         private float startTime;
 
@@ -68,6 +61,8 @@ namespace Emmanuel
 
             fishAttached = 0;
             SpringConnected = false;
+            
+            
         }
 
         // Update is called once per frame
@@ -78,9 +73,11 @@ namespace Emmanuel
 
         private void OnTriggerEnter(Collider other)
         {
+            if (state == FISH_STATE.UNCOLLECTED) return;
+            
             TestFishBehaviour testFishBeh = other.gameObject.GetComponent<TestFishBehaviour>();
             //if i am the player
-            if (isPlayer && testFishBeh != null)
+            if (isPlayer && testFishBeh != null && testFishBeh.state == FISH_STATE.UNCOLLECTED)
             {
                 //how many fish do i have attached to me
                 if (playerFishAttached == 0 && !initialList.Contains(testFishBeh.gameObject))
@@ -88,8 +85,8 @@ namespace Emmanuel
                     testFishBeh.ConnectSpring(gameObject, new Vector3(0f, 2.5f, 0f));
                     playerFishAttached++;
                     assignmentDirection = POSITION_ASSIGN_DIRECTION.UP;
-                    testFishBeh.InstantiateNextFishPositions();
-                    Debug.Log(playerFishAttached + " Player Position Instantiated");  
+                    testFishBeh.InstantiateNextFishPositions(POSITION_ASSIGN_DIRECTION.UP);
+                    testFishBeh.MakeMyselfCollected();
                     initialList.Add(testFishBeh.gameObject);
                     return;
                 }
@@ -98,8 +95,8 @@ namespace Emmanuel
                     testFishBeh.ConnectSpring(gameObject, new Vector3(3, 1, 0f));
                     playerFishAttached++;
                     assignmentDirection = POSITION_ASSIGN_DIRECTION.UP_RIGHT;
-                    testFishBeh.InstantiateNextFishPositions();
-                    Debug.Log(playerFishAttached + " Player Position Instantiated"); 
+                    testFishBeh.InstantiateNextFishPositions(assignmentDirection);
+                    testFishBeh.MakeMyselfCollected();
                     initialList.Add(testFishBeh.gameObject);
                     return;
                 }
@@ -109,8 +106,8 @@ namespace Emmanuel
                     testFishBeh.ConnectSpring(gameObject, new Vector3(3, -1, 0f));
                     playerFishAttached++;
                     assignmentDirection = POSITION_ASSIGN_DIRECTION.DOWN_RIGHT;
-                    testFishBeh.InstantiateNextFishPositions();
-                    Debug.Log(playerFishAttached + " Player Position Instantiated");  
+                    testFishBeh.InstantiateNextFishPositions(assignmentDirection);
+                    testFishBeh.MakeMyselfCollected();
                     initialList.Add(testFishBeh.gameObject);
                     return;
                 }
@@ -120,8 +117,8 @@ namespace Emmanuel
                     testFishBeh.ConnectSpring(gameObject, new Vector3(0f, -2.5f, 0f));
                     playerFishAttached++;
                     assignmentDirection = POSITION_ASSIGN_DIRECTION.DOWN;
-                    testFishBeh.InstantiateNextFishPositions();
-                    Debug.Log(playerFishAttached + " Player Position Instantiated");
+                    testFishBeh.InstantiateNextFishPositions(assignmentDirection);
+                    testFishBeh.MakeMyselfCollected();
                     initialList.Add(testFishBeh.gameObject);
                     return;
                 }
@@ -131,8 +128,8 @@ namespace Emmanuel
                     testFishBeh.ConnectSpring(gameObject, new Vector3(-3, -1f, 0f));
                     playerFishAttached++;
                     assignmentDirection = POSITION_ASSIGN_DIRECTION.DOWN_LEFT;
-                    testFishBeh.InstantiateNextFishPositions();
-                    Debug.Log(playerFishAttached + " Player Position Instantiated");  
+                    testFishBeh.InstantiateNextFishPositions(assignmentDirection);
+                    testFishBeh.MakeMyselfCollected();
                     initialList.Add(testFishBeh.gameObject);
                     return;
                 }
@@ -142,141 +139,59 @@ namespace Emmanuel
                     testFishBeh.ConnectSpring(gameObject, new Vector3(-3, 1f, 0f));
                     playerFishAttached++;
                     assignmentDirection = POSITION_ASSIGN_DIRECTION.UP_LEFT;
-                    testFishBeh.InstantiateNextFishPositions();
-                    Debug.Log(playerFishAttached + " Player Position Instantiated"); 
+                    testFishBeh.InstantiateNextFishPositions(assignmentDirection);
+                    testFishBeh.MakeMyselfCollected();
                     initialList.Add(testFishBeh.gameObject);
                     return;
                 }
             }
-
-
-            /*if (testFishBeh != null)
+            
+            
+            //if i am not the player
+            if (testFishBeh != null && !isPlayer)
             {
-                if (testFishBeh.state == FISH_STATE.COLLECTED)
+                Debug.Log("I am not the player and the other fish is not null");
+                //if im collected and the other is uncollected
+                if (state == FISH_STATE.COLLECTED && testFishBeh.state == FISH_STATE.UNCOLLECTED)
                 {
-                    //the first 6 positions
-                    if (testFishBeh.isPlayer)
+                    Debug.Log("I am Collected and the other fish is uncollected");
+                    if (fishAttached == 0)
                     {
-                        if (testFishBeh.playerFishAttached == 0)
-                        {
-                            GameObject position = Instantiate(new GameObject(), other.transform, false);
+                        //collect the other fish
+                        testFishBeh.MakeMyselfCollected();
 
-                            ConnectSpring(position, new Vector3(0f, 2.5f, 0f));
-                            testFishBeh.playerFishAttached++;
-                            assignmentDirection = POSITION_ASSIGN_DIRECTION.UP;
-                            InstantiateNextFishPositions();
-                            Debug.Log(playerFishAttached + " Player Position Instantiated");                            return;
-                        }
+                        //connect his spring to his ending position
+                        testFishBeh.ConnectSpring(nextSchoolPosition, gameObject);
+                        
+                        testFishBeh.InstantiateNextFishPositions(assignmentDirection);
 
-                        if (testFishBeh.playerFishAttached == 1)
-                        {
-                            GameObject position = Instantiate(new GameObject(), other.transform, false);
-
-                            ConnectSpring(position, new Vector3(3, 1, 0f));
-                            testFishBeh.playerFishAttached++;
-                            assignmentDirection = POSITION_ASSIGN_DIRECTION.UP_RIGHT;
-                            InstantiateNextFishPositions();
-                            Debug.Log(playerFishAttached + " Player Position Instantiated");                            return;
-                        }
-
-                        if (testFishBeh.playerFishAttached == 2)
-                        {
-                            GameObject position = Instantiate(new GameObject(), other.transform, false);
-
-                            ConnectSpring(position, new Vector3(3, -1, 0f));
-                            testFishBeh.playerFishAttached++;
-                            assignmentDirection = POSITION_ASSIGN_DIRECTION.DOWN_RIGHT;
-                            InstantiateNextFishPositions();
-                            Debug.Log(playerFishAttached + " Player Position Instantiated");
-                            return;
-                        }
-
-                        if (testFishBeh.playerFishAttached == 3)
-                        {
-                            GameObject position = Instantiate(new GameObject(), other.transform, false);
-
-                            ConnectSpring(position, new Vector3(0f, -2.5f, 0f));
-                            testFishBeh.playerFishAttached++;
-                            assignmentDirection = POSITION_ASSIGN_DIRECTION.DOWN;
-                            InstantiateNextFishPositions();
-                            Debug.Log(playerFishAttached + " Player Position Instantiated");                            return;
-                        }
-
-                        if (testFishBeh.playerFishAttached == 4)
-                        {
-                            GameObject position = Instantiate(new GameObject(), other.transform, false);
-
-                            ConnectSpring(position, new Vector3(-3, -1f, 0f));
-                            testFishBeh.playerFishAttached++;
-                            assignmentDirection = POSITION_ASSIGN_DIRECTION.DOWN_LEFT;
-                            InstantiateNextFishPositions();
-                            Debug.Log(playerFishAttached + " Player Position Instantiated");                            return;
-                        }
-
-                        if (testFishBeh.playerFishAttached == 5)
-                        {
-                            GameObject position = Instantiate(new GameObject(), other.transform, false);
-
-                            ConnectSpring(position, new Vector3(-3, 1f, 0f));
-                            testFishBeh.playerFishAttached++;
-                            assignmentDirection = POSITION_ASSIGN_DIRECTION.UP_LEFT;
-                            InstantiateNextFishPositions();
-                            Debug.Log(playerFishAttached + " Player Position Instantiated");                            return;
-                        }
+                        //increase the number of fish attached
+                        fishAttached = 1;
+                        
+                        return;
                     }
-                    else
+
+                    if (fishAttached == 1)
                     {
-                        //if im collected
-                        if (state == FISH_STATE.COLLECTED)
-                        {
-                            if (fishAttached == 0)
-                            {
-                                //if the other fish is uncollected
-                                if (testFishBeh.state == FISH_STATE.UNCOLLECTED)
-                                {
-                                    //collect the other fish
-                                    testFishBeh.state = FISH_STATE.COLLECTED;
 
-                                    //make his ending the position after me
-                                    testFishBeh.currentPosition = nextSchoolPosition;
+                        //collect the other fish
+                        testFishBeh.MakeMyselfCollected();
 
-                                    //connect his spring to his ending position
-                                    testFishBeh.ConnectSpring(testFishBeh.currentPosition);
-                                
-                                    //increase the number of fish attached
-                                    fishAttached = 1;
-                                
-                                    Debug.Log(fishAttached);
-                                    return;
-                                }
-                            }
-                    
-                            if (fishAttached == 1)
-                            {
-                                //if the other fish is uncollected
-                                if (testFishBeh.state == FISH_STATE.UNCOLLECTED)
-                                {
-                                    //collect the other fish
-                                    testFishBeh.state = FISH_STATE.COLLECTED;
+                        //connect his spring to his ending position
+                        testFishBeh.ConnectSpring(nextSchoolPositionTwo, gameObject);
 
-                                    //make his ending the other position after me
-                                    testFishBeh.currentPosition = nextSchoolPositionTwo;
+                        //increase the number of fish attached
+                        fishAttached = 2;
+                        return;
 
-                                    //connect his spring to his ending position
-                                    testFishBeh.ConnectSpring(testFishBeh.currentPosition);
-
-                                    //increase the number of fish attached
-                                    fishAttached = 2;
-                                }
-                            }
-                        }
                     }
                 }
-            }*/
+            }
+            
         }
 
         //teleports the gameobject to the position, then it connects a spring to it
-        public void ConnectSpring(GameObject gameObject)
+        public void ConnectSpring(GameObject gameObject, GameObject rigidBodyObject)
         {
             if (!SpringConnected)
             {
@@ -286,12 +201,12 @@ namespace Emmanuel
             
                 springJoint = this.gameObject.AddComponent<SpringJoint>();
                 springJoint.anchor = Vector3.zero;
-                springJoint.connectedBody = gameObject.GetComponent<Rigidbody>();
-                springJoint.connectedAnchor = gameObject.transform.position;
+                springJoint.connectedBody = rigidBodyObject.GetComponent<Rigidbody>();
+                springJoint.connectedAnchor = rigidBodyObject.transform.position;
                 springJoint.spring = 300;
                 springJoint.damper = 10;
                 springJoint.enableCollision = false;
-                springJoint.tolerance = 0.025f;
+                springJoint.tolerance = Random.Range(0.025f, 0.1f);
             }
         }
 
@@ -310,7 +225,7 @@ namespace Emmanuel
                 springJoint.spring = 300;
                 springJoint.damper = 10;
                 springJoint.enableCollision = false;
-                springJoint.tolerance = 0.025f;
+                springJoint.tolerance = Random.Range(0.025f, 0.1f);
             }
         }
 
@@ -403,22 +318,25 @@ namespace Emmanuel
         }
 
         //spawns in the next two positions for the next fish to go to
-        [ExecuteInEditMode]
-        public void InstantiateNextFishPositions()
+        public void InstantiateNextFishPositions(POSITION_ASSIGN_DIRECTION assignDirection)
         {
-            GameObject firstPosition = Instantiate(new GameObject(), transform, false);
-            firstPosition.transform.parent = transform;
-            firstPosition.transform.position = transform.position + FishDirectionOffsetVector.Item1;
-            firstPosition.name = "Next Position 1";
-            nextSchoolPosition = firstPosition;
+            SetPositionDirection(assignDirection);
+            
+            nextSchoolPosition = new GameObject();
+            nextSchoolPosition.name = "Next Position 1";
+            nextSchoolPosition.transform.parent = transform;
+            nextSchoolPosition.transform.position = transform.position + FishDirectionOffsetVector.Item1;
 
-            GameObject secondPosition = Instantiate(new GameObject(), transform, false);
-            transform.parent = transform;
-            secondPosition.transform.position = transform.position + FishDirectionOffsetVector.Item2;
-            secondPosition.name = "Next Position 2";
-            nextSchoolPosition = secondPosition;
+            nextSchoolPositionTwo = new GameObject();
+            nextSchoolPositionTwo.name = "Next Position 2";
+            nextSchoolPositionTwo.transform.parent = transform;
+            nextSchoolPositionTwo.transform.position = transform.position + FishDirectionOffsetVector.Item2;
         }
 
+        public void MakeMyselfCollected()
+        {
+            state = FISH_STATE.COLLECTED;
+        }
         
         //intended to be a routine that the fish activate when they are collected
         private IEnumerator JoinTheSchoolRoutine()
