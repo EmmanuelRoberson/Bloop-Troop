@@ -3,7 +3,7 @@
 public class TestSpawnBehavoiur : MonoBehaviour
 {
     public GameObject test;
-
+    public float timeToSpawn;
     public float timer;
     // Start is called before the first frame update
     void Start()
@@ -14,7 +14,7 @@ public class TestSpawnBehavoiur : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (timer > 5)
+        if (timer > timeToSpawn)
         {
             var obj = Instantiate(test, transform.position, Quaternion.identity);
             timer = 0f;
