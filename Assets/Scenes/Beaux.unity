@@ -1755,17 +1755,17 @@ PrefabInstance:
     - target: {fileID: 4511560398922020554, guid: 9ab91c09796a53042bdfff3e14423f55,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: -0.20645711
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4511560398922020554, guid: 9ab91c09796a53042bdfff3e14423f55,
         type: 3}
       propertyPath: m_ConnectedAnchor.y
-      value: 1.3740001
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4511560398922020554, guid: 9ab91c09796a53042bdfff3e14423f55,
         type: 3}
       propertyPath: m_ConnectedAnchor.z
-      value: -7.981
+      value: -8
       objectReference: {fileID: 0}
     - target: {fileID: 4511560398922020554, guid: 9ab91c09796a53042bdfff3e14423f55,
         type: 3}
@@ -2217,6 +2217,27 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1670194350}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2035023961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2035023960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8de6ab2c76155440ab29d2652135397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialList: []
+  isPlayer: 0
+  fishAttached: 0
+  playerFishAttached: 0
+  nextSchoolPosition: {fileID: 0}
+  nextSchoolPositionTwo: {fileID: 0}
+  state: 1
+  assignmentDirection: 0
+  SpringConnected: 0
 --- !u!4 &2035023964 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8237777789510629033, guid: 9ab91c09796a53042bdfff3e14423f55,
@@ -2253,6 +2274,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthVal: 2
   iFrameVal: 6
+  countdown: 0
 --- !u!1 &2144701983
 GameObject:
   m_ObjectHideFlags: 0

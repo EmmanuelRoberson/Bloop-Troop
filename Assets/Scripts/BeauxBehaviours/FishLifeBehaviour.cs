@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Emmanuel;
 
 public class FishLifeBehaviour : MonoBehaviour
 {
@@ -16,10 +17,12 @@ public class FishLifeBehaviour : MonoBehaviour
 
     public float countdown = 0;
 
+    bool isPlayer=false;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        isPlayer = GetComponent<TestFishBehaviour>().isPlayer;
     }
 
     private void OnTriggerStay(Collider other)
@@ -35,7 +38,8 @@ public class FishLifeBehaviour : MonoBehaviour
         {
             transform.rotation = new Quaternion(transform.rotation.x, transform.rotation.y, 3, transform.rotation.w);
             isDead = true;
-            countdown = 3;
+            if (isPlayer == true)
+                countdown = 3;
         }
     }
 
@@ -47,11 +51,14 @@ public class FishLifeBehaviour : MonoBehaviour
         {
             GetComponentInParent<TestMovementBehaviour>().enabled = false;
 
-            countdown -= (Time.fixedDeltaTime);
-
-            if (countdown <= 0.0f)
+            if (isPlayer == true)
             {
-                SceneManager.LoadScene("GameOver");
+                countdown -= (Time.fixedDeltaTime);
+
+                if (countdown <= 0.0f)
+                {
+                    SceneManager.LoadScene("GameOver");
+                }
             }
 
         }
