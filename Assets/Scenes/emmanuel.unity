@@ -811,8 +811,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd91f20cdd3a9a447888aeda4afd8454, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  test: {fileID: 1489151046}
-  timer: 5
+  test: {fileID: 8237777789510629039, guid: 9ab91c09796a53042bdfff3e14423f55, type: 3}
+  timeToSpawn: 3
+  timer: 0
 --- !u!4 &705932962
 Transform:
   m_ObjectHideFlags: 0
@@ -2574,8 +2575,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 768c7a509dc6c3043bfcff3b38681982, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &2039370476
-PrefabInstance:
+  initialList: []
+  isPlayer: 1
+  fishAttached: 0
+  playerFishAttached: 0
+  nextSchoolPosition: {fileID: 0}
+  nextSchoolPositionTwo: {fileID: 0}
+  state: 1
+  assignmentDirection: 0
+  SpringConnected: 0
+--- !u!114 &8237777791358904086
+MonoBehaviour:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
