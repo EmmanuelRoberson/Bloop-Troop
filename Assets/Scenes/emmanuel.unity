@@ -1336,6 +1336,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   test: {fileID: 8237777789510629039, guid: 9ab91c09796a53042bdfff3e14423f55, type: 3}
+  timeToSpawn: 3
   timer: 0
 --- !u!4 &705932962
 Transform:
@@ -3130,7 +3131,6 @@ MonoBehaviour:
   state: 1
   assignmentDirection: 0
   SpringConnected: 0
-  currentPosition: {fileID: 0}
 --- !u!114 &8237777791358904086
 MonoBehaviour:
   m_ObjectHideFlags: 0
