@@ -21,7 +21,7 @@ public class WinConditionBehaviour : MonoBehaviour
     {
         if (fish.transform.position.x >= endOfLvl)
         {
-            SceneManager.LoadScene("GameOver");
+            SceneManager.LoadScene("GameWin");
         }
     }
 }
