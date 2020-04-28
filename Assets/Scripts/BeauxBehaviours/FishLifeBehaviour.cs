@@ -19,6 +19,10 @@ public class FishLifeBehaviour : MonoBehaviour
 
     bool isPlayer=false;
 
+    /// ///////
+    bool isDetached=false;
+    ////////////
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -40,6 +44,13 @@ public class FishLifeBehaviour : MonoBehaviour
             isDead = true;
             if (isPlayer == true)
                 countdown = 3;
+            //////////
+            else if (isDetached == false)
+            {
+                Destroy(GetComponentInParent<SpringJoint>());
+                isDetached = true;
+            }
+            //////////
         }
     }
 
