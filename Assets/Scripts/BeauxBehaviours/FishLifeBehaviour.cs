@@ -47,7 +47,8 @@ public class FishLifeBehaviour : MonoBehaviour
             //////////
             else if (isDetached == false)
             {
-                Destroy(GetComponentInParent<SpringJoint>());
+                TestFishBehaviour tfbehav = GetComponentInParent<TestFishBehaviour>();
+                tfbehav.DetachFishFromSchool(tfbehav);
                 isDetached = true;
             }
             //////////
