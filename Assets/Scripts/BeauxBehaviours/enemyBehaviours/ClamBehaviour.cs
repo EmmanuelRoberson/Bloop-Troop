@@ -17,7 +17,7 @@ public class ClamBehaviour : MonoBehaviour
 
     void firePearl()
     {
-       //GameObject pearlShot = Instantiate(pearl, this.transform.position, Quaternion.identity);
+       // GameObject pearlShot = Instantiate(pearl, this.transform.position, Quaternion.identity);
         //pearlShot.PearlBehaviour.target = new Vector3(fish.transform.position.x, fish.transform.y, fish.transform.z);
     }
 
