@@ -30,17 +30,17 @@ public class ClamBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if ((transform.position.x - fish.transform.position.x) <= distanceToActivation && fish.transform.position.x < transform.position.x)
-        {
-            if (lastShotFired <= 0)
-            {
-                firePearl();
-                lastShotFired = 3;
-            }
-            else
-            {
-                lastShotFired -= (Time.fixedDeltaTime / 60);
-            }
-        }
+        //if ((transform.position.x - fish.transform.position.x) <= distanceToActivation && fish.transform.position.x < transform.position.x)
+        //{
+        //    if (lastShotFired <= 0)
+        //    {
+        //        firePearl();
+        //        lastShotFired = 3;
+        //    }
+        //    else
+        //    {
+        //        lastShotFired -= (Time.fixedDeltaTime / 60);
+        //    }
+        //}
     }
 }
