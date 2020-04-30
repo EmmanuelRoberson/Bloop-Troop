@@ -27,8 +27,6 @@ namespace Emmanuel
     
     public class TestFishBehaviour : MonoBehaviour
     {
-        public List<GameObject> initialList = new List<GameObject>();
-        
         public bool isPlayer;
 
         public int fishAttached;
@@ -66,7 +64,7 @@ namespace Emmanuel
                 playerFishAttached = 0;
                 state = FISH_STATE.COLLECTED;
                 assignmentDirection = POSITION_ASSIGN_DIRECTION.UP;
-                InstantiatePlayerPostitons();
+                //InstantiatePlayerPostitons();
             }
             else
             {
@@ -82,10 +80,16 @@ namespace Emmanuel
             playerNextPositions = new List<GameObject>();
             vacantDirections = new Queue<POSITION_ASSIGN_DIRECTION>();
         }
-
+        
+        
         // Update is called once per frame
         void Update()
         {
+            if (playerNextPositions.Count <= 0)
+            {
+                InstantiatePlayerPostitons();
+            }
+            
             if (fishAttached > 0)
                 fishAttached = 0;
 
@@ -99,12 +103,15 @@ namespace Emmanuel
             
             TestFishBehaviour testFishBeh = other.gameObject.GetComponent<TestFishBehaviour>();
             if (testFishBeh != null)
+            {
                 AttachFishToSchool(testFishBeh);
+            }
         }
 
         //teleports the gameobject to the position, then it connects a spring to it
         public void ConnectSpring(GameObject objToTeleportTo, GameObject rigidBodyObject)
         {
+            Debug.Log("Connect Spring Called");
             if (!SpringConnected)
             {
                 transform.position = objToTeleportTo.transform.position;
@@ -113,6 +120,7 @@ namespace Emmanuel
                 SpringConnected = true;
             
                 springJoint = gameObject.AddComponent<SpringJoint>();
+                Debug.Log("Spring Joint Added");
                 springJoint.anchor = Vector3.zero;
                 springJoint.connectedBody = rigidBodyObject.GetComponent<Rigidbody>();
                 springJoint.connectedAnchor = rigidBodyObject.transform.position;
@@ -170,10 +178,7 @@ namespace Emmanuel
         {
             for (int i = 0; i < 6; i++)
             {
-                playerNextPositions.Add(new GameObject());
-                playerNextPositions[i].name = "Next Position " + i;
-                playerNextPositions[i].transform.parent = transform;
-
+                GameObject nextObj = Instantiate(new GameObject("Next Position " + i));
                 switch (i)
                 {
                     case 0:
@@ -229,6 +234,8 @@ namespace Emmanuel
 
         public void AttachFishToSchool(TestFishBehaviour fishToAttach)
         {
+            Debug.Log(playerFishAttached + "playerfishattached");
+            Debug.Log(fishAttached+ " fish attached");
             if (fishToAttach.state == FISH_STATE.UNCOLLECTED)
             {
                 if (isPlayer) //player fish
@@ -236,10 +243,15 @@ namespace Emmanuel
                     if (!childrenFish.Contains(fishToAttach.gameObject))
                     {
                         bool fishAttachedLimit = playerFishAttached < 6;
+                        
+                        Debug.Log(fishAttachedLimit);
+                        
                         switch (fishAttachedLimit)
                         {
-                            case true:
+                            case (true):
                             {
+                                Debug.Log("Case is True");
+                                
                                 if (childrenLost)
                                 {
                                     fishToAttach.ConnectSpring(vacantPositions.Dequeue(), this.gameObject);
@@ -251,7 +263,9 @@ namespace Emmanuel
                                 }
                                 else
                                 {
-                                    fishToAttach.ConnectSpring(playerNextPositions[playerFishAttached], this.gameObject);
+                                    Debug.Log("No children lost, and the next line is to connect spring");
+                                    GameObject nextObj = playerNextPositions[playerFishAttached];
+                                    fishToAttach.ConnectSpring(nextObj, this.gameObject);
                                     fishToAttach.InstantiateNextFishPositions(assignmentDirection);
                                     assignmentDirection++;
                                 }

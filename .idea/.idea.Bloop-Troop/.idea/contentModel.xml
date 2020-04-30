@@ -52,6 +52,7 @@
               <e p="FishPositionList.cs" t="Include" />
               <e p="JointDataObject.cs" t="Include" />
             </e>
+            <e p="PlayerFishBehaviour.cs" t="Include" />
             <e p="PositionAssignmentBehaviour.cs" t="Include" />
             <e p="School Management" t="Include">
               <e p="Group System Implementations" t="Include">

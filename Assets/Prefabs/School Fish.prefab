@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 520025785241698221}
   - component: {fileID: 670013289432972790}
   m_Layer: 0
-  m_Name: School Agent
+  m_Name: School Fish
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42,7 +42,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8237777789510629039}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 1.1
   m_Height: 5.5
@@ -76,15 +76,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8de6ab2c76155440ab29d2652135397, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialList: []
   isPlayer: 0
   fishAttached: 0
   playerFishAttached: 0
-  nextSchoolPosition: {fileID: 0}
-  nextSchoolPositionTwo: {fileID: 0}
+  schoolPositionOne: {fileID: 0}
+  schoolPositionTwo: {fileID: 0}
+  parentFish: {fileID: 0}
+  childrenFish: []
   state: 0
   assignmentDirection: 0
   SpringConnected: 0
+  childrenLost: 0
+  contextualPosition: {fileID: 0}
+  playerNextPositions: []
 --- !u!1 &8237777791412704482
 GameObject:
   m_ObjectHideFlags: 0
