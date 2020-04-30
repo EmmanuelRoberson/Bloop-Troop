@@ -63,12 +63,14 @@ namespace Emmanuel
             playerFishAttached = 0;
             if (isPlayer)
             {
+                playerFishAttached = 0;
                 state = FISH_STATE.COLLECTED;
                 assignmentDirection = POSITION_ASSIGN_DIRECTION.UP;
                 InstantiatePlayerPostitons();
             }
             else
             {
+                fishAttached = 0;
                 state = FISH_STATE.UNCOLLECTED;
             }
 
@@ -84,7 +86,11 @@ namespace Emmanuel
         // Update is called once per frame
         void Update()
         {
-        
+            if (fishAttached > 0)
+                fishAttached = 0;
+
+            if (playerFishAttached < 0)
+                playerFishAttached = 0;
         }
 
         private void OnTriggerEnter(Collider other)
@@ -92,8 +98,8 @@ namespace Emmanuel
             if (state == FISH_STATE.UNCOLLECTED) return;
             
             TestFishBehaviour testFishBeh = other.gameObject.GetComponent<TestFishBehaviour>();
-
-            AttachFishToSchool(testFishBeh);
+            if (testFishBeh != null)
+                AttachFishToSchool(testFishBeh);
         }
 
         //teleports the gameobject to the position, then it connects a spring to it
