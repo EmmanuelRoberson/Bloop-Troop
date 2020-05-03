@@ -818,7 +818,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fish: {fileID: 57497601}
-  endOfLvl: 0
+  endOfLvl: 20
 --- !u!4 &1944794122
 Transform:
   m_ObjectHideFlags: 0
