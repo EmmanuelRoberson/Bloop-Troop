@@ -179,6 +179,8 @@ namespace Emmanuel
             for (int i = 0; i < 6; i++)
             {
                 GameObject nextObj = Instantiate(new GameObject("Next Position " + i));
+                nextObj.transform.parent = transform;
+                playerNextPositions[i] = nextObj;
                 switch (i)
                 {
                     case 0:

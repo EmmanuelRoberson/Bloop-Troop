@@ -172,12 +172,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8de6ab2c76155440ab29d2652135397, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialList: []
   isPlayer: 1
   fishAttached: 0
   playerFishAttached: 0
-  nextSchoolPosition: {fileID: 0}
-  nextSchoolPositionTwo: {fileID: 0}
+  schoolPositionOne: {fileID: 0}
+  schoolPositionTwo: {fileID: 0}
+  parentFish: {fileID: 0}
+  childrenFish: []
   state: 1
   assignmentDirection: 0
   SpringConnected: 0
+  childrenLost: 0
+  contextualPosition: {fileID: 0}
+  playerNextPositions: []

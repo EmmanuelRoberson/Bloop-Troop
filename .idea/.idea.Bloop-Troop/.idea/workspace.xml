@@ -27,7 +27,6 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2DB13BA0-D523-4322-8AA9-892C408FB49A/26/7e5ef5f3/SendMouseEvents.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Emmanuel/TestCollectBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Emmanuel/TestFishBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Emmanuel/PlayerFishBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Emmanuel/ChainSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E93AB2F8-5FF8-4881-B6AB-5BA98D373CFC/2f/c73759e2/NativeInputSystem.cs" root0="SKIP_HIGHLIGHTING" />
@@ -123,6 +122,7 @@
       <workItem from="1587065919914" duration="11180000" />
       <workItem from="1588094948947" duration="8956000" />
       <workItem from="1588261331256" duration="9414000" />
+      <workItem from="1588281194261" duration="1005000" />
     </task>
     <servers />
   </component>
@@ -156,13 +156,13 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Emmanuel/TestFishBehaviour.cs</url>
-          <line>265</line>
+          <line>267</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Emmanuel/TestFishBehaviour.cs" initialLine="262">
             <startOffsets>
-              <option value="9658" />
+              <option value="10345" />
             </startOffsets>
             <endOffsets>
-              <option value="9728" />
+              <option value="10415" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="3" />

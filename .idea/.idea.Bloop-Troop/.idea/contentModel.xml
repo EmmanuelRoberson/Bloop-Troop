@@ -33,6 +33,7 @@
             </e>
             <e p="MusicAdjusterBehaviour.cs" t="Include" />
             <e p="TestMovBehaviour.cs" t="Include" />
+            <e p="WinConditionBehaviour.cs" t="Include" />
           </e>
           <e p="Emmanuel" t="Include">
             <e p="ChainCoupler.cs" t="Include" />
