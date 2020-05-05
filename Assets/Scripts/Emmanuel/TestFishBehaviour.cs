@@ -58,19 +58,9 @@ namespace Emmanuel
         // Start is called before the first frame update
         void Start()
         {
-            playerFishAttached = 0;
-            if (isPlayer)
-            {
-                playerFishAttached = 0;
-                state = FISH_STATE.COLLECTED;
-                assignmentDirection = POSITION_ASSIGN_DIRECTION.UP;
-                //InstantiatePlayerPostitons();
-            }
-            else
-            {
-                fishAttached = 0;
-                state = FISH_STATE.UNCOLLECTED;
-            }
+
+            fishAttached = 0;
+            state = FISH_STATE.UNCOLLECTED;
 
             fishAttached = 0;
             SpringConnected = false;

@@ -12,24 +12,25 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Emmanuel/Test/TestSpawnBehavoiur.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Emmanuel/School Management/GroupNodeSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/437BA245-D840-4784-B9FB-AB9B439AC908/b7/65c0f07e/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Emmanuel/TestCollectBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Emmanuel/PlayerFishBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Emmanuel/PositionAssignmentBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Emmanuel/TestPlayerBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Emmanuel/Objects/FishPositionList.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Emmanuel/FishPositionBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Emmanuel/TestFishBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Emmanuel/TestPlayerBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2DB13BA0-D523-4322-8AA9-892C408FB49A/26/7e5ef5f3/SendMouseEvents.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E93AB2F8-5FF8-4881-B6AB-5BA98D373CFC/2f/c73759e2/NativeInputSystem.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Emmanuel/ChainCoupler.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Emmanuel/TestMovementBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/437BA245-D840-4784-B9FB-AB9B439AC908/ba/5d33ce4f/IList`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Emmanuel/GlobalFishController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Emmanuel/School Management/GroupNodeSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/437BA245-D840-4784-B9FB-AB9B439AC908/b7/65c0f07e/List`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Emmanuel/ChainNode.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Emmanuel/FishPositionBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2DB13BA0-D523-4322-8AA9-892C408FB49A/26/7e5ef5f3/SendMouseEvents.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Emmanuel/TestCollectBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Emmanuel/TestFishBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Emmanuel/Test/TestSpawnBehavoiur.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Emmanuel/TestMovementBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Emmanuel/ChainSystem.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E93AB2F8-5FF8-4881-B6AB-5BA98D373CFC/2f/c73759e2/NativeInputSystem.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -45,8 +46,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/TestMovementBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/Test/TestSpawnBehavoiur.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/GlobalFishController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/PlayerFishBehaviour.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/TestFishBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/PlayerFishBehaviour.cs" />
       </list>
     </option>
   </component>
@@ -86,10 +87,10 @@
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="832">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="16992">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="832" />
+      <option name="pid" value="16992" />
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
@@ -123,6 +124,7 @@
       <workItem from="1588094948947" duration="8956000" />
       <workItem from="1588261331256" duration="9414000" />
       <workItem from="1588281194261" duration="1005000" />
+      <workItem from="1588700949670" duration="1155000" />
     </task>
     <servers />
   </component>
@@ -156,26 +158,26 @@
         </breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Emmanuel/TestFishBehaviour.cs</url>
-          <line>267</line>
+          <line>257</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Emmanuel/TestFishBehaviour.cs" initialLine="262">
             <startOffsets>
-              <option value="10345" />
+              <option value="10001" />
             </startOffsets>
             <endOffsets>
-              <option value="10415" />
+              <option value="10071" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Emmanuel/TestFishBehaviour.cs</url>
-          <line>177</line>
+          <line>167</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Emmanuel/TestFishBehaviour.cs" initialLine="171">
             <startOffsets>
-              <option value="6169" />
+              <option value="5825" />
             </startOffsets>
             <endOffsets>
-              <option value="6170" />
+              <option value="5826" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="4" />
