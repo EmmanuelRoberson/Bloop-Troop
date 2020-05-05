@@ -94,7 +94,7 @@ namespace Emmanuel
             
             if (testBeh != null)
             {
-                parentFish = other.gameObject;
+                //parentFish = other.gameObject;
                 testBeh.TestPlayerFunction();
 
                 fishEnd = testBeh.nextSchoolPosition;
@@ -186,7 +186,7 @@ namespace Emmanuel
             
             
             GameObject firstPosition = Instantiate(new GameObject(), transform, false);
-            transform.position = transform.position += 
+            //transform.position = transform.position += 
 
             GameObject secondPosition = Instantiate(new GameObject());
         }
