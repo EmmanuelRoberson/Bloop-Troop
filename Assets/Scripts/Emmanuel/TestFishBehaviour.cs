@@ -70,6 +70,9 @@ namespace Emmanuel
             }
             
             fishAttached = 0;
+            state = FISH_STATE.UNCOLLECTED;
+
+            fishAttached = 0;
             SpringConnected = false;
 
             //System.Random rand1 = new System.Random((int)Time.time);
