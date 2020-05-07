@@ -6,6 +6,18 @@
     <e p="C:\Users\s188038\Documents\Unity\FishGame Testing\Game Repos\Bloop Troop" t="IncludeRecursive">
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Character" t="Include">
+          <e p="ReadMe.txt" t="Include" />
+        </e>
+        <e p="Environment" t="Include">
+          <e p="ReadMe.txt" t="Include" />
+        </e>
+        <e p="Particles" t="Include">
+          <e p="ReadMe.txt" t="Include" />
+        </e>
+        <e p="Resources" t="Include">
+          <e p="ReadMe.txt" t="Include" />
+        </e>
         <e p="Scripts" t="Include">
           <e p="BeauxBehaviours" t="Include">
             <e p="CamMovementBehaviour.cs" t="Include" />
@@ -14,6 +26,8 @@
             <e p="TestMovBehaviour.cs" t="Include" />
           </e>
           <e p="Emmanuel" t="Include">
+            <e p="ChainCoupler.cs" t="Include" />
+            <e p="ChainSystem.cs" t="Include" />
             <e p="Event System" t="Include">
               <e p="GameEvent.cs" t="Include" />
               <e p="GameEventListener.cs" t="Include" />
@@ -26,22 +40,25 @@
               <e p="JointDataObject.cs" t="Include" />
             </e>
             <e p="School Management" t="Include">
+              <e p="ChainNode.cs" t="Include" />
               <e p="Group System Implementations" t="Include">
                 <e p="SchoolAgentSystem.cs" t="Include" />
               </e>
-              <e p="GroupNode.cs" t="Include" />
               <e p="GroupNodeSystem.cs" t="Include" />
               <e p="IGroupable.cs" t="Include" />
             </e>
             <e p="Test" t="Include">
               <e p="ChangeDirectionBehaviour.cs" t="Include" />
+              <e p="TestFishCollectionBehaviour.cs" t="Include" />
               <e p="TestSpawnBehavoiur.cs" t="Include" />
               <e p="TestSpringBehaviour.cs" t="Include" />
             </e>
+            <e p="TestCollectBehaviour.cs" t="Include" />
+            <e p="TestMovementBehaviour.cs" t="Include" />
           </e>
         </e>
-        <e p="Sprites" t="Include">
-          <e p="TestMovementBehaviour.cs" t="Include" />
+        <e p="Shaders" t="Include">
+          <e p="ReadMe.txt" t="Include" />
         </e>
       </e>
       <e p="Bloop Troop.sln" t="IncludeFlat" />
