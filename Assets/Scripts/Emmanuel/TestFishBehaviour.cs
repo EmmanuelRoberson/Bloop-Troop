@@ -58,7 +58,6 @@ namespace Emmanuel
         // Start is called before the first frame update
         void Start()
         {
-
             fishAttached = 0;
             state = FISH_STATE.UNCOLLECTED;
 
@@ -69,22 +68,21 @@ namespace Emmanuel
             vacantPositions = new Queue<GameObject>();
             playerNextPositions = new List<GameObject>();
             vacantDirections = new Queue<POSITION_ASSIGN_DIRECTION>();
+
+            if (isPlayer)
+            {
+                state = FISH_STATE.COLLECTED;
+                playerFishAttached = 0;
+                InstantiatePlayerPostitons();
+            }
+            
         }
         
         
         // Update is called once per frame
         void Update()
         {
-            if (playerNextPositions.Count <= 0)
-            {
-                InstantiatePlayerPostitons();
-            }
-            
-            if (fishAttached > 0)
-                fishAttached = 0;
 
-            if (playerFishAttached < 0)
-                playerFishAttached = 0;
         }
 
         private void OnTriggerEnter(Collider other)
@@ -94,6 +92,7 @@ namespace Emmanuel
             TestFishBehaviour testFishBeh = other.gameObject.GetComponent<TestFishBehaviour>();
             if (testFishBeh != null)
             {
+                Debug.Log("Other fish behaviour not null");
                 AttachFishToSchool(testFishBeh);
             }
         }
@@ -115,7 +114,7 @@ namespace Emmanuel
                 springJoint.connectedBody = rigidBodyObject.GetComponent<Rigidbody>();
                 springJoint.connectedAnchor = rigidBodyObject.transform.position;
                 springJoint.spring = 300;
-                springJoint.damper = 10;
+                springJoint.damper = 30;
                 springJoint.enableCollision = false;
                 springJoint.tolerance = Random.Range(0.025f, 0.1f);
             }
@@ -136,7 +135,7 @@ namespace Emmanuel
                 springJoint.connectedBody = objToTeleportTo.GetComponent<Rigidbody>();
                 springJoint.connectedAnchor = objToTeleportTo.transform.position;
                 springJoint.spring = 300;
-                springJoint.damper = 10;
+                springJoint.damper = 30;
                 springJoint.enableCollision = false;
                 springJoint.tolerance = Random.Range(0.025f, 0.1f);
             }
@@ -163,52 +162,60 @@ namespace Emmanuel
             schoolPositionTwo.transform.parent = transform;
             schoolPositionTwo.transform.position = transform.position + FishDirectionOffsetVector.Item2;
         }
-
+        
+        // Tested:: Works
         public void InstantiatePlayerPostitons()
         {
             for (int i = 0; i < 6; i++)
             {
-                GameObject nextObj = Instantiate(new GameObject("Next Position " + i));
-                nextObj.transform.parent = transform;
-                playerNextPositions[i] = nextObj;
+                playerNextPositions.Add(new GameObject("Next Position " + i));
+                
                 switch (i)
                 {
                     case 0:
                     {
+                        playerNextPositions[i].transform.SetParent(transform);
                         playerNextPositions[i].transform.position =
                             transform.position + new Vector3(0f, 2.5f, 0f);
                         break;
                     }
                     case 1:
                     {
+                        playerNextPositions[i].transform.SetParent(transform);
                         playerNextPositions[i].transform.position =
                             transform.position + new Vector3(3, 1, 0f);
                         break;
                     }
                     case 2:
                     {
+                        playerNextPositions[i].transform.SetParent(transform);
                         playerNextPositions[i].transform.position =
                             transform.position + new Vector3(3, -1, 0f);
                         break;
                     }
                     case 3:
                     {
+                        playerNextPositions[i].transform.SetParent(transform);
                         playerNextPositions[i].transform.position =
                             transform.position + new Vector3(0f, -2.5f, 0f);
                         break;
                     }
                     case 4:
                     {
+                        playerNextPositions[i].transform.SetParent(transform);
                         playerNextPositions[i].transform.position =
                             transform.position + new Vector3(-3, -1f, 0f);
                         break;
                     }
                     case 5:
                     {
+                        playerNextPositions[i].transform.SetParent(transform);
                         playerNextPositions[i].transform.position =
                             transform.position + new Vector3(-3, 1f, 0f);
                         break;
                     }
+                    default:
+                        return;
                 }
             }
         }
@@ -234,11 +241,11 @@ namespace Emmanuel
                 {
                     if (!childrenFish.Contains(fishToAttach.gameObject))
                     {
-                        bool fishAttachedLimit = playerFishAttached < 6;
+                        bool isMaxFishAttached = playerFishAttached < 6;
                         
-                        Debug.Log(fishAttachedLimit);
+                        Debug.Log(isMaxFishAttached);
                         
-                        switch (fishAttachedLimit)
+                        switch (isMaxFishAttached)
                         {
                             case (true):
                             {
