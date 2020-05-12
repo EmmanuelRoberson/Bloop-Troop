@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 4945867385065562116}
   - component: {fileID: 3586756317227264258}
   - component: {fileID: 3586756317227264257}
+  - component: {fileID: 1432166379515494793}
   m_Layer: 0
   m_Name: Bloop
   m_TagString: Untagged
@@ -172,12 +173,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8de6ab2c76155440ab29d2652135397, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialList: []
   isPlayer: 1
   fishAttached: 0
   playerFishAttached: 0
-  nextSchoolPosition: {fileID: 0}
-  nextSchoolPositionTwo: {fileID: 0}
+  schoolPositionOne: {fileID: 0}
+  schoolPositionTwo: {fileID: 0}
+  parentFish: {fileID: 0}
+  childrenFish: []
   state: 1
   assignmentDirection: 0
   SpringConnected: 0
+  childrenLost: 0
+  contextualPosition: {fileID: 0}
+  playerNextPositions: []
+--- !u!114 &1432166379515494793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3586756317227264262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3a97ab435364ee47a749a3115eb3ab6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthVal: 1
+  iFrameVal: 6
+  countdown: 0

@@ -12,11 +12,27 @@
         <e p="Environment" t="Include">
           <e p="ReadMe.txt" t="Include" />
         </e>
+        <e p="Googly_colllision.cs" t="Include" />
         <e p="Particles" t="Include">
           <e p="ReadMe.txt" t="Include" />
         </e>
         <e p="Resources" t="Include">
           <e p="ReadMe.txt" t="Include" />
+        </e>
+        <e p="Samples" t="Include">
+          <e p="ProBuilder" t="Include">
+            <e p="4.2.3" t="Include">
+              <e p="Editor Examples" t="Include">
+                <e p="ClearUnusedAttributes.cs" t="Include" />
+                <e p="CreateShadowObject.cs" t="Include" />
+                <e p="CustomAction.cs" t="Include" />
+                <e p="EditorCallbackViewer.cs" t="Include" />
+                <e p="RenameNewObjects.cs" t="Include" />
+                <e p="SetCustomUnwrapParams.cs" t="Include" />
+                <e p="Unity.ProBuilder.Examples.Editor.asmdef" t="Include" />
+              </e>
+            </e>
+          </e>
         </e>
         <e p="Scripts" t="Include">
           <e p="BeauxBehaviours" t="Include">
@@ -33,6 +49,7 @@
             </e>
             <e p="MusicAdjusterBehaviour.cs" t="Include" />
             <e p="TestMovBehaviour.cs" t="Include" />
+            <e p="WinConditionBehaviour.cs" t="Include" />
           </e>
           <e p="Emmanuel" t="Include">
             <e p="ChainCoupler.cs" t="Include" />
@@ -50,8 +67,8 @@
             <e p="GlobalFishController.cs" t="Include" />
             <e p="Objects" t="Include">
               <e p="FishPositionList.cs" t="Include" />
-              <e p="JointDataObject.cs" t="Include" />
             </e>
+            <e p="PlayerFishBehaviour.cs" t="Include" />
             <e p="PositionAssignmentBehaviour.cs" t="Include" />
             <e p="School Management" t="Include">
               <e p="Group System Implementations" t="Include">
@@ -80,6 +97,7 @@
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
       <e p="Temp\bin" t="ExcludeRecursive" />
+      <e p="Unity.ProBuilder.Examples.Editor.csproj" t="IncludeRecursive" />
     </e>
   </component>
 </project>

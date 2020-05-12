@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 8237777789510629038}
   - component: {fileID: 520025785241698221}
   - component: {fileID: 670013289432972790}
+  - component: {fileID: 21763300766516583}
   m_Layer: 0
-  m_Name: School Agent
+  m_Name: School Fish
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,15 +77,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8de6ab2c76155440ab29d2652135397, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialList: []
   isPlayer: 0
   fishAttached: 0
   playerFishAttached: 0
-  nextSchoolPosition: {fileID: 0}
-  nextSchoolPositionTwo: {fileID: 0}
+  schoolPositionOne: {fileID: 0}
+  schoolPositionTwo: {fileID: 0}
+  parentFish: {fileID: 0}
+  childrenFish: []
   state: 0
   assignmentDirection: 0
   SpringConnected: 0
+  childrenLost: 0
+  contextualPosition: {fileID: 0}
+  playerNextPositions: []
+--- !u!114 &21763300766516583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8237777789510629039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3a97ab435364ee47a749a3115eb3ab6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthVal: 1
+  iFrameVal: 6
+  countdown: 0
 --- !u!1 &8237777791412704482
 GameObject:
   m_ObjectHideFlags: 0

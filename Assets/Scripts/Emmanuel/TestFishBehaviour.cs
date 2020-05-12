@@ -27,8 +27,6 @@ namespace Emmanuel
     
     public class TestFishBehaviour : MonoBehaviour
     {
-        public List<GameObject> initialList = new List<GameObject>();
-        
         public bool isPlayer;
 
         public int fishAttached;
@@ -60,19 +58,8 @@ namespace Emmanuel
         // Start is called before the first frame update
         void Start()
         {
-            playerFishAttached = 0;
-            if (isPlayer)
-            {
-                playerFishAttached = 0;
-                state = FISH_STATE.COLLECTED;
-                assignmentDirection = POSITION_ASSIGN_DIRECTION.UP;
-                InstantiatePlayerPostitons();
-            }
-            else
-            {
-                fishAttached = 0;
-                state = FISH_STATE.UNCOLLECTED;
-            }
+            fishAttached = 0;
+            state = FISH_STATE.UNCOLLECTED;
 
             fishAttached = 0;
             SpringConnected = false;
@@ -81,16 +68,21 @@ namespace Emmanuel
             vacantPositions = new Queue<GameObject>();
             playerNextPositions = new List<GameObject>();
             vacantDirections = new Queue<POSITION_ASSIGN_DIRECTION>();
-        }
 
+            if (isPlayer)
+            {
+                state = FISH_STATE.COLLECTED;
+                playerFishAttached = 0;
+                InstantiatePlayerPostitons();
+            }
+            
+        }
+        
+        
         // Update is called once per frame
         void Update()
         {
-            if (fishAttached > 0)
-                fishAttached = 0;
 
-            if (playerFishAttached < 0)
-                playerFishAttached = 0;
         }
 
         private void OnTriggerEnter(Collider other)
@@ -99,7 +91,9 @@ namespace Emmanuel
             
             TestFishBehaviour testFishBeh = other.gameObject.GetComponent<TestFishBehaviour>();
             if (testFishBeh != null)
+            {
                 AttachFishToSchool(testFishBeh);
+            }
         }
 
         //teleports the gameobject to the position, then it connects a spring to it
@@ -117,7 +111,7 @@ namespace Emmanuel
                 springJoint.connectedBody = rigidBodyObject.GetComponent<Rigidbody>();
                 springJoint.connectedAnchor = rigidBodyObject.transform.position;
                 springJoint.spring = 300;
-                springJoint.damper = 10;
+                springJoint.damper = 30;
                 springJoint.enableCollision = false;
                 springJoint.tolerance = Random.Range(0.025f, 0.1f);
             }
@@ -138,7 +132,7 @@ namespace Emmanuel
                 springJoint.connectedBody = objToTeleportTo.GetComponent<Rigidbody>();
                 springJoint.connectedAnchor = objToTeleportTo.transform.position;
                 springJoint.spring = 300;
-                springJoint.damper = 10;
+                springJoint.damper = 30;
                 springJoint.enableCollision = false;
                 springJoint.tolerance = Random.Range(0.025f, 0.1f);
             }
@@ -165,53 +159,60 @@ namespace Emmanuel
             schoolPositionTwo.transform.parent = transform;
             schoolPositionTwo.transform.position = transform.position + FishDirectionOffsetVector.Item2;
         }
-
+        
+        // Tested:: Works
         public void InstantiatePlayerPostitons()
         {
             for (int i = 0; i < 6; i++)
             {
-                playerNextPositions.Add(new GameObject());
-                playerNextPositions[i].name = "Next Position " + i;
-                playerNextPositions[i].transform.parent = transform;
-
+                playerNextPositions.Add(new GameObject("Next Position " + i));
+                
                 switch (i)
                 {
                     case 0:
                     {
+                        playerNextPositions[i].transform.SetParent(transform);
                         playerNextPositions[i].transform.position =
                             transform.position + new Vector3(0f, 2.5f, 0f);
                         break;
                     }
                     case 1:
                     {
+                        playerNextPositions[i].transform.SetParent(transform);
                         playerNextPositions[i].transform.position =
                             transform.position + new Vector3(3, 1, 0f);
                         break;
                     }
                     case 2:
                     {
+                        playerNextPositions[i].transform.SetParent(transform);
                         playerNextPositions[i].transform.position =
                             transform.position + new Vector3(3, -1, 0f);
                         break;
                     }
                     case 3:
                     {
+                        playerNextPositions[i].transform.SetParent(transform);
                         playerNextPositions[i].transform.position =
                             transform.position + new Vector3(0f, -2.5f, 0f);
                         break;
                     }
                     case 4:
                     {
+                        playerNextPositions[i].transform.SetParent(transform);
                         playerNextPositions[i].transform.position =
                             transform.position + new Vector3(-3, -1f, 0f);
                         break;
                     }
                     case 5:
                     {
+                        playerNextPositions[i].transform.SetParent(transform);
                         playerNextPositions[i].transform.position =
                             transform.position + new Vector3(-3, 1f, 0f);
                         break;
                     }
+                    default:
+                        return;
                 }
             }
         }
@@ -235,11 +236,13 @@ namespace Emmanuel
                 {
                     if (!childrenFish.Contains(fishToAttach.gameObject))
                     {
-                        bool fishAttachedLimit = playerFishAttached < 6;
-                        switch (fishAttachedLimit)
+                        bool isMaxFishAttached = playerFishAttached < 6;
+
+                        switch (isMaxFishAttached)
                         {
-                            case true:
+                            case (true):
                             {
+
                                 if (childrenLost)
                                 {
                                     fishToAttach.ConnectSpring(vacantPositions.Dequeue(), this.gameObject);
@@ -251,7 +254,8 @@ namespace Emmanuel
                                 }
                                 else
                                 {
-                                    fishToAttach.ConnectSpring(playerNextPositions[playerFishAttached], this.gameObject);
+                                    GameObject nextObj = playerNextPositions[playerFishAttached];
+                                    fishToAttach.ConnectSpring(nextObj, this.gameObject);
                                     fishToAttach.InstantiateNextFishPositions(assignmentDirection);
                                     assignmentDirection++;
                                 }
@@ -312,7 +316,7 @@ namespace Emmanuel
                 }
             }
         }
-
+        
         public void DetachFishFromSchool(TestFishBehaviour fishToDetach)
         {
             TestFishBehaviour parentFishBehaviour = fishToDetach.parentFish.GetComponent<TestFishBehaviour>();
@@ -333,6 +337,10 @@ namespace Emmanuel
                 parentFishBehaviour.childrenFish.Remove(fishToDetach.gameObject);
                 parentFishBehaviour.vacantPositions.Enqueue(fishToDetach.contextualPosition);
             }
+
+            SpringJoint sj = fishToDetach.gameObject.GetComponent<SpringJoint>();
+            Destroy(sj);
+
         }
         
 
