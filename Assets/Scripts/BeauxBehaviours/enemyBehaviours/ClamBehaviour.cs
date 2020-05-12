@@ -17,8 +17,9 @@ public class ClamBehaviour : MonoBehaviour
 
     void firePearl()
     {
-       //GameObject pearlShot = Instantiate(pearl, this.transform.position, Quaternion.identity);
-        //pearlShot.PearlBehaviour.target = new Vector3(fish.transform.position.x, fish.transform.y, fish.transform.z);
+        GameObject pearlShot = Instantiate(pearl, this.transform.position, Quaternion.identity);
+        pearlShot.GetComponent<PearlBehaviour>().target = new Vector3(fish.transform.position.x, fish.transform.position.y, fish.transform.position.z);
+        pearlShot.GetComponent<PearlBehaviour>().owner = this.transform.position;
     }
 
     // Start is called before the first frame update
@@ -30,17 +31,17 @@ public class ClamBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if ((transform.position.x - fish.transform.position.x) <= distanceToActivation && fish.transform.position.x < transform.position.x)
-        //{
-        //    if (lastShotFired <= 0)
-        //    {
-        //        firePearl();
-        //        lastShotFired = 3;
-        //    }
-        //    else
-        //    {
-        //        lastShotFired -= (Time.fixedDeltaTime / 60);
-        //    }
-        //}
+        if ((transform.position.x - fish.transform.position.x) <= distanceToActivation && fish.transform.position.x < transform.position.x)
+        {
+            if (lastShotFired <= 0)
+            {
+                firePearl();
+                lastShotFired = 3;
+            }
+            else
+            {
+                lastShotFired -= (Time.fixedDeltaTime / 60);
+            }
+        }
     }
 }

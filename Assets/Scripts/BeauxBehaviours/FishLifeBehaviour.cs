@@ -22,7 +22,12 @@ public class FishLifeBehaviour : MonoBehaviour
     /// ///////
     bool isDetached=false;
     ////////////
-    
+    ///
+
+    bool isParrying = false;
+    float parryTime = 0;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,7 +36,7 @@ public class FishLifeBehaviour : MonoBehaviour
 
     private void OnTriggerStay(Collider other)
     {
-        if(other.gameObject.CompareTag("Enemy") && iFrames <= 0)
+        if(other.gameObject.CompareTag("Enemy") && iFrames <= 0 || other.gameObject.CompareTag("Parryable") && iFrames <= 0 && isParrying == false)
         {
             healthVal -= 1;
             iFrames = iFrameVal;
@@ -59,9 +64,15 @@ public class FishLifeBehaviour : MonoBehaviour
     void Update()
     {
 
+        //if ()
+        //this will be the parry activation. don't mind it for now.
+
         if (isDead == true)
         {
-            GetComponentInParent<TestMovementBehaviour>().enabled = false;
+            if (GetComponentInParent<TestMovementBehaviour>() != null)
+            {
+                GetComponentInParent<TestMovementBehaviour>().enabled = false;
+            }
 
             if (isPlayer == true)
             {
