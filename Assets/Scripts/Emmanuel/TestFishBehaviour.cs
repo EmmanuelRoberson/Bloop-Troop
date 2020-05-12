@@ -92,7 +92,6 @@ namespace Emmanuel
             TestFishBehaviour testFishBeh = other.gameObject.GetComponent<TestFishBehaviour>();
             if (testFishBeh != null)
             {
-                Debug.Log("Other fish behaviour not null");
                 AttachFishToSchool(testFishBeh);
             }
         }
@@ -100,7 +99,6 @@ namespace Emmanuel
         //teleports the gameobject to the position, then it connects a spring to it
         public void ConnectSpring(GameObject objToTeleportTo, GameObject rigidBodyObject)
         {
-            Debug.Log("Connect Spring Called");
             if (!SpringConnected)
             {
                 transform.position = objToTeleportTo.transform.position;
@@ -109,7 +107,6 @@ namespace Emmanuel
                 SpringConnected = true;
             
                 springJoint = gameObject.AddComponent<SpringJoint>();
-                Debug.Log("Spring Joint Added");
                 springJoint.anchor = Vector3.zero;
                 springJoint.connectedBody = rigidBodyObject.GetComponent<Rigidbody>();
                 springJoint.connectedAnchor = rigidBodyObject.transform.position;
@@ -233,8 +230,6 @@ namespace Emmanuel
 
         public void AttachFishToSchool(TestFishBehaviour fishToAttach)
         {
-            Debug.Log(playerFishAttached + "playerfishattached");
-            Debug.Log(fishAttached+ " fish attached");
             if (fishToAttach.state == FISH_STATE.UNCOLLECTED)
             {
                 if (isPlayer) //player fish
@@ -242,15 +237,12 @@ namespace Emmanuel
                     if (!childrenFish.Contains(fishToAttach.gameObject))
                     {
                         bool isMaxFishAttached = playerFishAttached < 6;
-                        
-                        Debug.Log(isMaxFishAttached);
-                        
+
                         switch (isMaxFishAttached)
                         {
                             case (true):
                             {
-                                Debug.Log("Case is True");
-                                
+
                                 if (childrenLost)
                                 {
                                     fishToAttach.ConnectSpring(vacantPositions.Dequeue(), this.gameObject);
@@ -262,7 +254,6 @@ namespace Emmanuel
                                 }
                                 else
                                 {
-                                    Debug.Log("No children lost, and the next line is to connect spring");
                                     GameObject nextObj = playerNextPositions[playerFishAttached];
                                     fishToAttach.ConnectSpring(nextObj, this.gameObject);
                                     fishToAttach.InstantiateNextFishPositions(assignmentDirection);
@@ -325,7 +316,7 @@ namespace Emmanuel
                 }
             }
         }
-
+        
         public void DetachFishFromSchool(TestFishBehaviour fishToDetach)
         {
             TestFishBehaviour parentFishBehaviour = fishToDetach.parentFish.GetComponent<TestFishBehaviour>();
@@ -346,6 +337,10 @@ namespace Emmanuel
                 parentFishBehaviour.childrenFish.Remove(fishToDetach.gameObject);
                 parentFishBehaviour.vacantPositions.Enqueue(fishToDetach.contextualPosition);
             }
+
+            SpringJoint sj = fishToDetach.gameObject.GetComponent<SpringJoint>();
+            Destroy(sj);
+
         }
         
 
