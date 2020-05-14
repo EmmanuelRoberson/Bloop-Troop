@@ -43,6 +43,11 @@ public class FishLifeBehaviour : MonoBehaviour
             transform.rotation = new Quaternion(transform.rotation.x, transform.rotation.y, transform.rotation.z + 0.4f, transform.rotation.w);
         }
 
+        if (isParrying ==true && other.gameObject.CompareTag("Parryable"))
+        {
+            other.GetComponentInParent<PearlBehaviour>().isParried = true;
+        }
+
         if (healthVal <= 0)
         {
             transform.rotation = new Quaternion(transform.rotation.x, transform.rotation.y, 3, transform.rotation.w);
@@ -64,8 +69,11 @@ public class FishLifeBehaviour : MonoBehaviour
     void Update()
     {
 
-        //if ()
-        //this will be the parry activation. don't mind it for now.
+        if (Input.GetKeyDown("space") && isParrying == false && isDead == false)
+        {
+            isParrying = true;
+            parryTime = 3.0f;
+        }
 
         if (isDead == true)
         {
@@ -93,6 +101,22 @@ public class FishLifeBehaviour : MonoBehaviour
             }
 
             iFrames -= (Time.fixedDeltaTime);
+        }
+
+        if (parryTime > 0)
+        {
+            transform.rotation = new Quaternion(transform.rotation.x, transform.rotation.y, 270, transform.rotation.w);
+            parryTime -= (Time.fixedDeltaTime);
+
+            if (parryTime <= 0)
+            {
+                transform.rotation = new Quaternion(transform.rotation.x, transform.rotation.y, 0, transform.rotation.w);
+            }
+        }
+        else
+        {
+            isParrying = false;
+
         }
     }
 }

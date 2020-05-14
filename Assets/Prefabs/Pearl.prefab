@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8929468221131454441}
   m_Layer: 0
   m_Name: Pearl
-  m_TagString: Untagged
+  m_TagString: Parryable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -106,3 +106,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a932bbf1678fce84cbd89db3153d5eed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {x: 0, y: 0, z: 0}
+  owner: {x: 0, y: 0, z: 0}
+  isParried: 0
