@@ -13,7 +13,7 @@ public class WinConditionBehaviour : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        endOfLvl += this.transform.position.x;
     }
 
     // Update is called once per frame
