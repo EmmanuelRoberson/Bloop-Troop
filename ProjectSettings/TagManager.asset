@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - SpawnPoint
+  - Parryable
   layers:
   - Default
   - TransparentFX
