@@ -1,82 +1,67 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
-public class CamMovementBehaviour : MonoBehaviour
+namespace BeauxBehaviours
 {
-    [SerializeField]
-    MusicAdjusterBehaviour mab;
-
-    [SerializeField]
-    float slowValue, normalValue;
-
-    public bool stop, slow, normal = false;
-
-    //[SerializeField]
-    //GameObject fish;
-
-    //when the camera reaches this point, it will change speed, direction, or both
-    //meant to be assigned in the inspector
-    public List<Transform> travelCheckpointList;
-
-    //meant to be used by this script
-    private Queue<Transform> travelCheckpointQueue;
+    public class CamMovementBehaviour : MonoBehaviour
+    {
+        public List<Transform> travelCheckpointList;
     
-    //starting and ending position for the transitions
-    private Vector3 startPosition, endPosition;
+        private Queue<Transform> travelCheckpointQueue;
+    
+        //starting and ending position for the transitions
+        private Vector3 startPosition, endPosition;
 
-    //speed
-    public float speed;
-    public float speedMultiplier;
+        //speed
+        public float speed;
+        public float speedMultiplier;
 
-    //time at the beginning of a transition
-    private float startTime;
+        //time at the beginning of a transition
+        private float startTime;
 
-    //total distance between checkpoints
-    private float journeyLength;
+        //total distance between checkpoints
+        private float journeyLength;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        startTime = Time.time;
-        travelCheckpointQueue = new Queue<Transform>(travelCheckpointList);
-        
-        stop = true;
-        
-        startPosition = transform.position;
-        endPosition = travelCheckpointQueue.Dequeue().position;
-
-        journeyLength = Vector3.Distance(startPosition, endPosition);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        /*
-        if (normal == true)
+        // Start is called before the first frame update
+        void Start()
         {
-            transform.position=new Vector3(transform.position.x+(Time.fixedDeltaTime / normalValue),
-                transform.position.y, transform.position.z);
+            startTime = Time.time;
+            travelCheckpointQueue = new Queue<Transform>(travelCheckpointList);
+
+            startPosition = transform.position;
+            endPosition = travelCheckpointQueue.Dequeue().position;
+
+            journeyLength = Vector3.Distance(startPosition, endPosition);
         }
 
-        if (slow == true)
+        // Update is called once per frame
+        void Update()
         {
-            transform.position=new Vector3(transform.position.x+(Time.fixedDeltaTime / slowValue),
-                transform.position.y, transform.position.z);
+            //Distance covered is the elapsed time * speed
+            float distanceCovered = (Time.time - startTime) * (speedMultiplier *speed);
+
+            //Portion of journey complete is the distance covered / total distance
+            float portionOfJourney = distanceCovered / journeyLength;
+        
+            //set the position to the part of the distance covered
+            transform.position = Vector3.Lerp(startPosition, endPosition, portionOfJourney);
         }
-        */
-                
-        //mab.ObjectOfRef.floatObj = transform.position.x;
-        
-        //Distance covered is the elapsed time * speed
-        float distanceCovered = (Time.time - startTime) * (speedMultiplier *speed);
-
-        //Portion of journey complete is the distance covered / total distance
-        float portionOfJourney = distanceCovered / journeyLength;
-        
-        //set the position to the part of the distance covered
-        transform.position = Vector3.LerpUnclamped(startPosition, endPosition, portionOfJourney);
-
-    }
     
+        public void UpdateDestination()
+        {
+            startTime = Time.time;
+        
+            startPosition = transform.position;
+            endPosition = travelCheckpointQueue.Dequeue().position;
+        
+            journeyLength = Vector3.Distance(startPosition, endPosition);
+        
+        
+        }
+
+        public void SetSpeed(float newSpeed)
+        {
+            speed = newSpeed;
+        }
+    }
 }
