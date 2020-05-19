@@ -20,6 +20,9 @@ public class FishLifeBehaviour : MonoBehaviour
     public float countdown = 3;
     //how long after death til game over
 
+    bool hasMovement = false;
+    // checks to see if there is a movement script to turn off upon death
+
     bool isPlayer=false;
 
     /// ///////
@@ -29,12 +32,15 @@ public class FishLifeBehaviour : MonoBehaviour
 
     public bool isParrying = false;
 
-    public bool hasPressed = false;
-
     // Start is called before the first frame update
     void Start()
     {
         isPlayer = GetComponent<TestFishBehaviour>().isPlayer;
+
+        if (GetComponent<TestMovementBehaviour>() != null)
+        {
+            hasMovement = true;
+        }
     }
 
     private void OnTriggerStay(Collider other)
@@ -70,19 +76,17 @@ public class FishLifeBehaviour : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown("space") && isParrying == false && isDead == false && hasPressed == false)
+        if (Input.GetKeyDown("space") && isParrying == false && isDead == false )
         {
             isParrying = true;
             this.GetComponent<ParryBehaviour>().enabled = true;
-
-            hasPressed = true;
         }
 
         if (isDead == true)
         {
-            if (GetComponentInParent<TestMovementBehaviour>() != null)
+            if (GetComponent<TestMovementBehaviour>() != null)
             {
-                GetComponentInParent<TestMovementBehaviour>().enabled = false;
+                GetComponent<TestMovementBehaviour>().enabled = false;
             }
 
             if (isPlayer == true)

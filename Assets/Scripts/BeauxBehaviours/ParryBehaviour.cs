@@ -27,8 +27,7 @@ public class ParryBehaviour : MonoBehaviour
         else
         {
             transform.rotation = new Quaternion(transform.rotation.x, transform.rotation.y, 0, transform.rotation.w);
-            FishLifeBehaviour parryReset = GetComponentInParent<FishLifeBehaviour>();
-            parryReset.hasPressed = false;
+            FishLifeBehaviour parryReset = GetComponent<FishLifeBehaviour>();
             parryReset.isParrying = false;
             this.enabled = false;
         }
