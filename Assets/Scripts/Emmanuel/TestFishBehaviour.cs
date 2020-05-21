@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
@@ -24,9 +23,10 @@ namespace Emmanuel
         DOWN_LEFT,
         UP_LEFT
     }
-    
+
     public class TestFishBehaviour : MonoBehaviour
     {
+
         public bool isPlayer;
 
         public int fishAttached;
@@ -76,10 +76,8 @@ namespace Emmanuel
                 playerFishAttached = 0;
                 InstantiatePlayerPostitons();
             }
-            
         }
-        
-        
+
         // Update is called once per frame
         void Update()
         {
@@ -102,6 +100,9 @@ namespace Emmanuel
         {
             if (!SpringConnected)
             {
+                
+
+                
                 transform.position = objToTeleportTo.transform.position;
                 contextualPosition = objToTeleportTo;
             
@@ -115,29 +116,12 @@ namespace Emmanuel
                 springJoint.damper = 30;
                 springJoint.enableCollision = false;
                 springJoint.tolerance = Random.Range(0.025f, 0.1f);
+                
+                GameEvents.current.CollectFishEvent();
+
             }
         }
 
-        public void ConnectSpringWithOffset(GameObject objToTeleportTo, Vector3 positionOffset)
-        {
-            if (!SpringConnected)
-            {
-                transform.position = objToTeleportTo.transform.position + positionOffset;
-            
-                contextualPosition = objToTeleportTo;
-                
-                SpringConnected = true;
-            
-                springJoint = this.gameObject.AddComponent<SpringJoint>();
-                springJoint.anchor = Vector3.zero;
-                springJoint.connectedBody = objToTeleportTo.GetComponent<Rigidbody>();
-                springJoint.connectedAnchor = objToTeleportTo.transform.position;
-                springJoint.spring = 300;
-                springJoint.damper = 30;
-                springJoint.enableCollision = false;
-                springJoint.tolerance = Random.Range(0.025f, 0.1f);
-            }
-        }
 
         //sets position direction for next fish positions
         public void SetPositionDirection(POSITION_ASSIGN_DIRECTION newDirection)
