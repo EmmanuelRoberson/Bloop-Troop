@@ -54,6 +54,7 @@ namespace Emmanuel
         [FormerlySerializedAs("playerNextPostitions")] [FormerlySerializedAs("playerNextPostions")] public List<GameObject> playerNextPositions;
         
         private float startTime;
+        public float springForce;
 
         // Start is called before the first frame update
         void Start()
@@ -340,6 +341,8 @@ namespace Emmanuel
 
             SpringJoint sj = fishToDetach.gameObject.GetComponent<SpringJoint>();
             Destroy(sj);
+
+            SpringConnected = false;
 
         }
         
