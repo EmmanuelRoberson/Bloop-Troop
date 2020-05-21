@@ -11,7 +11,9 @@ public class PearlBehaviour : MonoBehaviour
     public bool isParried = false;
 
     Vector3 spd;
-    
+
+    public float lifeTime = 25;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,11 +25,19 @@ public class PearlBehaviour : MonoBehaviour
     {
         if (isParried == false)
         {
-            transform.position = Vector3.MoveTowards(transform.position, target, 0.1f);
+            //transform.position = Vector3.MoveTowards(transform.position, target, 0.1f);
+            transform.position += spd * Time.fixedDeltaTime*6;
         }
         else
         {
             transform.position = Vector3.MoveTowards(transform.position, owner, 0.1f);
+        }
+
+        lifeTime -= Time.fixedDeltaTime;
+
+        if (lifeTime <= 0)
+        {
+            Destroy(gameObject);
         }
     }
 }
