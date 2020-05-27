@@ -14,13 +14,18 @@ public class GameEvents : MonoBehaviour
     }
 
     public event Action onCollectFish;
+    public event Action onLoseFish;
 
     public void CollectFishEvent()
     {
-        if (onCollectFish != null)
-        {
-            onCollectFish();
-        }
+        //checks null
+        onCollectFish?.Invoke();
+    }
+
+    public void LoseFishEvent()
+    {
+        //checks null
+        onLoseFish?.Invoke();
     }
 
 }

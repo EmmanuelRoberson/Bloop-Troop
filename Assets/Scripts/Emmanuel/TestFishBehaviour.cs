@@ -100,9 +100,6 @@ namespace Emmanuel
         {
             if (!SpringConnected)
             {
-                
-
-                
                 transform.position = objToTeleportTo.transform.position;
                 contextualPosition = objToTeleportTo;
             
@@ -325,6 +322,8 @@ namespace Emmanuel
 
             SpringJoint sj = fishToDetach.gameObject.GetComponent<SpringJoint>();
             Destroy(sj);
+            
+            GameEvents.current.LoseFishEvent();
 
             SpringConnected = false;
 

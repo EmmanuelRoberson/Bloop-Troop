@@ -34,8 +34,6 @@ namespace Emmanuel
                     camMovement.SetSpeed(newCameraMovementSpeed);
             
             }
-        
-            
         }
     }
 }
