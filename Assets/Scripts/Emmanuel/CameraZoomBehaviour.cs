@@ -5,6 +5,9 @@ using UnityEngine.Serialization;
 
 public class CameraZoomBehaviour : MonoBehaviour
 {
+
+    public int maxZoomCount;
+    private int currentZoomCount;
     private float fieldOfView;
     private float bezierPointA;
     
@@ -61,9 +64,13 @@ public class CameraZoomBehaviour : MonoBehaviour
 
     public void DoZoomOutEffect()
     {
-        bezierPointA = fieldOfView;
-        elapsedTime = 0;
-        StartCoroutine(ZoomOutEffectCoroutine(Time.deltaTime));
+        if (currentZoomCount < maxZoomCount)
+        {
+            bezierPointA = fieldOfView;
+            elapsedTime = 0;
+            StartCoroutine(ZoomOutEffectCoroutine(Time.deltaTime));
+            currentZoomCount++;
+        }
     }
 
     public void DoZoomInEffect()
@@ -71,6 +78,7 @@ public class CameraZoomBehaviour : MonoBehaviour
         bezierPointA = fieldOfView;
         elapsedTime = 0;
         StartCoroutine(ZoomInEffectCoroutine(Time.deltaTime));
+        currentZoomCount--;
     }
 
     private IEnumerator ZoomOutEffectCoroutine(float deltaTime)
