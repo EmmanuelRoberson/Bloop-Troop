@@ -7,7 +7,10 @@ public class CamMovementBehaviour : MonoBehaviour
     [SerializeField]
     MusicAdjusterBehaviour mab;
 
-    bool stop, slow, normal = false;
+    [SerializeField]
+    float slowValue, normalValue;
+
+    public bool stop, slow, normal = false;
 
     //[SerializeField]
     //GameObject fish;
@@ -15,7 +18,7 @@ public class CamMovementBehaviour : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        stop = true;
     }
 
     // Update is called once per frame
@@ -23,16 +26,19 @@ public class CamMovementBehaviour : MonoBehaviour
     {
         if (normal == true)
         {
-            transform.position=new Vector3(transform.position.x+(Time.fixedDeltaTime / 10),
+            transform.position=new Vector3(transform.position.x+(Time.fixedDeltaTime / normalValue),
                 transform.position.y, transform.position.z);
         }
 
         if (slow == true)
         {
-            transform.position=new Vector3(transform.position.x+(Time.fixedDeltaTime / 15),
+            transform.position=new Vector3(transform.position.x+(Time.fixedDeltaTime / slowValue),
                 transform.position.y, transform.position.z);
         }
 
+
+
         mab.ObjectOfRef.floatObj = transform.position.x;
     }
+    
 }
