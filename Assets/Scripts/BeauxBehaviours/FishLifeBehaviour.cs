@@ -88,6 +88,7 @@ public class FishLifeBehaviour : MonoBehaviour
             {
                 GetComponent<TestMovementBehaviour>().enabled = false;
             }
+            
 
             if (isPlayer == true)
             {

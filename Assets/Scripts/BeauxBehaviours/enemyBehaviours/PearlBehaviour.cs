@@ -12,7 +12,7 @@ public class PearlBehaviour : MonoBehaviour
 
     Vector3 spd;
 
-    public float lifeTime = 25;
+    public float lifeTime;
 
     // Start is called before the first frame update
     void Start()

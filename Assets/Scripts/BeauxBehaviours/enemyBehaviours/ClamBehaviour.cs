@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using BeauxBehaviours;
 
 public class ClamBehaviour : MonoBehaviour
 {
@@ -14,7 +15,13 @@ public class ClamBehaviour : MonoBehaviour
     GameObject pearl;
 
     [SerializeField]
-    TestMovBehaviour tmb;
+    CamMovementBehaviour tmb;
+
+    [SerializeField]
+    float timeBetweenShots;
+
+    [SerializeField]
+    float lifeOfPearls;
 
     bool isMoving = false;
 
@@ -26,8 +33,9 @@ public class ClamBehaviour : MonoBehaviour
         //
         if (isMoving == true)
         {
-            pearlShot.GetComponent<PearlBehaviour>().target = new Vector3(fish.transform.position.x + (Vector3.Distance(fish.transform.position, this.transform.position)), 
-                                                                fish.transform.position.y, fish.transform.position.z);
+            pearlShot.GetComponent<PearlBehaviour>().target = new Vector3(fish.transform.position.x + 
+                                                                (Vector3.Distance(fish.transform.position, this.transform.position) * tmb.speed), 
+                                                                    fish.transform.position.y, fish.transform.position.z);
         }
         else
         {
@@ -36,6 +44,8 @@ public class ClamBehaviour : MonoBehaviour
             //
 
         pearlShot.GetComponent<PearlBehaviour>().owner = this.transform.position;
+
+        pearlShot.GetComponent<PearlBehaviour>().lifeTime = lifeOfPearls;
     }
 
     // Start is called before the first frame update
@@ -45,6 +55,9 @@ public class ClamBehaviour : MonoBehaviour
         {
             isMoving = true;
         }
+
+        if (lifeOfPearls == null)
+            lifeOfPearls = 25;
     }
 
     // Update is called once per frame
@@ -55,7 +68,7 @@ public class ClamBehaviour : MonoBehaviour
             if (lastShotFired <= 0)
             {
                 firePearl();
-                lastShotFired = 3;
+                lastShotFired = timeBetweenShots;
             }
             else
             {

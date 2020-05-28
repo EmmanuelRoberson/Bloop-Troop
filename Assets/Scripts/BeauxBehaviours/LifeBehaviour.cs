@@ -4,6 +4,15 @@ using UnityEngine;
 
 public class LifeBehaviour : MonoBehaviour
 {
+    [SerializeField]
+    bool isFish;
+
+    [SerializeField]
+    bool isEnemy;
+
+    [SerializeField]
+    int lifeAmount;
+
     // Start is called before the first frame update
     void Start()
     {
