@@ -10,8 +10,25 @@ public class PearlBehaviour : MonoBehaviour
 
     public bool isParried = false;
 
+    bool targetChange = false;
+
     Vector3 spd;
     
+
+    public float lifeTime;
+
+    
+
+    void spdChange()
+    {
+        spd = new Vector3((owner.x - transform.position.x) / 60, (owner.y - transform.position.y) / 60, (owner.z - transform.position.z) / 60);
+    }
+
+    void OnTriggerExit (Collider other)
+    {
+        GetComponent<LifeBehaviour>().hasEscaped = true;
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,13 +38,20 @@ public class PearlBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isParried == false)
+
+        transform.position += spd * Time.fixedDeltaTime * 6;
+
+        if (isParried && targetChange == false)
         {
-            transform.position = Vector3.MoveTowards(transform.position, target, 0.1f);
+            spdChange();
+            targetChange = true;
         }
-        else
+
+        lifeTime -= Time.fixedDeltaTime;
+
+        if (lifeTime <= 0)
         {
-            transform.position = Vector3.MoveTowards(transform.position, owner, 0.1f);
+            Destroy(gameObject);
         }
     }
 }
