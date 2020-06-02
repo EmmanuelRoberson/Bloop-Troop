@@ -22,12 +22,10 @@ namespace Emmanuel
 
         private void OnTriggerEnter(Collider other)
         {
-            Debug.Log("Trigger detected");
             CamMovementBehaviour camMovement = other.gameObject.GetComponent<CamMovementBehaviour>();
         
             if (camMovement != null)
             {
-                Debug.Log("CheckPoint Reached");
                 //Update the cameras new checkpoint destination
                 camMovement.UpdateDestination();
             
@@ -36,8 +34,6 @@ namespace Emmanuel
                     camMovement.SetSpeed(newCameraMovementSpeed);
             
             }
-        
-            
         }
     }
 }
