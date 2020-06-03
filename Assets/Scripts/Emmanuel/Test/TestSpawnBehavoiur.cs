@@ -1,15 +1,16 @@
 ﻿using System;
+using System.Collections.Generic;
 using Emmanuel;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
 public class TestSpawnBehavoiur : MonoBehaviour
 {
-    public GameObject ObjectToSpawn;
+    public List<GameObject> ObjectsToSpawn;
     public float spawnChancePercent;
 
     private Collider collider;
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -24,7 +25,8 @@ public class TestSpawnBehavoiur : MonoBehaviour
 
     private void SpawnObject(Vector3 spawnPosition)
     {
-        var obj = Instantiate(ObjectToSpawn, spawnPosition, Quaternion.identity);
+        int index = (int)UnityEngine.Random.Range(0, ObjectsToSpawn.Count - 1);
+        GameObject obj = Instantiate(ObjectsToSpawn[index], spawnPosition, Quaternion.identity);
     }
 
     private void OnTriggerEnter(Collider other)
