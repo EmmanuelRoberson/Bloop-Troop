@@ -15,7 +15,6 @@ public class GameEvents : MonoBehaviour
 
     public event Action onCollectFish;
     public event Action onLoseFish;
-
     public void CollectFishEvent()
     {
         //checks null
