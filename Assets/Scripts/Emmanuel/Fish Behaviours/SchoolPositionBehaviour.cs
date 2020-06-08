@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using Emmanuel;
 using UnityEngine;
@@ -48,6 +49,15 @@ public class SchoolPositionBehaviour : MonoBehaviour
         foreach (var neighbor in neighbors)
         {
             neighbor.occupiedNeighbors.Remove(this);
+        }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        SchoolPositionBehaviour schoolPosition = other.GetComponent<SchoolPositionBehaviour>();
+        if (!neighbors.Contains(schoolPosition))
+        {
+            neighbors.Add(schoolPosition);
         }
     }
 }
