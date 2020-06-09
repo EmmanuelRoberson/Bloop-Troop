@@ -6,12 +6,15 @@ using UnityEngine;
 
 public class SchoolPositionBehaviour : MonoBehaviour
 {
+   
     private TestFishBehaviour assignedFish;
 
     public List<SchoolPositionBehaviour> neighbors;
 
     private List<SchoolPositionBehaviour> occupiedNeighbors;
-    
+
+
+
     // Start is called before the first frame update
     void Start()
     {

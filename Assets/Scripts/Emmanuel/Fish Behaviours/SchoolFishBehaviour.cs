@@ -7,7 +7,14 @@ public class SchoolFishBehaviour : MonoBehaviour
 {
     private bool isCollected;
     
-    
+    private Collider collider;
+    private SpriteRenderer spriteRenderer;
+
+    private void Awake()
+    {
+        collider = GetComponent<Collider>();
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+    }
     
     // Start is called before the first frame update
     void Start()
@@ -22,6 +29,16 @@ public class SchoolFishBehaviour : MonoBehaviour
     }
 
     public void OnTriggerEnter(Collider other)
+    {
+        
+    }
+
+    public void Activate()
+    {
+        
+    }
+
+    public void Deactivate()
     {
         
     }
