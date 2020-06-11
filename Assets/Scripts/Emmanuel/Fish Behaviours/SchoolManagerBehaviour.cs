@@ -8,17 +8,25 @@ using UnityEngine.UIElements;
 
 public class SchoolManagerBehaviour : MonoBehaviour
 {
+    public GameObject fishBasePrefab;
+    
     public static SchoolManagerBehaviour Instance;
     public List<SchoolFishBehaviour> fishSchool;
     private static Stack<SchoolFishBehaviour> fishStack = new Stack<SchoolFishBehaviour>();
-
+    
     public TestFishBehaviour playerFish;
+
+    public float fishActivateEffectTime;
+    
+    public float desiredXScale;
+    public float desiredYScale;
     
     private void Awake()
     {
-        foreach (var position in fishSchool)
+        foreach (var fish in fishSchool)
         {
-            fishStack.Push(position);
+            fishStack.Push(fish);
+            fish.Deactivate();
         }
 
         Instance = this;
