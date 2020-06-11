@@ -10,18 +10,20 @@ public class PearlBehaviour : MonoBehaviour
 
     public bool isParried = false;
 
-    bool targetChange = false;
+    bool targetHasChanged = false;
 
-    Vector3 spd;
+    [SerializeField]
+    float spd;
     
 
     public float lifeTime;
-
     
 
-    void spdChange()
+    void targetChange()
     {
-        spd = new Vector3((owner.x - transform.position.x) / 60, (owner.y - transform.position.y) / 60, (owner.z - transform.position.z) / 60);
+        Vector3 holder = new Vector3(owner.x - transform.position.x, owner.y - transform.position.y, owner.z);
+        holder.Normalize();
+        target = holder;
     }
 
     void OnTriggerExit (Collider other)
@@ -32,19 +34,22 @@ public class PearlBehaviour : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        spd = new Vector3((target.x - owner.x) / 60, (target.y - owner.y) / 60, (target.z - owner.z) / 60);
+        if (spd == null)
+        {
+            spd = 1;
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
 
-        transform.position += spd * Time.fixedDeltaTime * 6;
+        transform.position += target * spd * Time.fixedDeltaTime;
 
-        if (isParried && targetChange == false)
+        if (isParried && targetHasChanged == false)
         {
-            spdChange();
-            targetChange = true;
+            targetChange();
+            targetHasChanged = true;
         }
 
         lifeTime -= Time.fixedDeltaTime;

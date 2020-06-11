@@ -111,7 +111,7 @@ MonoBehaviour:
   target: {x: 0, y: 0, z: 0}
   owner: {x: 0, y: 0, z: 0}
   isParried: 0
-  expectedLife: 0
+  spd: 3
   lifeTime: 0
 --- !u!114 &2345209286153934923
 MonoBehaviour:
@@ -131,6 +131,7 @@ MonoBehaviour:
   isEnemy: 0
   isParryable: 1
   healthVal: 1
+  hasEscaped: 0
 --- !u!54 &7360805490225169409
 Rigidbody:
   m_ObjectHideFlags: 0

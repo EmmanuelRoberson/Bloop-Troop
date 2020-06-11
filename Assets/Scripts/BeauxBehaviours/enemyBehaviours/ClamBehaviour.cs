@@ -39,7 +39,10 @@ public class ClamBehaviour : MonoBehaviour
         }
         else
         {
-            pearlShot.GetComponent<PearlBehaviour>().target = new Vector3(fish.transform.position.x, fish.transform.position.y, fish.transform.position.z);
+
+            Vector3 holder = new Vector3(fish.transform.position.x - transform.position.x, fish.transform.position.y - transform.position.y, fish.transform.position.z);
+            holder.Normalize();
+            pearlShot.GetComponent<PearlBehaviour>().target = holder;
         }
             //
 
