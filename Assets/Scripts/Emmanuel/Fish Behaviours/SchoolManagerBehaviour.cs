@@ -8,17 +8,25 @@ using UnityEngine.UIElements;
 
 public class SchoolManagerBehaviour : MonoBehaviour
 {
+    public GameObject fishBasePrefab;
+    
     public static SchoolManagerBehaviour Instance;
-    public List<SchoolPositionBehaviour> SchoolPositions;
-    private static Stack<SchoolPositionBehaviour> positionStack = new Stack<SchoolPositionBehaviour>();
-
+    public List<SchoolFishBehaviour> fishSchool;
+    private static Stack<SchoolFishBehaviour> fishStack = new Stack<SchoolFishBehaviour>();
+    
     public TestFishBehaviour playerFish;
+
+    public float fishActivateEffectTime;
+    
+    public float desiredXScale;
+    public float desiredYScale;
     
     private void Awake()
     {
-        foreach (var position in SchoolPositions)
+        foreach (var fish in fishSchool)
         {
-            positionStack.Push(position);
+            fishStack.Push(fish);
+            fish.Deactivate();
         }
 
         Instance = this;
@@ -37,15 +45,15 @@ public class SchoolManagerBehaviour : MonoBehaviour
     }
     
     //When a fish dies, it will push its position to the top of the stack
-    public static void PushPosition(SchoolPositionBehaviour positionToPush)
+    public static void PushFishToActivate(SchoolFishBehaviour schoolFish)
     {
-        positionStack.Push(positionToPush);
+        fishStack.Push(schoolFish);
     }
 
     //When a fish needs to be assigned to the next position, use this
-    public static SchoolPositionBehaviour PopPosition()
+    public static SchoolFishBehaviour PopFishToActivate()
     {
-        return positionStack.Pop();
+        return fishStack.Pop();
     }
     
 }
