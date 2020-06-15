@@ -114,7 +114,7 @@ namespace Emmanuel
                 springJoint.enableCollision = false;
                 springJoint.tolerance = Random.Range(0.025f, 0.1f);
                 
-                GameEvents.current.CollectFishEvent();
+               // GameEvents.current.CollectFishEvent();
 
             }
         }

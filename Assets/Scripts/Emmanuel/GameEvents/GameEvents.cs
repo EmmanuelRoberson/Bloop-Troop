@@ -14,11 +14,13 @@ public class GameEvents : MonoBehaviour
     }
 
     public event Action onCollectFish;
+    public event Action<Sprite> onAssignFishSprite;
     public event Action onLoseFish;
-    public void CollectFishEvent()
+    public void CollectFishEvent(Sprite fishSprite)
     {
         //checks null
         onCollectFish?.Invoke();
+        onAssignFishSprite?.Invoke(fishSprite);
     }
 
     public void LoseFishEvent()
