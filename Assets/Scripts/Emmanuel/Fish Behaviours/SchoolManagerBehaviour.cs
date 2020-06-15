@@ -1,41 +1,45 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Runtime.CompilerServices;
 using Emmanuel;
 using UnityEngine;
 using UnityEngine.UIElements;
+using Random = UnityEngine.Random;
 
 public class SchoolManagerBehaviour : MonoBehaviour
 {
     public GameObject fishBasePrefab;
     
-    public static SchoolManagerBehaviour Instance;
+    public SchoolManagerBehaviour Instance;
     public List<SchoolFishBehaviour> fishSchool;
-    private static Stack<SchoolFishBehaviour> fishStack = new Stack<SchoolFishBehaviour>();
+    private Stack<SchoolFishBehaviour> fishStack = new Stack<SchoolFishBehaviour>();
+
+    public List<Sprite> fishSprites;
+    private Sprite currentFishSprite;
     
-    public TestFishBehaviour playerFish;
+    public PlayerFishBehaviour playerFish;
 
     public float fishActivateEffectTime;
     
     public float desiredXScale;
     public float desiredYScale;
-    
+
     private void Awake()
+    {
+        Instance = this;
+        GameEvents.current.onAssignFishSprite += ActivateFish;
+    }
+
+    private void Start()
     {
         foreach (var fish in fishSchool)
         {
-            fishStack.Push(fish);
+            fish.SetScales(desiredXScale, desiredYScale);
+            fish.totalActivateEffectTime = fishActivateEffectTime;
             fish.Deactivate();
+            
+            
+            PushFishToActivate(fish);
         }
-
-        Instance = this;
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
     }
 
     // Update is called once per frame
@@ -45,15 +49,15 @@ public class SchoolManagerBehaviour : MonoBehaviour
     }
     
     //When a fish dies, it will push its position to the top of the stack
-    public static void PushFishToActivate(SchoolFishBehaviour schoolFish)
+    public void PushFishToActivate(SchoolFishBehaviour schoolFish)
     {
         fishStack.Push(schoolFish);
     }
 
     //When a fish needs to be assigned to the next position, use this
-    public static SchoolFishBehaviour PopFishToActivate()
+    public void ActivateFish(Sprite fishSprite)
     {
-        return fishStack.Pop();
+        fishStack.Pop().Activate(fishSprite);
     }
     
 }

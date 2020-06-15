@@ -1,23 +1,21 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using Emmanuel;
 using UnityEngine;
 
-public class PlayerFishBehaviour : TestFishBehaviour
+public class PlayerFishBehaviour : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        isPlayer = true;
-        playerFishAttached = 0;
-        state = FISH_STATE.COLLECTED;
-        assignmentDirection = POSITION_ASSIGN_DIRECTION.UP;
-    }
+    public readonly bool isCollected = true;
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter(Collider other)
     {
-        
+        CollectableFishBehaviour otherFish = other.GetComponent<CollectableFishBehaviour>();
+
+        if (otherFish != null)
+        {
+            GameEvents.current.CollectFishEvent(otherFish.fishSprite);
+            Destroy(otherFish.gameObject);
+        }
     }
-    
 }
