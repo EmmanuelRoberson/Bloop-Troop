@@ -323,7 +323,7 @@ namespace Emmanuel
             SpringJoint sj = fishToDetach.gameObject.GetComponent<SpringJoint>();
             Destroy(sj);
             
-            GameEvents.current.LoseFishEvent();
+            //GameEvents.current.LoseFishEvent();
 
             SpringConnected = false;
 

@@ -38,6 +38,12 @@ public class SchoolFishBehaviour : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
+        if (other.CompareTag("Enemy"))
+        {
+            GameEvents.current.LoseFishEvent(this);
+            return;
+        }
+        
         CollectableFishBehaviour collectableFish = other.GetComponent<CollectableFishBehaviour>();
         if (collectableFish != null)
         {
@@ -86,8 +92,8 @@ public class SchoolFishBehaviour : MonoBehaviour
             //float x = CustomMath.QuadBezier(portionComplete, 0f, 10, desiredXScale);
             //float y = CustomMath.QuadBezier(portionComplete, 0f, 10, desiredYScale);
 
-            float x = CustomMath.CubicBezier(portionComplete, 0f, 1, 1, desiredXScale);
-            float y = CustomMath.CubicBezier(portionComplete, 0f, 1, 1, desiredYScale);
+            float x = CustomMath.CubicBezier(portionComplete, 0f, 2, 4, desiredXScale);
+            float y = CustomMath.CubicBezier(portionComplete, 0f, 2, 4, desiredYScale);
 
             elapsedActivateEffectTime += deltaTime;
             
@@ -97,10 +103,14 @@ public class SchoolFishBehaviour : MonoBehaviour
             {
                 collider.enabled = true;
             }
-                
-
+            
             yield return 0;
         }
+    }
+
+    private IEnumerator DeactivateEffectCoroutine(float deltaTime)
+    {
+        yield return 0;
     }
     
 }
