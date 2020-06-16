@@ -114,7 +114,7 @@ namespace Emmanuel
                 springJoint.enableCollision = false;
                 springJoint.tolerance = Random.Range(0.025f, 0.1f);
                 
-                GameEvents.current.CollectFishEvent();
+               // GameEvents.current.CollectFishEvent();
 
             }
         }
@@ -323,7 +323,7 @@ namespace Emmanuel
             SpringJoint sj = fishToDetach.gameObject.GetComponent<SpringJoint>();
             Destroy(sj);
             
-            GameEvents.current.LoseFishEvent();
+            //GameEvents.current.LoseFishEvent();
 
             SpringConnected = false;
 

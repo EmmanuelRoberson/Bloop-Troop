@@ -8,25 +8,17 @@ public class TestSpawnBehavoiur : MonoBehaviour
 {
     public List<GameObject> ObjectsToSpawn;
     public float spawnChancePercent;
-
-    private Collider collider;
-
+    
     // Start is called before the first frame update
     void Start()
     {
-        collider = GetComponent<Collider>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     private void SpawnObject(Vector3 spawnPosition)
     {
         int index = (int)UnityEngine.Random.Range(0, ObjectsToSpawn.Count - 1);
         GameObject obj = Instantiate(ObjectsToSpawn[index], spawnPosition, Quaternion.identity);
+        obj.GetComponent<CollectableFishBehaviour>().fishSprite = obj.GetComponentInChildren<SpriteRenderer>().sprite;
     }
 
     private void OnTriggerEnter(Collider other)
