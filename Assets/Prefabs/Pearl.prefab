@@ -111,8 +111,8 @@ MonoBehaviour:
   target: {x: 0, y: 0, z: 0}
   owner: {x: 0, y: 0, z: 0}
   isParried: 0
-  spd: 3
-  lifeTime: 0
+  lifeTime: 25
+  spd: 0
 --- !u!114 &2345209286153934923
 MonoBehaviour:
   m_ObjectHideFlags: 0

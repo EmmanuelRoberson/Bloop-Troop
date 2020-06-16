@@ -13,10 +13,10 @@ public class PearlBehaviour : MonoBehaviour
     bool targetHasChanged = false;
 
     [SerializeField]
-    float spd;
+    float lifeTime;
     
 
-    public float lifeTime;
+    public float spd;
     
 
     void targetChange()

@@ -972,7 +972,7 @@ MonoBehaviour:
   pearl: {fileID: 6624545091943571248, guid: 8049b0f1ec0e7a246a0657863f44284b, type: 3}
   tmb: {fileID: 0}
   timeBetweenShots: 3
-  lifeOfPearls: 25
+  spdOfPearls: 3
   lastShotFired: 0
 --- !u!65 &1838308824
 BoxCollider:

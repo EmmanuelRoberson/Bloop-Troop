@@ -21,7 +21,7 @@ public class ClamBehaviour : MonoBehaviour
     float timeBetweenShots;
 
     [SerializeField]
-    float lifeOfPearls;
+    float spdOfPearls;
 
     bool isMoving = false;
 
@@ -33,9 +33,9 @@ public class ClamBehaviour : MonoBehaviour
         //
         if (isMoving == true)
         {
-            pearlShot.GetComponent<PearlBehaviour>().target = new Vector3(fish.transform.position.x + 
-                                                                (Vector3.Distance(fish.transform.position, this.transform.position) * tmb.speed), 
-                                                                    fish.transform.position.y, fish.transform.position.z);
+            Vector3 holder = new Vector3(fish.transform.position.x - transform.position.x, fish.transform.position.y - transform.position.y * tmb.speed, fish.transform.position.z);
+            holder.Normalize();
+            pearlShot.GetComponent<PearlBehaviour>().target = holder;
         }
         else
         {
@@ -48,7 +48,7 @@ public class ClamBehaviour : MonoBehaviour
 
         pearlShot.GetComponent<PearlBehaviour>().owner = this.transform.position;
 
-        pearlShot.GetComponent<PearlBehaviour>().lifeTime = lifeOfPearls;
+        pearlShot.GetComponent<PearlBehaviour>().spd = spdOfPearls;
     }
 
     // Start is called before the first frame update
@@ -59,8 +59,8 @@ public class ClamBehaviour : MonoBehaviour
             isMoving = true;
         }
 
-        if (lifeOfPearls == null)
-            lifeOfPearls = 25;
+        if (spdOfPearls == null)
+            spdOfPearls = 3;
     }
 
     // Update is called once per frame
