@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCollected: 0
-  totalActivateEffectTime: 0
+  totalActivateEffectTime: 1
 --- !u!1 &8237777791412704482
 GameObject:
   m_ObjectHideFlags: 0
