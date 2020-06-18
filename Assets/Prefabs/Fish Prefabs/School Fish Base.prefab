@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 8237777789510629033}
   - component: {fileID: 8237777789510629038}
   - component: {fileID: 520025785241698221}
-  - component: {fileID: 21763300766516583}
   - component: {fileID: 7433770511602864465}
   - component: {fileID: 9049777882546838255}
   m_Layer: 0
@@ -66,21 +65,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &21763300766516583
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8237777789510629039}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d3a97ab435364ee47a749a3115eb3ab6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isDead: 0
-  countdown: 0
-  isParrying: 0
 --- !u!145 &7433770511602864465
 SpringJoint:
   m_ObjectHideFlags: 0
@@ -117,6 +101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCollected: 0
+  totalActivateEffectTime: 0
 --- !u!1 &8237777791412704482
 GameObject:
   m_ObjectHideFlags: 0
