@@ -53,11 +53,11 @@ public class ToothBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if ((transform.position.x - fish.transform.position.x) <= distanceToActivation)
+        if ((transform.position.x - fish.transform.position.x) <= 0/*distanceToActivation*/)
         {
             if (lastShotFired <= 0)
             {
-                firePearl();
+                //firePearl();
                 currentTeeth++;
                 if (currentTeeth == numberOfTeeth)
                 {

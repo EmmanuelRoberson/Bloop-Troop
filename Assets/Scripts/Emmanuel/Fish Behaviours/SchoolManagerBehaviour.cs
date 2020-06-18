@@ -19,7 +19,7 @@ public class SchoolManagerBehaviour : MonoBehaviour
     public PlayerFishBehaviour playerFish;
 
     public float fishActivateEffectTime;
-    
+
     public float desiredXScale;
     public float desiredYScale;
 
@@ -37,9 +37,10 @@ public class SchoolManagerBehaviour : MonoBehaviour
             fish.totalActivateEffectTime = fishActivateEffectTime;
             fish.Deactivate();
             
-            
             PushFishToActivate(fish);
         }
+
+        GameEvents.current.onDeactivateFish += PushFishToActivate;
     }
 
     // Update is called once per frame

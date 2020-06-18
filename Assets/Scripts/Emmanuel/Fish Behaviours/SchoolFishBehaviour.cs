@@ -84,13 +84,13 @@ public class SchoolFishBehaviour : MonoBehaviour
     
     private IEnumerator ActivateEffectCoroutine(float deltaTime)
     {
-        elapsedActivateEffectTime = 0f;
+        transform.rotation = new Quaternion(transform.rotation.x, transform.rotation.y, 0, transform.rotation.w);
         
+        elapsedActivateEffectTime = 0f;
+
         while (elapsedActivateEffectTime <= totalActivateEffectTime && Math.Abs(transform.localScale.x - desiredXScale) > 0.01)
         {
-            float portionComplete = elapsedActivateEffectTime / totalActivateEffectTime;
-            //float x = CustomMath.QuadBezier(portionComplete, 0f, 10, desiredXScale);
-            //float y = CustomMath.QuadBezier(portionComplete, 0f, 10, desiredYScale);
+            float portionComplete = elapsedActivateEffectTime / (totalActivateEffectTime * 0.7f);
 
             float x = CustomMath.CubicBezier(portionComplete, 0f, 2, 4, desiredXScale);
             float y = CustomMath.CubicBezier(portionComplete, 0f, 2, 4, desiredYScale);
@@ -110,7 +110,27 @@ public class SchoolFishBehaviour : MonoBehaviour
 
     private IEnumerator DeactivateEffectCoroutine(float deltaTime)
     {
-        yield return 0;
+        Time.timeScale = 0.1f;
+        yield return new WaitForSeconds(0.1f);
+        Time.timeScale = 1;
+        
+        elapsedActivateEffectTime = 0;
+
+        transform.rotation = new Quaternion(transform.rotation.x, transform.rotation.y, 90, transform.rotation.w);
+        
+        while (elapsedActivateEffectTime <= totalActivateEffectTime && Math.Abs(transform.localScale.x - desiredXScale) > 0.01)
+        {
+            float portionComplete = elapsedActivateEffectTime / totalActivateEffectTime;
+
+            float x = CustomMath.CubicBezier(portionComplete, desiredXScale, 4, 2, 0f);
+            float y = CustomMath.CubicBezier(portionComplete, desiredYScale, 4, 2, 0f);
+
+            elapsedActivateEffectTime += deltaTime;
+            
+            transform.localScale = new Vector3(x, y, transform.localScale.z);
+
+            yield return 0;
+        }
     }
     
 }
