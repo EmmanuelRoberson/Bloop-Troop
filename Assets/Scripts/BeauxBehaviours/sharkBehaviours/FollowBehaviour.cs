@@ -23,6 +23,14 @@ public class FollowBehaviour : MonoBehaviour
     [SerializeField]
     float camMin;
 
+    [SerializeField]
+    float fishMax;
+
+    [SerializeField]
+    float fishMin;
+
+    float timerForToothTest = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -54,5 +62,12 @@ public class FollowBehaviour : MonoBehaviour
             }
         }
         targetVisual = target.position;
+
+        timerForToothTest += Time.fixedDeltaTime;
+
+        if (timerForToothTest <= 10)
+        {
+            GetComponent<ToothBehaviour>().enabled = true;
+        }
     }
 }
