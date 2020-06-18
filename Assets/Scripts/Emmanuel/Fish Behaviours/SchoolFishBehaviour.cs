@@ -106,11 +106,33 @@ public class SchoolFishBehaviour : MonoBehaviour
             
             yield return 0;
         }
+        
+        transform.rotation = new Quaternion(transform.rotation.x, transform.rotation.y, 0, transform.rotation.w);
+
+        yield return 0;
     }
 
     private IEnumerator DeactivateEffectCoroutine(float deltaTime)
     {
-        yield return 0;
+        elapsedActivateEffectTime = 0;
+
+        transform.rotation = new Quaternion(transform.rotation.x, transform.rotation.y, 3, transform.rotation.w);
+        
+        while (elapsedActivateEffectTime <= totalActivateEffectTime && Math.Abs(transform.localScale.x - desiredXScale) > 0.01)
+        {
+            float portionComplete = elapsedActivateEffectTime / totalActivateEffectTime;
+            //float x = CustomMath.QuadBezier(portionComplete, 0f, 10, desiredXScale);
+            //float y = CustomMath.QuadBezier(portionComplete, 0f, 10, desiredYScale);
+
+            float x = CustomMath.CubicBezier(portionComplete, desiredXScale, 4, 2, 0f);
+            float y = CustomMath.CubicBezier(portionComplete, desiredYScale, 4, 2, 0f);
+
+            elapsedActivateEffectTime += deltaTime;
+            
+            transform.localScale = new Vector3(x, y, transform.localScale.z);
+
+            yield return 0;
+        }
     }
     
 }

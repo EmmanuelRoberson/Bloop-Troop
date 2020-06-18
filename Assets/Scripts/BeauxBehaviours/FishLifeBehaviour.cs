@@ -14,24 +14,46 @@ public class FishLifeBehaviour : MonoBehaviour
     bool hasMovement = false;
     // checks to see if there is a movement script to turn off upon death
 
-    bool isPlayer=false;
-
     /// ///////
     bool isDetached=false;
     // checks to see if it must be detached or not
     ///
-
+    private bool isPlayer;
+    
     public bool isParrying = false;
+
+    private SchoolFishBehaviour fishBehaviour;
+    //script attached to a fish in the school
+    
+    private PlayerFishBehaviour playerBehaviour;
+    //script attached to the player
+
+    private TestMovementBehaviour playerMovement;
+    //player movement behaviour
+
+    private ParryBehaviour parryBehaviour;
+    //parry behaviour
 
     // Start is called before the first frame update
     void Start()
     {
-        isPlayer = GetComponent<TestFishBehaviour>().isPlayer;
+        fishBehaviour = GetComponent<SchoolFishBehaviour>();
+        //behaviour script attached to the fish
+        
+        playerBehaviour = GetComponent<PlayerFishBehaviour>();
+        //behaviour script attached to the player
 
-        if (GetComponent<TestMovementBehaviour>() != null)
+        playerMovement = GetComponent<TestMovementBehaviour>();
+        //movement script attached to the player
+
+        parryBehaviour = GetComponent<ParryBehaviour>();
+        
+        if (playerMovement != null)
         {
             hasMovement = true;
         }
+
+        isPlayer = playerBehaviour != null;
     }
     
 
@@ -41,20 +63,22 @@ public class FishLifeBehaviour : MonoBehaviour
 
         if (Input.GetKeyDown("space") && isParrying == false && isDead == false )
         {
-            isParrying = true;
-            this.GetComponent<ParryBehaviour>().enabled = true;
+            isParrying = true; 
+            parryBehaviour.enabled = true;
         }
 
         if (isDead == true)
         {
-            if (GetComponent<TestMovementBehaviour>() != null)
+            if (playerMovement != null)
             {
-                GetComponent<TestMovementBehaviour>().enabled = false;
+                playerBehaviour.enabled = false;
             }
 
+            GameEvents.current.LoseFishEvent(fishBehaviour);
+            
             transform.rotation = new Quaternion(transform.rotation.x, transform.rotation.y, 3, transform.rotation.w);
 
-            if (isPlayer != true && isDetached == false)
+            if (isPlayer && isDetached == false)
             {
                 TestFishBehaviour tfbehav = GetComponentInParent<TestFishBehaviour>();
                 tfbehav.DetachFishFromSchool(tfbehav);
@@ -70,8 +94,6 @@ public class FishLifeBehaviour : MonoBehaviour
                     SceneManager.LoadScene("GameOver");
                 }
             }
-
         }
-        
     }
 }

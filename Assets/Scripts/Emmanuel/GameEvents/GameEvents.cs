@@ -28,7 +28,7 @@ public class GameEvents : MonoBehaviour
     {
         //? checks null
         onLoseFish?.Invoke();
-        onDeactivateFish.Invoke(lostFish);
+        onDeactivateFish?.Invoke(lostFish);
     }
 
 }
