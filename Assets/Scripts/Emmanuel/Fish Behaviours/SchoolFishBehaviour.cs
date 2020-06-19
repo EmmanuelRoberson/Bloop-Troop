@@ -39,6 +39,7 @@ public class SchoolFishBehaviour : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
+        /*
         if (other.CompareTag("Enemy") || other.CompareTag("Parryable"))
         {
             collider.enabled = false;
@@ -53,6 +54,7 @@ public class SchoolFishBehaviour : MonoBehaviour
             
             Destroy(collectableFish.gameObject);
         }
+        */
     }
     
     public void Activate(Sprite newSprite)
