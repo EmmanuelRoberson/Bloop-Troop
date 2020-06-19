@@ -26,6 +26,7 @@ public class ToothBehaviour : MonoBehaviour
     [SerializeField]
     float spdOfTeeth;
 
+    [SerializeField]
     Animator anim;
 
     public float lastShotFired = 0;
@@ -51,36 +52,42 @@ public class ToothBehaviour : MonoBehaviour
         if (spdOfTeeth == null)
             spdOfTeeth = 6;
 
-        anim = GetComponent<Animator>();
+        if (anim == null)
+            anim = GetComponentInParent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-            if (lastShotFired <= 0)
-            {
-                anim.SetTrigger("Attack");
-                FireTooth();
-                currentTeeth++;
-                if (currentTeeth == numberOfTeeth)
-                {
-                    lastShotFired = timeBetweenSets;
-                    currentTeeth = 0;
-                    currentSets++;
-                }
-                else
-                {
-                    lastShotFired = timeBetweenShots;
-                }
+        if (lastShotFired > 0f && lastShotFired <= 0.48f)
+        {
+            anim.SetTrigger("Attack");
+        }
 
-                if (currentSets == numberOfSets)
-                {
-                    this.enabled = false;
-                }
+        if (lastShotFired <= 0)
+        {
+            //anim.SetTrigger("Attack");
+            FireTooth();
+            currentTeeth++;
+            if (currentTeeth == numberOfTeeth)
+            {
+                lastShotFired = timeBetweenSets;
+                currentTeeth = 0;
+                currentSets++;
             }
             else
             {
-                lastShotFired -= (Time.fixedDeltaTime / 8);
+                lastShotFired = timeBetweenShots;
             }
+
+            if (currentSets == numberOfSets)
+            {
+                this.enabled = false;
+            }
+        }
+        else
+        {
+            lastShotFired -= (Time.fixedDeltaTime / 8);
+        }
     }
 }
