@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Emmanuel;
+using TMPro;
 using UnityEditorInternal;
 using UnityEngine;
 
@@ -38,8 +39,9 @@ public class SchoolFishBehaviour : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Enemy"))
+        if (other.CompareTag("Enemy") || other.CompareTag("Parryable"))
         {
+            collider.enabled = false;
             GameEvents.current.LoseFishEvent(this);
             return;
         }
@@ -116,7 +118,7 @@ public class SchoolFishBehaviour : MonoBehaviour
     private IEnumerator DeactivateEffectCoroutine(float deltaTime)
     {
         Time.timeScale = 0.1f;
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.01f);
         Time.timeScale = 1;
         
         elapsedActivateEffectTime = 0;
