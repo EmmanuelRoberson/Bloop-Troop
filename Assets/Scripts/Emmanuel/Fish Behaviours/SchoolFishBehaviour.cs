@@ -118,7 +118,7 @@ public class SchoolFishBehaviour : MonoBehaviour
 
         transform.rotation = new Quaternion(transform.rotation.x, transform.rotation.y, 90, transform.rotation.w);
         
-        while (elapsedActivateEffectTime <= totalActivateEffectTime && Math.Abs(transform.localScale.x - desiredXScale) > 0.01)
+        while (elapsedActivateEffectTime <= totalActivateEffectTime && Math.Abs(transform.localScale.x) > 0.01)
         {
             float portionComplete = elapsedActivateEffectTime / totalActivateEffectTime;
 
@@ -131,6 +131,12 @@ public class SchoolFishBehaviour : MonoBehaviour
 
             yield return 0;
         }
+        
+        Deactivate();
+        transform.rotation = new Quaternion(transform.rotation.x, transform.rotation.y, 0, transform.rotation.w);
+
+        yield return 0;
+
     }
     
 }
