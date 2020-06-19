@@ -71,6 +71,11 @@ public class SchoolFishBehaviour : MonoBehaviour
         transform.localScale = new Vector3(0f,0f,transform.localScale.z);
     }
 
+    public void DeactivateFishRoutine()
+    {
+        StartCoroutine(DeactivateEffectCoroutine(Time.fixedDeltaTime));
+    }
+    
     public void SetFishSprite(Sprite newSprite)
     {
         spriteRenderer.sprite = newSprite;

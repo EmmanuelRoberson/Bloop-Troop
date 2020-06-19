@@ -40,6 +40,7 @@ public class SchoolManagerBehaviour : MonoBehaviour
             PushFishToActivate(fish);
         }
 
+        GameEvents.current.onDeactivateFish += DeactivateFish;
         GameEvents.current.onDeactivateFish += PushFishToActivate;
     }
 
@@ -59,6 +60,11 @@ public class SchoolManagerBehaviour : MonoBehaviour
     public void ActivateFish(Sprite fishSprite)
     {
         fishStack.Pop().Activate(fishSprite);
+    }
+
+    public void DeactivateFish(SchoolFishBehaviour schoolFishBehaviour)
+    {
+        schoolFishBehaviour.DeactivateFishRoutine();
     }
     
 }
