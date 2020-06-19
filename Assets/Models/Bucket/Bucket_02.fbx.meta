@@ -8,17 +8,17 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Bucket_Bolts_MAT
-    second: {fileID: 2100000, guid: 57eb3b6f52fa9934e9768f275dad4099, type: 2}
+    second: {fileID: 2100000, guid: ae847074e87092c42a554ea996de2b6b, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Bucket_Handle_MAT
-    second: {fileID: 2100000, guid: ef23ea7b653cccc4a8ff5fb5dd452991, type: 2}
+    second: {fileID: 2100000, guid: d1a9dd16981f87b41a08c23349705cc7, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Bucket_MAT
-    second: {fileID: 2100000, guid: 13220114eeb2b4b4f825e88747b35037, type: 2}
+    second: {fileID: 2100000, guid: 1e65c1223a61faa4282a6621974d593e, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

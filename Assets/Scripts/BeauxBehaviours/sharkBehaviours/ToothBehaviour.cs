@@ -37,7 +37,7 @@ public class ToothBehaviour : MonoBehaviour
     {
         GameObject toothShot = Instantiate(tooth, this.transform.position, Quaternion.identity);
 
-        Vector3 holder = new Vector3(fish.transform.position.x - transform.position.x, fish.transform.position.y - transform.position.y, fish.transform.position.z);
+        Vector3 holder = new Vector3(fish.transform.position.x - transform.position.x, fish.transform.position.y - transform.position.y, fish.transform.position.z - transform.position.z);
         holder.Normalize();
         toothShot.GetComponent<PearlBehaviour>().target = holder;
 

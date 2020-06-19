@@ -1,7 +1,6 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
+using Emmanuel;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 public class CameraZoomBehaviour : MonoBehaviour
 {
@@ -51,17 +50,6 @@ public class CameraZoomBehaviour : MonoBehaviour
         
     }
 
-    //used as a function of time, returns a float based on a quadratic bezier curve
-    // t should should be from 0 - 1
-    float QuadBezier(float t, float A, float B, float C)
-    {
-        float s = 1 - t;
-        float s2 = Mathf.Pow(s, 2);
-        float t2 = Mathf.Pow(t, 2);
-        
-        return (s2 * A) + (2 * s * t * B) + (t2 * C);
-    }
-
     public void DoZoomOutEffect()
     {
         if (currentZoomCount < maxZoomCount)
@@ -86,7 +74,7 @@ public class CameraZoomBehaviour : MonoBehaviour
         while (elapsedTime <= zoomOutTime)
         {
             float t = elapsedTime / zoomOutTime;
-            fieldOfView = QuadBezier(t, bezierPointA, bezierPointA + zoomOutMaxValue, bezierPointA + zoomOutRestValue);
+            fieldOfView = CustomMath.QuadBezier(t, bezierPointA, bezierPointA + zoomOutMaxValue, bezierPointA + zoomOutRestValue);
             elapsedTime += deltaTime;
             camera.fieldOfView = fieldOfView;
             
@@ -99,7 +87,10 @@ public class CameraZoomBehaviour : MonoBehaviour
         while (elapsedTime <= zoomInTime)
         {
             float t = elapsedTime / zoomInTime;
-            fieldOfView = QuadBezier(t, bezierPointA, bezierPointA + zoomInMaxValue, bezierPointA + zoomInRestValue);
+            fieldOfView = CustomMath.QuadBezier(
+                t, bezierPointA, 
+                bezierPointA + zoomInMaxValue, 
+                bezierPointA + zoomInRestValue);
             elapsedTime += deltaTime;
             camera.fieldOfView = fieldOfView;
 
