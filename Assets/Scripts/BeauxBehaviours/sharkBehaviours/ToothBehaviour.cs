@@ -26,6 +26,8 @@ public class ToothBehaviour : MonoBehaviour
     [SerializeField]
     float spdOfTeeth;
 
+    Animator anim;
+
     public float lastShotFired = 0;
     public int currentTeeth = 0;
     public int currentSets = 0;
@@ -48,16 +50,17 @@ public class ToothBehaviour : MonoBehaviour
     {
         if (spdOfTeeth == null)
             spdOfTeeth = 6;
+
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if ((transform.position.x - fish.transform.position.x) <= 0/*distanceToActivation*/)
-        {
             if (lastShotFired <= 0)
             {
-                //firePearl();
+                anim.SetTrigger("Attack");
+                FireTooth();
                 currentTeeth++;
                 if (currentTeeth == numberOfTeeth)
                 {
@@ -72,13 +75,12 @@ public class ToothBehaviour : MonoBehaviour
 
                 if (currentSets == numberOfSets)
                 {
-                    //kill this script
+                    this.enabled = false;
                 }
             }
             else
             {
                 lastShotFired -= (Time.fixedDeltaTime / 8);
             }
-        }
     }
 }

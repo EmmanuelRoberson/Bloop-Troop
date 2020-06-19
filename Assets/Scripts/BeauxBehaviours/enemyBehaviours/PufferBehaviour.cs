@@ -27,7 +27,7 @@ public class PufferBehaviour : MonoBehaviour
     void puff()
     {
         transform.localScale = new Vector3((transform.localScale.x + puffIncrease), 
-                                (transform.localScale.y + puffIncrease), (puffIncrease));
+                                (transform.localScale.y + puffIncrease), (transform.localScale.z + puffIncrease));
     }
 
     // Start is called before the first frame update
