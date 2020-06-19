@@ -726,9 +726,43 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2145897794021440000, guid: 10f016df750abcf4aa6756fd28113fb4,
         type: 3}
-      propertyPath: spawnChancePercent
-      value: 70
+      propertyPath: ObjectsToSpawn.Array.size
+      value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 2145897794021440000, guid: 10f016df750abcf4aa6756fd28113fb4,
+        type: 3}
+      propertyPath: spawnChancePercent
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2145897794021440000, guid: 10f016df750abcf4aa6756fd28113fb4,
+        type: 3}
+      propertyPath: ObjectsToSpawn.Array.data[5]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2145897794021440000, guid: 10f016df750abcf4aa6756fd28113fb4,
+        type: 3}
+      propertyPath: ObjectsToSpawn.Array.data[0]
+      value: 
+      objectReference: {fileID: 8237777789510629039, guid: 08dd117e92deb7643b4276d019d97d59,
+        type: 3}
+    - target: {fileID: 2145897794021440000, guid: 10f016df750abcf4aa6756fd28113fb4,
+        type: 3}
+      propertyPath: ObjectsToSpawn.Array.data[1]
+      value: 
+      objectReference: {fileID: 8237777789510629039, guid: aba88c8794745b344a4e72dc3ba3a40d,
+        type: 3}
+    - target: {fileID: 2145897794021440000, guid: 10f016df750abcf4aa6756fd28113fb4,
+        type: 3}
+      propertyPath: ObjectsToSpawn.Array.data[2]
+      value: 
+      objectReference: {fileID: 8237777789510629039, guid: ecd04b59790e01447b04ee79904d5f94,
+        type: 3}
+    - target: {fileID: 2145897794021440000, guid: 10f016df750abcf4aa6756fd28113fb4,
+        type: 3}
+      propertyPath: ObjectsToSpawn.Array.data[3]
+      value: 
+      objectReference: {fileID: 8237777789510629039, guid: d26beaf4f97c2c7428e1c6bb89a70f17,
+        type: 3}
     - target: {fileID: 2145897794021440001, guid: 10f016df750abcf4aa6756fd28113fb4,
         type: 3}
       propertyPath: m_Name
