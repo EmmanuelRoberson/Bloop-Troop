@@ -48,7 +48,7 @@ public class LifeBehaviour : MonoBehaviour
             if (other.CompareTag("Enemy") || other.CompareTag("Parryable"))
             {
                 TakeDamage();
-                collider.enabled = false;
+                GetComponent<Collider>().enabled = false;
                 GameEvents.current.LoseFishEvent(GetComponent<SchoolFishBehaviour>());
             }
 
