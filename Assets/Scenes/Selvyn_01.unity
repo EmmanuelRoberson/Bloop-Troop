@@ -211,6 +211,31 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &178841382 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5273260778586964854, guid: 00de15bc4dc24834583b2aa1c02e126f,
+    type: 3}
+  m_PrefabInstance: {fileID: 185419440}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &178841384
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178841382}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: de36691f51ad15947b7a0e14a4b41357, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &185419440
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -835,6 +860,31 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &1006004994 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4893842790766063948, guid: 00de15bc4dc24834583b2aa1c02e126f,
+    type: 3}
+  m_PrefabInstance: {fileID: 185419440}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1006004995
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1006004994}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: de36691f51ad15947b7a0e14a4b41357, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1090287775 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8201386903793821629, guid: d16d783be6035fa4188a8d0be90456a6,
@@ -855,6 +905,31 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4036304772057903566, guid: 70f107f73cacd6842a9b40e827f3d556, type: 3}
+--- !u!1 &1126373280 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7364849006829392984, guid: 00de15bc4dc24834583b2aa1c02e126f,
+    type: 3}
+  m_PrefabInstance: {fileID: 185419440}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1126373282
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126373280}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: de36691f51ad15947b7a0e14a4b41357, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1130426432 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1346659788530223598, guid: d16d783be6035fa4188a8d0be90456a6,
@@ -875,6 +950,31 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 889559327855366776, guid: 70f107f73cacd6842a9b40e827f3d556, type: 3}
+--- !u!1 &1181300667 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 384025568833321483, guid: 00de15bc4dc24834583b2aa1c02e126f,
+    type: 3}
+  m_PrefabInstance: {fileID: 185419440}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1181300669
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1181300667}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: de36691f51ad15947b7a0e14a4b41357, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1204985257 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4443674503381049024, guid: d16d783be6035fa4188a8d0be90456a6,
@@ -1205,7 +1305,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1600993095}
   m_LocalRotation: {x: -0, y: 0.18316653, z: -0, w: 0.98308194}
-  m_LocalPosition: {x: -13.047, y: 20.11, z: 24.282}
+  m_LocalPosition: {x: -13.257, y: 20.11, z: 24.503}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
