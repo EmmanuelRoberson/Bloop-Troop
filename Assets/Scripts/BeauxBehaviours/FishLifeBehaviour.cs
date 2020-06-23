@@ -34,6 +34,10 @@ public class FishLifeBehaviour : MonoBehaviour
     private ParryBehaviour parryBehaviour;
     //parry behaviour
 
+    [SerializeField]
+    private LoseConditionBehaviour loseScript;
+    //ONLY FILL IN IF IT IS THE PLAYER FISH
+
     // Start is called before the first frame update
     void Start()
     {
@@ -85,14 +89,9 @@ public class FishLifeBehaviour : MonoBehaviour
                 isDetached = true;
             }
 
-            if (isPlayer == true)
+            if (isPlayer == true && loseScript != null)
             {
-                countdown -= (Time.fixedDeltaTime);
-
-                if (countdown <= 0.0f)
-                {
-                    SceneManager.LoadScene("GameOver");
-                }
+                loseScript.enabled = true;
             }
         }
     }
