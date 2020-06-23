@@ -8,6 +8,9 @@ public class WinConditionBehaviour : MonoBehaviour
     [SerializeField]
     GameObject fish;
 
+    [SerializeField]
+    float spdOfCurtains;
+
     public float endOfLvl = 0;
 
     // Start is called before the first frame update
