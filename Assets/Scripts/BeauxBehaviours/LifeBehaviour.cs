@@ -47,6 +47,7 @@ public class LifeBehaviour : MonoBehaviour
             //Emmanuel code change 6/19/2020
             if (other.CompareTag("Enemy") || other.CompareTag("Parryable"))
             {
+                TakeDamage();
                 GetComponent<Collider>().enabled = false;
                 GameEvents.current.LoseFishEvent(GetComponent<SchoolFishBehaviour>());
             }
@@ -57,6 +58,11 @@ public class LifeBehaviour : MonoBehaviour
                 GameEvents.current.CollectFishEvent(collectableFish.fishSprite);
 
                 Destroy(collectableFish.gameObject);
+            }
+
+            if (healthVal <= 0)
+            {
+                GetComponent<FishLifeBehaviour>().isDead = true;
             }
         }
 
