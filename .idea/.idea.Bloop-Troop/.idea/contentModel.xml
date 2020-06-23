@@ -16,10 +16,8 @@
         <e p="Particles" t="Include">
           <e p="ReadMe.txt" t="Include" />
         </e>
-        <e p="Prefabs" t="Include">
-          <e p="Resources" t="Include">
-            <e p="ReadMe.txt" t="Include" />
-          </e>
+        <e p="Resources" t="Include">
+          <e p="ReadMe.txt" t="Include" />
         </e>
         <e p="Scripts" t="Include">
           <e p="BeauxBehaviours" t="Include">
@@ -28,6 +26,7 @@
               <e p="ClamBehaviour.cs" t="Include" />
               <e p="PearlBehaviour.cs" t="Include" />
               <e p="PufferBehaviour.cs" t="Include" />
+              <e p="StalagtiteBehaviour.cs" t="Include" />
               <e p="UrchinBehaviour.cs" t="Include" />
             </e>
             <e p="FishLifeBehaviour.cs" t="Include" />
@@ -37,27 +36,50 @@
             </e>
             <e p="MusicAdjusterBehaviour.cs" t="Include" />
             <e p="ParryBehaviour.cs" t="Include" />
+            <e p="sharkBehaviours" t="Include">
+              <e p="FollowBehaviour.cs" t="Include" />
+              <e p="ToothBehaviour.cs" t="Include" />
+            </e>
             <e p="TestMovBehaviour.cs" t="Include" />
             <e p="WinConditionBehaviour.cs" t="Include" />
           </e>
           <e p="Emmanuel" t="Include">
-            <e p="CameraCheckpointBehaviour.cs" t="Include" />
-            <e p="CameraZoomBehaviour.cs" t="Include" />
+            <e p="Camera Behaviour" t="Include">
+              <e p="CameraCheckpointBehaviour.cs" t="Include" />
+              <e p="CameraControllerBehviour.cs" t="Include" />
+              <e p="CameraZoomBehaviour.cs" t="Include" />
+            </e>
+            <e p="Custom Math" t="Include">
+              <e p="CustomMath.cs" t="Include" />
+            </e>
+            <e p="Data Structures" t="Include">
+              <e p="Tree" t="Include">
+                <e p="TreeNode.cs" t="Include" />
+              </e>
+            </e>
             <e p="Fish Behaviours" t="Include">
+              <e p="CollectableFishBehaviour.cs" t="Include" />
+              <e p="PlayerPositionBehaviour.cs" t="Include" />
+              <e p="SchoolFishBehaviour.cs" t="Include" />
+              <e p="SchoolManagerBehaviour.cs" t="Include" />
+              <e p="SchoolPositionBehaviour.cs" t="Include" />
+              <e p="SharkScootBehaviour.cs" t="Include" />
+              <e p="SpringAdjustBehaviour.cs" t="Include" />
               <e p="TestFishBehaviour.cs" t="Include" />
             </e>
             <e p="GameEvents" t="Include">
               <e p="GameEvents.cs" t="Include" />
             </e>
-            <e p="PlayerFishBehaviour.cs" t="Include" />
+            <e p="Player Fish Behaviour" t="Include">
+              <e p="PlayerFishBehaviour.cs" t="Include" />
+              <e p="TestMovementBehaviour.cs" t="Include" />
+            </e>
             <e p="Test" t="Include">
               <e p="ChangeDirectionBehaviour.cs" t="Include" />
               <e p="TestFishCollectionBehaviour.cs" t="Include" />
               <e p="TestSpawnBehavoiur.cs" t="Include" />
               <e p="TestSpringBehaviour.cs" t="Include" />
             </e>
-            <e p="TestMovementBehaviour.cs" t="Include" />
-            <e p="TestPlayerBehaviour.cs" t="Include" />
           </e>
         </e>
         <e p="Shaders" t="Include">

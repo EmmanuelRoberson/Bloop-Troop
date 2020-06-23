@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
 using Emmanuel;
-using TMPro;
-using UnityEditorInternal;
 using UnityEngine;
 
 public class SchoolFishBehaviour : MonoBehaviour
