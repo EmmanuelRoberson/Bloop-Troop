@@ -18,7 +18,7 @@ public class FishLifeBehaviour : MonoBehaviour
     bool isDetached=false;
     // checks to see if it must be detached or not
     ///
-    private bool isPlayer;
+    public bool isPlayer;
     
     public bool isParrying = false;
 
@@ -73,8 +73,10 @@ public class FishLifeBehaviour : MonoBehaviour
 
         if (isDead == true)
         {
+            Debug.Log("Is Dead :: FishLifeBehaviour");
             if (playerMovement != null)
             {
+                Debug.Log("PlayerBehaviour is not null, and is disabled");
                 playerBehaviour.enabled = false;
             }
 
@@ -89,9 +91,16 @@ public class FishLifeBehaviour : MonoBehaviour
                 isDetached = true;
             }
 
-            if (isPlayer == true && loseScript != null)
+            if (isPlayer == true)
             {
-                loseScript.enabled = true;
+                if (loseScript != null)
+                {
+                    Debug.Log("Lose script is not null");
+                    loseScript.enabled = true;
+                }
+
+                Debug.Log("Is the Player");
+
             }
         }
     }

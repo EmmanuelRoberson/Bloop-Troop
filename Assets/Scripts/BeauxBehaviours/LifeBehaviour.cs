@@ -59,7 +59,8 @@ public class LifeBehaviour : MonoBehaviour
 
                 Destroy(collectableFish.gameObject);
             }
-
+            //
+            
             if (healthVal <= 0)
             {
                 GetComponent<FishLifeBehaviour>().isDead = true;
