@@ -20,6 +20,7 @@ public class CurtainBehaviour : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        Debug.Log("Trigger entered");
         if (other.GetComponent<CurtainBehaviour>() != null)
         {
             Debug.Log("curtain behaviour that i collided with is not null");
