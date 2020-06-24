@@ -57,7 +57,7 @@ public class FishLifeBehaviour : MonoBehaviour
             hasMovement = true;
         }
 
-        isPlayer = playerBehaviour != null;
+        isPlayer = (playerBehaviour != null);
     }
     
 
@@ -76,7 +76,7 @@ public class FishLifeBehaviour : MonoBehaviour
             Debug.Log("Is Dead :: FishLifeBehaviour");
             if (playerMovement != null)
             {
-                Debug.Log("PlayerBehaviour is not null, and is disabled");
+                Debug.Log("Player Movement is not null, and is disabled");
                 playerBehaviour.enabled = false;
             }
 
@@ -86,9 +86,7 @@ public class FishLifeBehaviour : MonoBehaviour
 
             if (isPlayer && isDetached == false)
             {
-                TestFishBehaviour tfbehav = GetComponentInParent<TestFishBehaviour>();
-                tfbehav.DetachFishFromSchool(tfbehav);
-                isDetached = true;
+
             }
 
             if (isPlayer == true)

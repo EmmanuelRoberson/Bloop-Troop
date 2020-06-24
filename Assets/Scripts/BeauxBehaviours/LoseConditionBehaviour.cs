@@ -1,7 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using BeauxBehaviours;
+using Emmanuel;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 
 public class LoseConditionBehaviour : MonoBehaviour
 {
@@ -16,21 +19,26 @@ public class LoseConditionBehaviour : MonoBehaviour
     GameObject blockRight;
     
     // curtain closing process has activated
-    bool curtainClose = false;
-
-    // the blocks are now moving
-    bool blocksEnabled = false;
+    public bool curtainClose = false;
 
     // the curtains have closed
     public bool hasCollided = false;
 
+    [FormerlySerializedAs("cameraCheckpointBehaviour")] public CamMovementBehaviour camMovement;
+
     void activateCurtains()
     {
-        blockLeft.GetComponent<Renderer>().enabled = true;
-        blockRight.GetComponent<Renderer>().enabled = true;
+        blockLeft.GetComponent<MeshRenderer>().enabled = true;
+        blockRight.GetComponent<MeshRenderer>().enabled = true;
 
+        blockLeft.GetComponent<CurtainBehaviour>().CloseCurtains();
+        blockRight.GetComponent<CurtainBehaviour>().CloseCurtains();
+
+        camMovement.enabled = false;
+        
         curtainClose = true;
     }
+
 
     // Start is called before the first frame update
     void Start()
@@ -42,19 +50,16 @@ public class LoseConditionBehaviour : MonoBehaviour
     void Update()
     {
         countdown -= (Time.fixedDeltaTime);
+        
+        if (countdown > 0)
+            Debug.Log(countdown);
 
         if (countdown <= 0.0f && curtainClose == false)
         {
             activateCurtains();
+            curtainClose = true;
 
             //SceneManager.LoadScene("GameOver");
-        }
-
-        if (curtainClose == true && blocksEnabled == false)
-        {
-            blockLeft.GetComponent<CurtainBehaviour>().enabled = true;
-            blockRight.GetComponent<CurtainBehaviour>().enabled = true;
-            blocksEnabled = true;
         }
 
         if (hasCollided == true)

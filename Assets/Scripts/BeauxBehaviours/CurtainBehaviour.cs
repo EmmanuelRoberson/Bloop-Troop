@@ -16,12 +16,16 @@ public class CurtainBehaviour : MonoBehaviour
     [SerializeField]
     LoseConditionBehaviour lose;
 
-    bool hasStopped = false;
+    public bool hasStopped = false;
 
     private void OnTriggerEnter(Collider other)
     {
-        lose.hasCollided = true;
-        hasStopped = true;
+        if (other.GetComponent<CurtainBehaviour>() != null)
+        {
+            Debug.Log("curtain behaviour that i collided with is not null");
+            lose.hasCollided = true;
+            hasStopped = true;
+        }
     }
 
     // Start is called before the first frame update
@@ -33,27 +37,35 @@ public class CurtainBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        StartCoroutine("SampleCoroutine");
+        
     }
 
-    private IEnumerator SampleCoroutine()
+    public void CloseCurtains()
+    {
+        StartCoroutine(CurtainCloseCoroutine());
+    }
+    
+    
+    private IEnumerator CurtainCloseCoroutine()
     {
         while (hasStopped == false)
         {
             //code goes here
-
             if (isLeft)
             {
-                transform.position = new Vector3(transform.position.x + (curtainSpd * Time.fixedDeltaTime), transform.position.y, transform.position.z);
+                transform.position += new Vector3(curtainSpd * Time.fixedDeltaTime, 0, 0);
+                
+                //transform.position = new Vector3(transform.position.x + (curtainSpd * Time.fixedDeltaTime), transform.localPosition.y, transform.localPosition.z);
             }
             else
             {
-                transform.position = new Vector3(transform.position.x + (curtainSpd * Time.fixedDeltaTime * -1), transform.position.y, transform.position.z);
+                transform.position += new Vector3(-curtainSpd * Time.fixedDeltaTime, 0, 0);
+                
+                //transform.position = new Vector3(transform.position.x + (curtainSpd * Time.fixedDeltaTime * -1), transform.localPosition.y, transform.localPosition.z);
             }
 
             yield return 0;
         }
-   
     }
 
 }
