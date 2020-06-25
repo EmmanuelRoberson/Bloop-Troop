@@ -8,8 +8,15 @@ public class PlayerFishBehaviour : MonoBehaviour
 {
     public readonly bool isCollected = true;
 
+
+    private void Update()
+    {
+        
+    }
+
     private void OnTriggerEnter(Collider other)
     {
+        /*
         CollectableFishBehaviour otherFish = other.GetComponent<CollectableFishBehaviour>();
 
         if (otherFish != null)
@@ -17,5 +24,6 @@ public class PlayerFishBehaviour : MonoBehaviour
             GameEvents.current.CollectFishEvent(otherFish.fishSprite);
             Destroy(otherFish.gameObject);
         }
+        */
     }
 }

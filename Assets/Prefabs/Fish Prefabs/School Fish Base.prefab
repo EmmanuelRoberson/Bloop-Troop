@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 520025785241698221}
   - component: {fileID: 7433770511602864465}
   - component: {fileID: 9049777882546838255}
+  - component: {fileID: -1576310588228606390}
   m_Layer: 0
   m_Name: School Fish Base
   m_TagString: Untagged
@@ -102,6 +103,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isCollected: 0
   totalActivateEffectTime: 1
+--- !u!114 &-1576310588228606390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8237777789510629039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5b83eecf53d58147b9316022ff8450d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  iFrames: 0
+  iFrameVal: 0
+  isFish: 1
+  isEnemy: 0
+  isParryable: 0
+  healthVal: 0
+  hasEscaped: 0
 --- !u!1 &8237777791412704482
 GameObject:
   m_ObjectHideFlags: 0
@@ -170,7 +190,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1325141965
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f8296f1acd6101f44918e316b3c0f967, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

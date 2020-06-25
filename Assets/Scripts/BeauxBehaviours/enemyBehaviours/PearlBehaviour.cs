@@ -21,7 +21,7 @@ public class PearlBehaviour : MonoBehaviour
 
     void targetChange()
     {
-        Vector3 holder = new Vector3(owner.x - transform.position.x, owner.y - transform.position.y, owner.z);
+        Vector3 holder = new Vector3(owner.x - transform.position.x, owner.y - transform.position.y, owner.z- transform.position.z);
         holder.Normalize();
         target = holder;
     }

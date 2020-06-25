@@ -40,6 +40,7 @@ public class SchoolManagerBehaviour : MonoBehaviour
             PushFishToActivate(fish);
         }
 
+        GameEvents.current.onDeactivateFish += DeactivateFish;
         GameEvents.current.onDeactivateFish += PushFishToActivate;
     }
 
@@ -52,6 +53,7 @@ public class SchoolManagerBehaviour : MonoBehaviour
     //When a fish dies, it will push its position to the top of the stack
     public void PushFishToActivate(SchoolFishBehaviour schoolFish)
     {
+        Debug.Log(schoolFish.name);
         fishStack.Push(schoolFish);
     }
 
@@ -59,6 +61,11 @@ public class SchoolManagerBehaviour : MonoBehaviour
     public void ActivateFish(Sprite fishSprite)
     {
         fishStack.Pop().Activate(fishSprite);
+    }
+
+    public void DeactivateFish(SchoolFishBehaviour schoolFishBehaviour)
+    {
+        schoolFishBehaviour.DeactivateFishRoutine();
     }
     
 }

@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
 using Emmanuel;
-using UnityEditorInternal;
 using UnityEngine;
 
 public class SchoolFishBehaviour : MonoBehaviour
@@ -38,8 +36,10 @@ public class SchoolFishBehaviour : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Enemy"))
+        /*
+        if (other.CompareTag("Enemy") || other.CompareTag("Parryable"))
         {
+            collider.enabled = false;
             GameEvents.current.LoseFishEvent(this);
             return;
         }
@@ -51,6 +51,7 @@ public class SchoolFishBehaviour : MonoBehaviour
             
             Destroy(collectableFish.gameObject);
         }
+        */
     }
     
     public void Activate(Sprite newSprite)
@@ -71,6 +72,11 @@ public class SchoolFishBehaviour : MonoBehaviour
         transform.localScale = new Vector3(0f,0f,transform.localScale.z);
     }
 
+    public void DeactivateFishRoutine()
+    {
+        StartCoroutine(DeactivateEffectCoroutine(Time.fixedDeltaTime));
+    }
+    
     public void SetFishSprite(Sprite newSprite)
     {
         spriteRenderer.sprite = newSprite;
@@ -111,14 +117,14 @@ public class SchoolFishBehaviour : MonoBehaviour
     private IEnumerator DeactivateEffectCoroutine(float deltaTime)
     {
         Time.timeScale = 0.1f;
-        yield return new WaitForSeconds(0.1f);
+        yield return new WaitForSeconds(0.01f);
         Time.timeScale = 1;
         
         elapsedActivateEffectTime = 0;
 
         transform.rotation = new Quaternion(transform.rotation.x, transform.rotation.y, 90, transform.rotation.w);
         
-        while (elapsedActivateEffectTime <= totalActivateEffectTime && Math.Abs(transform.localScale.x - desiredXScale) > 0.01)
+        while (elapsedActivateEffectTime <= totalActivateEffectTime && Math.Abs(transform.localScale.x) > 0.01)
         {
             float portionComplete = elapsedActivateEffectTime / totalActivateEffectTime;
 
@@ -131,6 +137,12 @@ public class SchoolFishBehaviour : MonoBehaviour
 
             yield return 0;
         }
+        
+        Deactivate();
+        transform.rotation = new Quaternion(transform.rotation.x, transform.rotation.y, 0, transform.rotation.w);
+
+        yield return 0;
+
     }
     
 }
