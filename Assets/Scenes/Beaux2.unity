@@ -660,12 +660,12 @@ PrefabInstance:
     - target: {fileID: 8480618732289344351, guid: 00de15bc4dc24834583b2aa1c02e126f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -60.3
+      value: -78.4
       objectReference: {fileID: 0}
     - target: {fileID: 8480618732289344351, guid: 00de15bc4dc24834583b2aa1c02e126f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -29
+      value: -45.7
       objectReference: {fileID: 0}
     - target: {fileID: 8480618732289344351, guid: 00de15bc4dc24834583b2aa1c02e126f,
         type: 3}
@@ -715,12 +715,12 @@ PrefabInstance:
     - target: {fileID: 8480618732289344351, guid: 00de15bc4dc24834583b2aa1c02e126f,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8480618732289344351, guid: 00de15bc4dc24834583b2aa1c02e126f,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 8480618732289344351, guid: 00de15bc4dc24834583b2aa1c02e126f,
         type: 3}
@@ -919,7 +919,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1719080028}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 75537d0d7503e334aa8f9a0f43904a2c, type: 3}
   m_Name: 
@@ -1000,7 +1000,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1719080028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -142.5, y: 5.4, z: 0}
+  m_LocalPosition: {x: -212.9, y: 5.4, z: 0}
   m_LocalScale: {x: 35, y: 35, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1204,6 +1204,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1862683949}
   - component: {fileID: 1862683950}
+  - component: {fileID: 1862683951}
   m_Layer: 0
   m_Name: ToothSpawnPoint
   m_TagString: Untagged
@@ -1219,7 +1220,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1862683948}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.62, y: 2.69, z: 0}
+  m_LocalPosition: {x: -2, y: 2.77, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1827580926}
@@ -1241,13 +1242,26 @@ MonoBehaviour:
   tooth: {fileID: 6624545091943571248, guid: 8049b0f1ec0e7a246a0657863f44284b, type: 3}
   numberOfTeeth: 5
   numberOfSets: 3
-  timeBetweenShots: 3
-  timeBetweenSets: 4
+  timeBetweenShots: 1
+  timeBetweenSets: 2
   spdOfTeeth: 15
   anim: {fileID: 1827580925}
   lastShotFired: 0
   currentTeeth: 0
   currentSets: 0
+--- !u!65 &1862683951
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1862683948}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1897009166 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8237777789510629039, guid: c99a4ab77ec4771449e95a8827e30b41,
@@ -1577,10 +1591,15 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 451115034}
+    - target: {fileID: 2074863723875400036, guid: cd16e54ecf4b2eb40bfd40e3ba7f1850,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6463177144300066715, guid: cd16e54ecf4b2eb40bfd40e3ba7f1850,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -167.7
+      value: -205.1
       objectReference: {fileID: 0}
     - target: {fileID: 6463177144300066715, guid: cd16e54ecf4b2eb40bfd40e3ba7f1850,
         type: 3}

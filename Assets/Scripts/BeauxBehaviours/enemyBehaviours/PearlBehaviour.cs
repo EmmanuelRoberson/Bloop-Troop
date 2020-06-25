@@ -14,21 +14,25 @@ public class PearlBehaviour : MonoBehaviour
 
     [SerializeField]
     float lifeTime;
-    
+
+    //avoids accidental trigger breaks
+    public Collider creator;
 
     public float spd;
     
 
     void targetChange()
     {
-        Vector3 holder = new Vector3(owner.x - transform.position.x, owner.y - transform.position.y, owner.z- transform.position.z);
+        Vector3 holder = new Vector3(owner.x - transform.position.x, owner.y - transform.position.y, owner.z - transform.position.z);
         holder.Normalize();
         target = holder;
     }
 
     void OnTriggerExit (Collider other)
     {
-        GetComponent<LifeBehaviour>().hasEscaped = true;
+        //creator check 6/25/2020
+        if (other == creator)
+            GetComponent<LifeBehaviour>().hasEscaped = true;
     }
 
     // Start is called before the first frame update
