@@ -19,6 +19,13 @@ public class SceneTransitionBehaviour : MonoBehaviour
 
     public void LoadScene(string scene)
     {
+        SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene());
         SceneManager.LoadScene(scene);
+    }
+
+
+    public void ExitGame()
+    {
+        Application.Quit();
     }
 }

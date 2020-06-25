@@ -50,16 +50,12 @@ public class LoseConditionBehaviour : MonoBehaviour
     void Update()
     {
         countdown -= (Time.fixedDeltaTime);
-        
-        if (countdown > 0)
-            Debug.Log(countdown);
 
         if (countdown <= 0.0f && curtainClose == false)
         {
             activateCurtains();
             curtainClose = true;
 
-            //SceneManager.LoadScene("GameOver");
         }
 
         if (hasCollided == true)
@@ -71,7 +67,7 @@ public class LoseConditionBehaviour : MonoBehaviour
 
     IEnumerator CountdownToNextSceneCoroutine()
     {
-        yield return new WaitForSeconds(5);
+        yield return new WaitForSeconds(3);
 
         SceneManager.LoadScene("GameOver");
 
