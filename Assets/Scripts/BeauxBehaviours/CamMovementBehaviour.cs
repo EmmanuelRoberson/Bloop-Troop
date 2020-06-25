@@ -1,38 +1,67 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
-public class CamMovementBehaviour : MonoBehaviour
+namespace BeauxBehaviours
 {
-    [SerializeField]
-    MusicAdjusterBehaviour mab;
-
-    bool stop, slow, normal = false;
-
-    //[SerializeField]
-    //GameObject fish;
-
-    // Start is called before the first frame update
-    void Start()
+    public class CamMovementBehaviour : MonoBehaviour
     {
+        public List<Transform> travelCheckpointList;
+    
+        private Queue<Transform> travelCheckpointQueue;
+    
+        //starting and ending position for the transitions
+        private Vector3 startPosition, endPosition;
+
+        //speed
+        public float speed;
+        public float speedMultiplier;
+
+        //time at the beginning of a transition
+        private float startTime;
+
+        //total distance between checkpoints
+        private float journeyLength;
+
+        // Start is called before the first frame update
+        void Start()
+        {
+            startTime = Time.time;
+            travelCheckpointQueue = new Queue<Transform>(travelCheckpointList);
+
+            startPosition = transform.position;
+            endPosition = travelCheckpointQueue.Dequeue().position;
+
+            journeyLength = Vector3.Distance(startPosition, endPosition);
+        }
+
+        // Update is called once per frame
+        void Update()
+        {
+            //Distance covered is the elapsed time * speed
+            float distanceCovered = (Time.time - startTime) * (speedMultiplier *speed);
+
+            //Portion of journey complete is the distance covered / total distance
+            float portionOfJourney = distanceCovered / journeyLength;
         
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (normal == true)
+            //set the position to the part of the distance covered
+            transform.position = Vector3.Lerp(startPosition, endPosition, portionOfJourney);
+        }
+    
+        public void UpdateDestination()
         {
-            transform.position=new Vector3(transform.position.x+(Time.fixedDeltaTime / 10),
-                transform.position.y, transform.position.z);
+            startTime = Time.time;
+        
+            startPosition = transform.position;
+            endPosition = travelCheckpointQueue.Dequeue().position;
+        
+            journeyLength = Vector3.Distance(startPosition, endPosition);
+        
+        
         }
 
-        if (slow == true)
+        public void SetSpeed(float newSpeed)
         {
-            transform.position=new Vector3(transform.position.x+(Time.fixedDeltaTime / 15),
-                transform.position.y, transform.position.z);
+            speed = newSpeed;
         }
-
-        mab.ObjectOfRef.floatObj = transform.position.x;
     }
 }
