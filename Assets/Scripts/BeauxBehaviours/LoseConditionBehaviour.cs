@@ -64,7 +64,16 @@ public class LoseConditionBehaviour : MonoBehaviour
 
         if (hasCollided == true)
         {
-            SceneManager.LoadScene("GameOver");
+            StartCoroutine(CountdownToNextSceneCoroutine());
+            hasCollided = false;
         }
+    }
+
+    IEnumerator CountdownToNextSceneCoroutine()
+    {
+        yield return new WaitForSeconds(5);
+
+        SceneManager.LoadScene("GameOver");
+
     }
 }
