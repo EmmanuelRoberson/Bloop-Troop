@@ -16,6 +16,7 @@ public class PlayerFishBehaviour : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        /*
         CollectableFishBehaviour otherFish = other.GetComponent<CollectableFishBehaviour>();
 
         if (otherFish != null)
@@ -23,5 +24,6 @@ public class PlayerFishBehaviour : MonoBehaviour
             GameEvents.current.CollectFishEvent(otherFish.fishSprite);
             Destroy(otherFish.gameObject);
         }
+        */
     }
 }
