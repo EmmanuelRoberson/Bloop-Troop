@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Prefabs/Coral/Green/Coral2.prefab.meta
+guid: d113ade369e97954cbf290c7b73916a0
+PrefabImporter:
+=======
 guid: da0f2fe45c7119646b7fba41ee345ea5
 DefaultImporter:
+>>>>>>> emmanuel:Assets/Scenes/Menu_Scene.unity.meta
   externalObjects: {}
   userData: 
   assetBundleName: 

@@ -44,6 +44,8 @@ public class ToothBehaviour : MonoBehaviour
         toothShot.GetComponent<PearlBehaviour>().owner = this.transform.position;
 
         toothShot.GetComponent<PearlBehaviour>().spd = spdOfTeeth;
+
+        toothShot.GetComponent<PearlBehaviour>().creator = GetComponent<Collider>();
     }
 
     // Start is called before the first frame update
