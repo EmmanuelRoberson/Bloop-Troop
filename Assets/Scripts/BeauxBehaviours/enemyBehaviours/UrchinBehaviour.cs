@@ -15,10 +15,14 @@ public class UrchinBehaviour : MonoBehaviour
 
     bool isFalling = false;
 
+    [SerializeField]
+    float fallSpd;
+    //default is 0.8
+
     void fall()
     {
         transform.position = new Vector3(transform.position.x,
-                transform.position.y - (Time.fixedDeltaTime / 8), transform.position.z);
+                transform.position.y - (Time.fixedDeltaTime * fallSpd), transform.position.z);
     }
 
     // Start is called before the first frame update

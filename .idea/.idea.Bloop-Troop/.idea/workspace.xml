@@ -12,18 +12,38 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/437BA245-D840-4784-B9FB-AB9B439AC908/ba/5d33ce4f/IList`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Emmanuel/TestFishBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://C:/Program Files/Unity/Hub/Editor/2019.3.6f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/437BA245-D840-4784-B9FB-AB9B439AC908/b7/65c0f07e/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BeauxBehaviours/LifeBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Emmanuel/Fish Behaviours/SharkScootBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2DB13BA0-D523-4322-8AA9-892C408FB49A/26/7e5ef5f3/SendMouseEvents.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BeauxBehaviours/MusicAdjusterBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BeauxBehaviours/CamMovementBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E93AB2F8-5FF8-4881-B6AB-5BA98D373CFC/2f/c73759e2/NativeInputSystem.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Emmanuel/Fish Behaviours/SchoolFishBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Emmanuel/Camera Behaviour/CameraControllerBehviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/437BA245-D840-4784-B9FB-AB9B439AC908/ba/5d33ce4f/IList`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/437BA245-D840-4784-B9FB-AB9B439AC908/b7/65c0f07e/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BeauxBehaviours/sharkBehaviours/ToothBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BeauxBehaviours/enemyBehaviours/PearlBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Emmanuel/Test/TestSpawnBehavoiur.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/School Management/GroupNodeSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/ChainNode.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/ChainCoupler.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/ChainSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/TestPlayerBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/TestCollectBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/Objects/FishPositionList.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/PositionAssignmentBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/TestMovementBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/Test/TestSpawnBehavoiur.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/GlobalFishController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/TestFishBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/PlayerFishBehaviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/Camera Behaviour/CameraControllerBehviour.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Emmanuel/Fish Behaviours/SchoolFishBehaviour.cs" />
       </list>
     </option>
   </component>
@@ -34,7 +54,10 @@
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RunDashboard">
@@ -57,10 +80,10 @@
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="16992">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="16992" />
       <option name="userSelectedPid" value="false" />
       <method v="2" />
     </configuration>
@@ -74,10 +97,26 @@
       <created>1588717768761</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1588717768761</updated>
-      <workItem from="1588717771269" duration="30000" />
-      <workItem from="1588717815383" duration="19000" />
-      <workItem from="1588883310673" duration="5000" />
+      <updated>1585065510304</updated>
+      <workItem from="1585065524149" duration="665000" />
+      <workItem from="1585066640620" duration="9364000" />
+      <workItem from="1585234853623" duration="13377000" />
+      <workItem from="1585331458382" duration="9718000" />
+      <workItem from="1585667011168" duration="9347000" />
+      <workItem from="1585792702999" duration="7578000" />
+      <workItem from="1586271245065" duration="8491000" />
+      <workItem from="1586444369473" duration="9803000" />
+      <workItem from="1587046520297" duration="343000" />
+      <workItem from="1587048947216" duration="8000" />
+      <workItem from="1587049106600" duration="657000" />
+      <workItem from="1587065919914" duration="11180000" />
+      <workItem from="1588094948947" duration="8956000" />
+      <workItem from="1588261331256" duration="9414000" />
+      <workItem from="1588281194261" duration="1005000" />
+      <workItem from="1588700949670" duration="1155000" />
+      <workItem from="1591209054092" duration="785000" />
+      <workItem from="1592944026069" duration="182000" />
+      <workItem from="1592944221108" duration="3758000" />
     </task>
     <servers />
   </component>
