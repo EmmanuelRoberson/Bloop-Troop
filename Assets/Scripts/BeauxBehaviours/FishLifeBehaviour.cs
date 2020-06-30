@@ -18,7 +18,7 @@ public class FishLifeBehaviour : MonoBehaviour
     bool isDetached=false;
     // checks to see if it must be detached or not
     ///
-    private bool isPlayer;
+    public bool isPlayer;
     
     public bool isParrying = false;
 
@@ -33,6 +33,10 @@ public class FishLifeBehaviour : MonoBehaviour
 
     private ParryBehaviour parryBehaviour;
     //parry behaviour
+
+    [SerializeField]
+    private LoseConditionBehaviour loseScript;
+    //ONLY FILL IN IF IT IS THE PLAYER FISH
 
     // Start is called before the first frame update
     void Start()
@@ -53,7 +57,7 @@ public class FishLifeBehaviour : MonoBehaviour
             hasMovement = true;
         }
 
-        isPlayer = playerBehaviour != null;
+        isPlayer = (playerBehaviour != null);
     }
     
 
@@ -69,8 +73,10 @@ public class FishLifeBehaviour : MonoBehaviour
 
         if (isDead == true)
         {
+            Debug.Log("Is Dead :: FishLifeBehaviour");
             if (playerMovement != null)
             {
+                Debug.Log("Player Movement is not null, and is disabled");
                 playerBehaviour.enabled = false;
             }
 
@@ -80,19 +86,19 @@ public class FishLifeBehaviour : MonoBehaviour
 
             if (isPlayer && isDetached == false)
             {
-                TestFishBehaviour tfbehav = GetComponentInParent<TestFishBehaviour>();
-                tfbehav.DetachFishFromSchool(tfbehav);
-                isDetached = true;
+
             }
 
             if (isPlayer == true)
             {
-                countdown -= (Time.fixedDeltaTime);
-
-                if (countdown <= 0.0f)
+                if (loseScript != null)
                 {
-                    SceneManager.LoadScene("GameOver");
+                    Debug.Log("Lose script is not null");
+                    loseScript.enabled = true;
                 }
+
+                Debug.Log("Is the Player");
+
             }
         }
     }
