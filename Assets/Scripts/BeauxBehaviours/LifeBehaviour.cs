@@ -99,6 +99,7 @@ public class LifeBehaviour : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        /*
         if (iFrames > 0)
         {
             if (iFrames <= iFrameVal - 2 && isFish && healthVal > 0)
@@ -108,6 +109,7 @@ public class LifeBehaviour : MonoBehaviour
 
             iFrames -= (Time.fixedDeltaTime);
         }
+        */
 
         if (isEnemy || isParryable)
         {
@@ -115,6 +117,17 @@ public class LifeBehaviour : MonoBehaviour
             {
                 Destroy(gameObject);
             }
+        }
+    }
+
+    private IEnumerator IFrameCoroutine()
+    {
+        iFrames = 0;
+        while (iFrames <= iFrameVal)
+        {
+            iFrames += Time.deltaTime;
+            
+            yield return 0;
         }
     }
 }
