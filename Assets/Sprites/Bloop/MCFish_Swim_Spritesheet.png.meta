@@ -1,0 +1,656 @@
+fileFormatVersion: 2
+guid: efe402927f744ed40bc6f15d6f61a745
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8774334281775858375
+    second: MCFish_Swim_Spritesheet_0
+  - first:
+      213: -2443513993179223897
+    second: MCFish_Swim_Spritesheet_1
+  - first:
+      213: -5724723937346395531
+    second: MCFish_Swim_Spritesheet_2
+  - first:
+      213: 7745535187447173862
+    second: MCFish_Swim_Spritesheet_3
+  - first:
+      213: -7145578571754351369
+    second: MCFish_Swim_Spritesheet_4
+  - first:
+      213: 8716123666097802016
+    second: MCFish_Swim_Spritesheet_5
+  - first:
+      213: -8083064579001636401
+    second: MCFish_Swim_Spritesheet_6
+  - first:
+      213: 4721479555191678865
+    second: MCFish_Swim_Spritesheet_7
+  - first:
+      213: 6182201644512407097
+    second: MCFish_Swim_Spritesheet_8
+  - first:
+      213: -7023884527262193188
+    second: MCFish_Swim_Spritesheet_9
+  - first:
+      213: 5343008308874500275
+    second: MCFish_Swim_Spritesheet_10
+  - first:
+      213: 904390936929792365
+    second: MCFish_Swim_Spritesheet_11
+  - first:
+      213: -8725321815752352596
+    second: MCFish_Swim_Spritesheet_12
+  - first:
+      213: -2501321740503544554
+    second: MCFish_Swim_Spritesheet_13
+  - first:
+      213: -8429294387561133330
+    second: MCFish_Swim_Spritesheet_14
+  - first:
+      213: -7173064185160610811
+    second: MCFish_Swim_Spritesheet_15
+  - first:
+      213: -8698547114230905843
+    second: MCFish_Swim_Spritesheet_16
+  - first:
+      213: -1034948164457600554
+    second: MCFish_Swim_Spritesheet_17
+  - first:
+      213: -6174429900409801590
+    second: MCFish_Swim_Spritesheet_18
+  - first:
+      213: 8667117392367689430
+    second: MCFish_Swim_Spritesheet_19
+  - first:
+      213: 809017705660666294
+    second: MCFish_Swim_Spritesheet_20
+  - first:
+      213: 1776447019785400454
+    second: MCFish_Swim_Spritesheet_21
+  - first:
+      213: -1913713696713947008
+    second: MCFish_Swim_Spritesheet_22
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MCFish_Swim_Spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1820.8
+        width: 455.2
+        height: 455.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93db73a857d4b3680800000000000000
+      internalID: -8774334281775858375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Swim_Spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 1820.8
+        width: 455.2
+        height: 455.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a82bd038f4e61ed0800000000000000
+      internalID: -2443513993179223897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Swim_Spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 1820.8
+        width: 455.2
+        height: 455.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 572ea4de8e1bd80b0800000000000000
+      internalID: -5724723937346395531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Swim_Spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 1820.8
+        width: 455.2
+        height: 455.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e2d313273bad7b60800000000000000
+      internalID: 7745535187447173862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Swim_Spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 1820.8
+        width: 455.2
+        height: 455.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f450fbd52ec5dc90800000000000000
+      internalID: -7145578571754351369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Swim_Spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1365.8
+        width: 455.2
+        height: 455.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02b82285b44e5f870800000000000000
+      internalID: 8716123666097802016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Swim_Spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 1365.8
+        width: 455.2
+        height: 455.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc9a010679f23df80800000000000000
+      internalID: -8083064579001636401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Swim_Spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 1365.8
+        width: 455.2
+        height: 455.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1972875d3a0168140800000000000000
+      internalID: 4721479555191678865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Swim_Spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 1365.8
+        width: 455.2
+        height: 455.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93e6ff614a79bc550800000000000000
+      internalID: 6182201644512407097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Swim_Spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 1365.8
+        width: 455.2
+        height: 455.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd9ac219c36268e90800000000000000
+      internalID: -7023884527262193188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Swim_Spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 910.8
+        width: 455.2
+        height: 455.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b8dc6a9fbd262a40800000000000000
+      internalID: 5343008308874500275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Swim_Spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 910.8
+        width: 455.2
+        height: 455.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6178c5f3ca0d8c00800000000000000
+      internalID: 904390936929792365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Swim_Spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 910.8
+        width: 455.2
+        height: 455.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cac5d1d890e69e680800000000000000
+      internalID: -8725321815752352596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Swim_Spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 910.8
+        width: 455.2
+        height: 455.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61d035c2125894dd0800000000000000
+      internalID: -2501321740503544554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Swim_Spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 910.8
+        width: 455.2
+        height: 455.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eea89323a61250b80800000000000000
+      internalID: -8429294387561133330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Swim_Spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 455.8
+        width: 455.2
+        height: 455.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50ccc6cc028247c90800000000000000
+      internalID: -7173064185160610811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Swim_Spritesheet_16
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 455.8
+        width: 455.2
+        height: 455.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d04844a8c7d884780800000000000000
+      internalID: -8698547114230905843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Swim_Spritesheet_17
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 455.8
+        width: 455.2
+        height: 455.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d9ef88b02023a1f0800000000000000
+      internalID: -1034948164457600554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Swim_Spritesheet_18
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 455.8
+        width: 455.2
+        height: 455.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a84f58718b4005aa0800000000000000
+      internalID: -6174429900409801590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Swim_Spritesheet_19
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 455.8
+        width: 455.2
+        height: 455.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6de9fa61959c74870800000000000000
+      internalID: 8667117392367689430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Swim_Spritesheet_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.7999878
+        width: 455.2
+        height: 455.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b1d7e221553a3b00800000000000000
+      internalID: 809017705660666294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Swim_Spritesheet_21
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 0.7999878
+        width: 455.2
+        height: 455.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6803c98072537a810800000000000000
+      internalID: 1776447019785400454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Swim_Spritesheet_22
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 0.7999878
+        width: 455.2
+        height: 455.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 088c099388f1175e0800000000000000
+      internalID: -1913713696713947008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5d1f9bffa1924d14dbc8fef03c77497b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -19,21 +19,6 @@
         <e p="Resources" t="Include">
           <e p="ReadMe.txt" t="Include" />
         </e>
-        <e p="Samples" t="Include">
-          <e p="ProBuilder" t="Include">
-            <e p="4.2.3" t="Include">
-              <e p="Editor Examples" t="Include">
-                <e p="ClearUnusedAttributes.cs" t="Include" />
-                <e p="CreateShadowObject.cs" t="Include" />
-                <e p="CustomAction.cs" t="Include" />
-                <e p="EditorCallbackViewer.cs" t="Include" />
-                <e p="RenameNewObjects.cs" t="Include" />
-                <e p="SetCustomUnwrapParams.cs" t="Include" />
-                <e p="Unity.ProBuilder.Examples.Editor.asmdef" t="Include" />
-              </e>
-            </e>
-          </e>
-        </e>
         <e p="Scripts" t="Include">
           <e p="BeauxBehaviours" t="Include">
             <e p="CamMovementBehaviour.cs" t="Include" />
@@ -41,37 +26,53 @@
               <e p="ClamBehaviour.cs" t="Include" />
               <e p="PearlBehaviour.cs" t="Include" />
               <e p="PufferBehaviour.cs" t="Include" />
+              <e p="StalagtiteBehaviour.cs" t="Include" />
               <e p="UrchinBehaviour.cs" t="Include" />
             </e>
+            <e p="FishLifeBehaviour.cs" t="Include" />
+            <e p="LifeBehaviour.cs" t="Include" />
             <e p="mayusel8r" t="Include">
               <e p="CamTriggerSetBehaviour.cs" t="Include" />
             </e>
             <e p="MusicAdjusterBehaviour.cs" t="Include" />
+            <e p="ParryBehaviour.cs" t="Include" />
+            <e p="sharkBehaviours" t="Include">
+              <e p="FollowBehaviour.cs" t="Include" />
+              <e p="ToothBehaviour.cs" t="Include" />
+            </e>
             <e p="TestMovBehaviour.cs" t="Include" />
+            <e p="WinConditionBehaviour.cs" t="Include" />
           </e>
           <e p="Emmanuel" t="Include">
-            <e p="ChainCoupler.cs" t="Include" />
-            <e p="ChainNode.cs" t="Include" />
-            <e p="ChainSystem.cs" t="Include" />
-            <e p="Event System" t="Include">
-              <e p="GameEvent.cs" t="Include" />
-              <e p="GameEventListener.cs" t="Include" />
-              <e p="GameEventResponse.cs" t="Include" />
-              <e p="IListener.cs" t="Include" />
-              <e p="IReactable.cs" t="Include" />
-              <e p="ISubscribeable.cs" t="Include" />
+            <e p="Camera Behaviour" t="Include">
+              <e p="CameraCheckpointBehaviour.cs" t="Include" />
+              <e p="CameraControllerBehviour.cs" t="Include" />
+              <e p="CameraZoomBehaviour.cs" t="Include" />
             </e>
-            <e p="GlobalFishController.cs" t="Include" />
-            <e p="Objects" t="Include">
-              <e p="FishPositionList.cs" t="Include" />
+            <e p="Custom Math" t="Include">
+              <e p="CustomMath.cs" t="Include" />
             </e>
-            <e p="PositionAssignmentBehaviour.cs" t="Include" />
-            <e p="School Management" t="Include">
-              <e p="Group System Implementations" t="Include">
-                <e p="SchoolAgentSystem.cs" t="Include" />
+            <e p="Data Structures" t="Include">
+              <e p="Tree" t="Include">
+                <e p="TreeNode.cs" t="Include" />
               </e>
-              <e p="GroupNodeSystem.cs" t="Include" />
-              <e p="IGroupable.cs" t="Include" />
+            </e>
+            <e p="Fish Behaviours" t="Include">
+              <e p="CollectableFishBehaviour.cs" t="Include" />
+              <e p="PlayerPositionBehaviour.cs" t="Include" />
+              <e p="SchoolFishBehaviour.cs" t="Include" />
+              <e p="SchoolManagerBehaviour.cs" t="Include" />
+              <e p="SchoolPositionBehaviour.cs" t="Include" />
+              <e p="SharkScootBehaviour.cs" t="Include" />
+              <e p="SpringAdjustBehaviour.cs" t="Include" />
+              <e p="TestFishBehaviour.cs" t="Include" />
+            </e>
+            <e p="GameEvents" t="Include">
+              <e p="GameEvents.cs" t="Include" />
+            </e>
+            <e p="Player Fish Behaviour" t="Include">
+              <e p="PlayerFishBehaviour.cs" t="Include" />
+              <e p="TestMovementBehaviour.cs" t="Include" />
             </e>
             <e p="Test" t="Include">
               <e p="ChangeDirectionBehaviour.cs" t="Include" />
@@ -79,10 +80,6 @@
               <e p="TestSpawnBehavoiur.cs" t="Include" />
               <e p="TestSpringBehaviour.cs" t="Include" />
             </e>
-            <e p="TestCollectBehaviour.cs" t="Include" />
-            <e p="TestFishBehaviour.cs" t="Include" />
-            <e p="TestMovementBehaviour.cs" t="Include" />
-            <e p="TestPlayerBehaviour.cs" t="Include" />
           </e>
         </e>
         <e p="Shaders" t="Include">
@@ -93,7 +90,6 @@
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
       <e p="Temp\bin" t="ExcludeRecursive" />
-      <e p="Unity.ProBuilder.Examples.Editor.csproj" t="IncludeRecursive" />
     </e>
   </component>
 </project>
