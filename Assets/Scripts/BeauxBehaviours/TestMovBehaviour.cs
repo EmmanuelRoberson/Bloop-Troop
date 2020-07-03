@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using BeauxBehaviours;
 using UnityEngine;
 
 public class TestMovBehaviour : MonoBehaviour
@@ -9,6 +10,7 @@ public class TestMovBehaviour : MonoBehaviour
 
     void Update()
     {
+        /*
         if (cmb.transform.position.x==0)
         {
             if (Input.GetKeyDown("space"))
@@ -23,5 +25,6 @@ public class TestMovBehaviour : MonoBehaviour
             cmb.normal = false;
             cmb.slow = true;
         }
+        */
     }
 }
