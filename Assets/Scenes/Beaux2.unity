@@ -160,6 +160,35 @@ MonoBehaviour:
   isParryable: 0
   healthVal: 0
   hasEscaped: 0
+--- !u!1 &145478890 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 648962077494759105, guid: 00de15bc4dc24834583b2aa1c02e126f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1425009114}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &145478892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 145478890}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd60ce4680ee61141b21c6ff0510edef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fish: {fileID: 451115034}
+  tooth: {fileID: 6624545091943571248, guid: 8049b0f1ec0e7a246a0657863f44284b, type: 3}
+  numberOfTeeth: 5
+  numberOfSets: 3
+  timeBetweenShots: 3
+  timeBetweenSets: 4
+  spdOfTeeth: 3
+  anim: {fileID: 1827580925}
+  lastShotFired: 0
+  currentTeeth: 0
+  currentSets: 0
 --- !u!1 &349690385 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 8afa9656faa17024483d44a052ae9714,
