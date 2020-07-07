@@ -142,6 +142,8 @@ GameObject:
   - component: {fileID: 3586756317227264258}
   - component: {fileID: 1432166379515494793}
   - component: {fileID: 2100350234}
+  - component: {fileID: 2793982740784001717}
+  - component: {fileID: 2100350239}
   m_Layer: 0
   m_Name: Bloop
   m_TagString: Untagged
@@ -223,7 +225,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isDead: 0
   countdown: 2
+  isPlayer: 1
   isParrying: 0
+  loseScript: {fileID: 0}
 --- !u!114 &2100350234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -236,6 +240,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54fbfc0b5b7566941b499dfc5b9ebaf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2793982740784001717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3586756317227264262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79c502290b4f16641acf2fe913107f40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCollected: 1
+  totalActivateEffectTime: 2
+--- !u!114 &2100350239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3586756317227264262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5b83eecf53d58147b9316022ff8450d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  iFrames: 0
+  iFrameVal: 0
+  isFish: 1
+  isEnemy: 0
+  isParryable: 0
+  healthVal: 1
+  hasEscaped: 0
 --- !u!1001 &197025813
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1645,15 +1682,15 @@ PrefabInstance:
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 861b4cf50ff31414aa0b95976f64908e, type: 3}
---- !u!4 &8237777790729316197 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8237777789510629033, guid: 861b4cf50ff31414aa0b95976f64908e,
-    type: 3}
-  m_PrefabInstance: {fileID: 1231540684}
-  m_PrefabAsset: {fileID: 0}
 --- !u!54 &520025784014351969 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 520025785241698221, guid: 861b4cf50ff31414aa0b95976f64908e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1231540684}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &8237777790729316197 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8237777789510629033, guid: 861b4cf50ff31414aa0b95976f64908e,
     type: 3}
   m_PrefabInstance: {fileID: 1231540684}
   m_PrefabAsset: {fileID: 0}
@@ -1789,7 +1826,7 @@ PrefabInstance:
     - target: {fileID: 7433770511602864465, guid: 861b4cf50ff31414aa0b95976f64908e,
         type: 3}
       propertyPath: m_ConnectedAnchor.x
-      value: -2.4788911
+      value: -2.4788563
       objectReference: {fileID: 0}
     - target: {fileID: 7433770511602864465, guid: 861b4cf50ff31414aa0b95976f64908e,
         type: 3}
