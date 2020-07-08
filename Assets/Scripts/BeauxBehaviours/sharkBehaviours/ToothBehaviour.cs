@@ -29,6 +29,9 @@ public class ToothBehaviour : MonoBehaviour
     [SerializeField]
     Animator anim;
 
+    [SerializeField]
+    Collider creator;
+
     public float lastShotFired = 0;
     public int currentTeeth = 0;
     public int currentSets = 0;
@@ -45,7 +48,7 @@ public class ToothBehaviour : MonoBehaviour
 
         toothShot.GetComponent<PearlBehaviour>().spd = spdOfTeeth;
 
-        toothShot.GetComponent<PearlBehaviour>().creator = GetComponent<Collider>();
+        toothShot.GetComponent<PearlBehaviour>().creator = creator;
     }
 
     // Start is called before the first frame update
