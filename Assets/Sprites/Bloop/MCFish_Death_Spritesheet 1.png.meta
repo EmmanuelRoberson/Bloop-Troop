@@ -1,0 +1,2024 @@
+fileFormatVersion: 2
+guid: f49069bd6f4c8fb49acf0d8633b89061
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3902106963231744503
+    second: MCFish_Death_Spritesheet 1_0
+  - first:
+      213: 7646310352426956113
+    second: MCFish_Death_Spritesheet 1_1
+  - first:
+      213: 5500965263239161234
+    second: MCFish_Death_Spritesheet 1_2
+  - first:
+      213: 2256207354256338232
+    second: MCFish_Death_Spritesheet 1_3
+  - first:
+      213: -2181879887051632793
+    second: MCFish_Death_Spritesheet 1_4
+  - first:
+      213: 9042522449833812613
+    second: MCFish_Death_Spritesheet 1_5
+  - first:
+      213: -4697244260096376751
+    second: MCFish_Death_Spritesheet 1_6
+  - first:
+      213: 564672150354186263
+    second: MCFish_Death_Spritesheet 1_7
+  - first:
+      213: 4916631669301110781
+    second: MCFish_Death_Spritesheet 1_8
+  - first:
+      213: 4646020860862235171
+    second: MCFish_Death_Spritesheet 1_9
+  - first:
+      213: 3304338818339194867
+    second: MCFish_Death_Spritesheet 1_10
+  - first:
+      213: 2334845269117834323
+    second: MCFish_Death_Spritesheet 1_11
+  - first:
+      213: 7667439354642993249
+    second: MCFish_Death_Spritesheet 1_12
+  - first:
+      213: 2951566314101711227
+    second: MCFish_Death_Spritesheet 1_13
+  - first:
+      213: -1674989946102601043
+    second: MCFish_Death_Spritesheet 1_14
+  - first:
+      213: 6638236329882769605
+    second: MCFish_Death_Spritesheet 1_15
+  - first:
+      213: -2938861298663896552
+    second: MCFish_Death_Spritesheet 1_16
+  - first:
+      213: -897690143263301456
+    second: MCFish_Death_Spritesheet 1_17
+  - first:
+      213: -1510667405915733665
+    second: MCFish_Death_Spritesheet 1_18
+  - first:
+      213: 9168232780827536916
+    second: MCFish_Death_Spritesheet 1_19
+  - first:
+      213: 8033293898770932239
+    second: MCFish_Death_Spritesheet 1_20
+  - first:
+      213: -1999735383739442143
+    second: MCFish_Death_Spritesheet 1_21
+  - first:
+      213: -3570874067998182563
+    second: MCFish_Death_Spritesheet 1_22
+  - first:
+      213: -9065315817460506394
+    second: MCFish_Death_Spritesheet 1_23
+  - first:
+      213: -4985372324247777279
+    second: MCFish_Death_Spritesheet 1_24
+  - first:
+      213: 8197032977604653927
+    second: MCFish_Death_Spritesheet 1_25
+  - first:
+      213: 9072978336821516800
+    second: MCFish_Death_Spritesheet 1_26
+  - first:
+      213: -562931754116313936
+    second: MCFish_Death_Spritesheet 1_27
+  - first:
+      213: 8816479354758479087
+    second: MCFish_Death_Spritesheet 1_28
+  - first:
+      213: -1747533466762841200
+    second: MCFish_Death_Spritesheet 1_29
+  - first:
+      213: -3513431227601235685
+    second: MCFish_Death_Spritesheet 1_30
+  - first:
+      213: -1790973962216561736
+    second: MCFish_Death_Spritesheet 1_31
+  - first:
+      213: 4945663955866894246
+    second: MCFish_Death_Spritesheet 1_32
+  - first:
+      213: 5311129974102198363
+    second: MCFish_Death_Spritesheet 1_33
+  - first:
+      213: -109653240977958464
+    second: MCFish_Death_Spritesheet 1_34
+  - first:
+      213: 6999119874944537819
+    second: MCFish_Death_Spritesheet 1_35
+  - first:
+      213: -1268019814496874696
+    second: MCFish_Death_Spritesheet 1_36
+  - first:
+      213: 6524350173676718540
+    second: MCFish_Death_Spritesheet 1_37
+  - first:
+      213: -661829252355377206
+    second: MCFish_Death_Spritesheet 1_38
+  - first:
+      213: -6538095672843871667
+    second: MCFish_Death_Spritesheet 1_39
+  - first:
+      213: -8597880936899498685
+    second: MCFish_Death_Spritesheet 1_40
+  - first:
+      213: 431308257193018342
+    second: MCFish_Death_Spritesheet 1_41
+  - first:
+      213: 8001458361880149744
+    second: MCFish_Death_Spritesheet 1_42
+  - first:
+      213: -4174180846799356671
+    second: MCFish_Death_Spritesheet 1_43
+  - first:
+      213: 6397572990705977533
+    second: MCFish_Death_Spritesheet 1_44
+  - first:
+      213: 1506123464236291227
+    second: MCFish_Death_Spritesheet 1_45
+  - first:
+      213: 3222021807693099608
+    second: MCFish_Death_Spritesheet 1_46
+  - first:
+      213: 9172366955807555046
+    second: MCFish_Death_Spritesheet 1_47
+  - first:
+      213: 141069942735664502
+    second: MCFish_Death_Spritesheet 1_48
+  - first:
+      213: -3907729989203159527
+    second: MCFish_Death_Spritesheet 1_49
+  - first:
+      213: -3674410186236022535
+    second: MCFish_Death_Spritesheet 1_50
+  - first:
+      213: 3216263873240616395
+    second: MCFish_Death_Spritesheet 1_51
+  - first:
+      213: 573409300570251823
+    second: MCFish_Death_Spritesheet 1_52
+  - first:
+      213: -1374607862197824070
+    second: MCFish_Death_Spritesheet 1_53
+  - first:
+      213: -2163400980995130537
+    second: MCFish_Death_Spritesheet 1_54
+  - first:
+      213: 3626952870906693626
+    second: MCFish_Death_Spritesheet 1_55
+  - first:
+      213: 9170244545664899350
+    second: MCFish_Death_Spritesheet 1_56
+  - first:
+      213: -6040612566071263290
+    second: MCFish_Death_Spritesheet 1_57
+  - first:
+      213: 7872589085358745875
+    second: MCFish_Death_Spritesheet 1_58
+  - first:
+      213: 8912407479611605014
+    second: MCFish_Death_Spritesheet 1_59
+  - first:
+      213: -8472525191380269355
+    second: MCFish_Death_Spritesheet 1_60
+  - first:
+      213: -4520839228293026261
+    second: MCFish_Death_Spritesheet 1_61
+  - first:
+      213: -5247702019212366356
+    second: MCFish_Death_Spritesheet 1_62
+  - first:
+      213: 2772955420414587570
+    second: MCFish_Death_Spritesheet 1_63
+  - first:
+      213: -2614038136069256384
+    second: MCFish_Death_Spritesheet 1_64
+  - first:
+      213: -7084364101143066880
+    second: MCFish_Death_Spritesheet 1_65
+  - first:
+      213: 6764033381738690111
+    second: MCFish_Death_Spritesheet 1_66
+  - first:
+      213: -5751780687238683649
+    second: MCFish_Death_Spritesheet 1_67
+  - first:
+      213: 6006942491055593079
+    second: MCFish_Death_Spritesheet 1_68
+  - first:
+      213: -6860100390218770390
+    second: MCFish_Death_Spritesheet 1_69
+  - first:
+      213: -2611620566455549181
+    second: MCFish_Death_Spritesheet 1_70
+  - first:
+      213: -6727818810168497491
+    second: MCFish_Death_Spritesheet 1_71
+  - first:
+      213: -2027955784634218276
+    second: MCFish_Death_Spritesheet 1_72
+  - first:
+      213: -368241508439338224
+    second: MCFish_Death_Spritesheet 1_73
+  - first:
+      213: -7201364619952980200
+    second: MCFish_Death_Spritesheet 1_74
+  - first:
+      213: -3438554434279259640
+    second: MCFish_Death_Spritesheet 1_75
+  - first:
+      213: 5180657288368495171
+    second: MCFish_Death_Spritesheet 1_76
+  - first:
+      213: 4397840975132584037
+    second: MCFish_Death_Spritesheet 1_77
+  - first:
+      213: -668375928359853837
+    second: MCFish_Death_Spritesheet 1_78
+  - first:
+      213: 3169128016137234604
+    second: MCFish_Death_Spritesheet 1_79
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3640.889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90e5ef4246ee8d9c0800000000000000
+      internalID: -3902106963231744503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_1
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 3640.889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 155fccee0c62d1a60800000000000000
+      internalID: 7646310352426956113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_2
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 3640.889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2952225f2ca575c40800000000000000
+      internalID: 5500965263239161234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_3
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 3640.889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83da21282a8af4f10800000000000000
+      internalID: 2256207354256338232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_4
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 3640.889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76fc7b58dc768b1e0800000000000000
+      internalID: -2181879887051632793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_5
+      rect:
+        serializedVersion: 2
+        x: 2275
+        y: 3640.889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 582e6df324e7d7d70800000000000000
+      internalID: 9042522449833812613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_6
+      rect:
+        serializedVersion: 2
+        x: 2730
+        y: 3640.889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15086b58b3900deb0800000000000000
+      internalID: -4697244260096376751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_7
+      rect:
+        serializedVersion: 2
+        x: 3185
+        y: 3640.889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 710da68345e16d700800000000000000
+      internalID: 564672150354186263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_8
+      rect:
+        serializedVersion: 2
+        x: 3640
+        y: 3640.889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df7e02c24726b3440800000000000000
+      internalID: 4916631669301110781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3185.889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3228fb67b5bf97040800000000000000
+      internalID: 4646020860862235171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_10
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 3185.889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f744ace5ae5bdd20800000000000000
+      internalID: 3304338818339194867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_11
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 3185.889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3541547d669076020800000000000000
+      internalID: 2334845269117834323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_12
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 3185.889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 160985e1877386a60800000000000000
+      internalID: 7667439354642993249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_13
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 3185.889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b71aa03bce116f820800000000000000
+      internalID: 2951566314101711227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_14
+      rect:
+        serializedVersion: 2
+        x: 2275
+        y: 3185.889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daa243cb48d31c8e0800000000000000
+      internalID: -1674989946102601043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_15
+      rect:
+        serializedVersion: 2
+        x: 2730
+        y: 3185.889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c851c965c0cf1c50800000000000000
+      internalID: 6638236329882769605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_16
+      rect:
+        serializedVersion: 2
+        x: 3185
+        y: 3185.889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81acef838311737d0800000000000000
+      internalID: -2938861298663896552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_17
+      rect:
+        serializedVersion: 2
+        x: 3640
+        y: 3185.889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b0eb642293ca83f0800000000000000
+      internalID: -897690143263301456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2730.889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f51c1a88ff7090be0800000000000000
+      internalID: -1510667405915733665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_19
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 2730.889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41e2157832b1c3f70800000000000000
+      internalID: 9168232780827536916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_20
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 2730.889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f02ed8c1d3efb7f60800000000000000
+      internalID: 8033293898770932239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_21
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 2730.889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12c5e6773438f34e0800000000000000
+      internalID: -1999735383739442143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_22
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 2730.889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d53705754f4b17ec0800000000000000
+      internalID: -3570874067998182563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_23
+      rect:
+        serializedVersion: 2
+        x: 2275
+        y: 2730.889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e0698b4b47813280800000000000000
+      internalID: -9065315817460506394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_24
+      rect:
+        serializedVersion: 2
+        x: 2730
+        y: 2730.889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 100d524e84660dab0800000000000000
+      internalID: -4985372324247777279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_25
+      rect:
+        serializedVersion: 2
+        x: 3185
+        y: 2730.889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 763b94a3016b1c170800000000000000
+      internalID: 8197032977604653927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_26
+      rect:
+        serializedVersion: 2
+        x: 3640
+        y: 2730.889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00a9f050ab1b9ed70800000000000000
+      internalID: 9072978336821516800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2275.889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bc0c1b5d801038f0800000000000000
+      internalID: -562931754116313936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_28
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 2275.889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fecb1fde24d6a5a70800000000000000
+      internalID: 8816479354758479087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_29
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 2275.889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0937e7022938fb7e0800000000000000
+      internalID: -1747533466762841200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_30
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 2275.889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b115018d9e8cd3fc0800000000000000
+      internalID: -3513431227601235685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_31
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 2275.889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b3ab1c9bae2527e0800000000000000
+      internalID: -1790973962216561736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_32
+      rect:
+        serializedVersion: 2
+        x: 2275
+        y: 2275.889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6af36e32a2782a440800000000000000
+      internalID: 4945663955866894246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_33
+      rect:
+        serializedVersion: 2
+        x: 2730
+        y: 2275.889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b588a46629ce4b940800000000000000
+      internalID: 5311129974102198363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_34
+      rect:
+        serializedVersion: 2
+        x: 3185
+        y: 2275.889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c9d90355fe6a7ef0800000000000000
+      internalID: -109653240977958464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_35
+      rect:
+        serializedVersion: 2
+        x: 3640
+        y: 2275.889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd4127e717ed12160800000000000000
+      internalID: 6999119874944537819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1820.8889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83fc1cc62b6176ee0800000000000000
+      internalID: -1268019814496874696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_37
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 1820.8889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc9424c5ae52b8a50800000000000000
+      internalID: 6524350173676718540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_38
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 1820.8889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac7356f2dc5b0d6f0800000000000000
+      internalID: -661829252355377206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_39
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 1820.8889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4a5f9830a40445a0800000000000000
+      internalID: -6538095672843871667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_40
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 1820.8889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34da00767d03ea880800000000000000
+      internalID: -8597880936899498685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_41
+      rect:
+        serializedVersion: 2
+        x: 2275
+        y: 1820.8889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e3cea223905cf500800000000000000
+      internalID: 431308257193018342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_42
+      rect:
+        serializedVersion: 2
+        x: 2730
+        y: 1820.8889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fef1f09cf3ea0f60800000000000000
+      internalID: 8001458361880149744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_43
+      rect:
+        serializedVersion: 2
+        x: 3185
+        y: 1820.8889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10df846b2a45216c0800000000000000
+      internalID: -4174180846799356671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_44
+      rect:
+        serializedVersion: 2
+        x: 3640
+        y: 1820.8889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db8c9af3dbeb8c850800000000000000
+      internalID: 6397572990705977533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1365.8889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b945fa99f43d6e410800000000000000
+      internalID: 1506123464236291227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_46
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 1365.8889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 852fb1a53cbe6bc20800000000000000
+      internalID: 3222021807693099608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_47
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 1365.8889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6edb076262bca4f70800000000000000
+      internalID: 9172366955807555046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_48
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 1365.8889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6757e319d5e25f100800000000000000
+      internalID: 141069942735664502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_49
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 1365.8889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91697636744f4c9c0800000000000000
+      internalID: -3907729989203159527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_50
+      rect:
+        serializedVersion: 2
+        x: 2275
+        y: 1365.8889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f0335a476fd10dc0800000000000000
+      internalID: -3674410186236022535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_51
+      rect:
+        serializedVersion: 2
+        x: 2730
+        y: 1365.8889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcdcd64c3f672ac20800000000000000
+      internalID: 3216263873240616395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_52
+      rect:
+        serializedVersion: 2
+        x: 3185
+        y: 1365.8889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f22256788b825f700800000000000000
+      internalID: 573409300570251823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_53
+      rect:
+        serializedVersion: 2
+        x: 3640
+        y: 1365.8889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab55d3cae696cece0800000000000000
+      internalID: -1374607862197824070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 910.8889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75bbd0d154e0af1e0800000000000000
+      internalID: -2163400980995130537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_55
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 910.8889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af70a7f6b66855230800000000000000
+      internalID: 3626952870906693626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_56
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 910.8889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 619d1d704d0434f70800000000000000
+      internalID: 9170244545664899350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_57
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 910.8889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cfbf8d20ee6b2ca0800000000000000
+      internalID: -6040612566071263290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_58
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 910.8889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 319ec67ff0e014d60800000000000000
+      internalID: 7872589085358745875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_59
+      rect:
+        serializedVersion: 2
+        x: 2275
+        y: 910.8889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 610c8cbf16b3fab70800000000000000
+      internalID: 8912407479611605014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_60
+      rect:
+        serializedVersion: 2
+        x: 2730
+        y: 910.8889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d60b315a3b8b6a80800000000000000
+      internalID: -8472525191380269355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_61
+      rect:
+        serializedVersion: 2
+        x: 3185
+        y: 910.8889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2e61fe9ca0c241c0800000000000000
+      internalID: -4520839228293026261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_62
+      rect:
+        serializedVersion: 2
+        x: 3640
+        y: 910.8889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ced2fb921da6c27b0800000000000000
+      internalID: -5247702019212366356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_63
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 455.8889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b23ecb53448b7620800000000000000
+      internalID: 2772955420414587570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_64
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 455.8889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04b844e3a2219bbd0800000000000000
+      internalID: -2614038136069256384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_65
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 455.8889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00786d372684fad90800000000000000
+      internalID: -7084364101143066880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_66
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 455.8889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f363b67f58caedd50800000000000000
+      internalID: 6764033381738690111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_67
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 455.8889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff3af2f60f19d20b0800000000000000
+      internalID: -5751780687238683649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_68
+      rect:
+        serializedVersion: 2
+        x: 2275
+        y: 455.8889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77691959e52fc5350800000000000000
+      internalID: 6006942491055593079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_69
+      rect:
+        serializedVersion: 2
+        x: 2730
+        y: 455.8889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a28dd7d9a070cc0a0800000000000000
+      internalID: -6860100390218770390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_70
+      rect:
+        serializedVersion: 2
+        x: 3185
+        y: 455.8889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30300588ee8a1cbd0800000000000000
+      internalID: -2611620566455549181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_71
+      rect:
+        serializedVersion: 2
+        x: 3640
+        y: 455.8889
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daa27ba007cf1a2a0800000000000000
+      internalID: -6727818810168497491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.8888855
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd8cdac55f04bd3e0800000000000000
+      internalID: -2027955784634218276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_73
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 0.8888855
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0135be19c4eb3eaf0800000000000000
+      internalID: -368241508439338224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_74
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 0.8888855
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81ff2a9580d9f0c90800000000000000
+      internalID: -7201364619952980200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_75
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 0.8888855
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 802c0f3d5fcc740d0800000000000000
+      internalID: -3438554434279259640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_76
+      rect:
+        serializedVersion: 2
+        x: 1820
+        y: 0.8888855
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34a1e300b5465e740800000000000000
+      internalID: 5180657288368495171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_77
+      rect:
+        serializedVersion: 2
+        x: 2275
+        y: 0.8888855
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5686f6de015480d30800000000000000
+      internalID: 4397840975132584037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_78
+      rect:
+        serializedVersion: 2
+        x: 2730
+        y: 0.8888855
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f060b562a379b6f0800000000000000
+      internalID: -668375928359853837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCFish_Death_Spritesheet 1_79
+      rect:
+        serializedVersion: 2
+        x: 3185
+        y: 0.8888855
+        width: 455.1111
+        height: 455.1111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca82991d3210bfb20800000000000000
+      internalID: 3169128016137234604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e69ae8463c3118489ece773ec111c1d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
