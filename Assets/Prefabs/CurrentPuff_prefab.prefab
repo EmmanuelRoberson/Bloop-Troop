@@ -2912,7 +2912,8 @@ SkinnedMeshRenderer:
   - {fileID: 8297558603869429389}
   - {fileID: 2074424480509873257}
   - {fileID: 7886189905696669729}
-  m_BlendShapeWeights: []
+  m_BlendShapeWeights:
+  - 0
   m_RootBone: {fileID: 7886189905696669729}
   m_AABB:
     m_Center: {x: -0.738299, y: 0.11097932, z: 0}
@@ -3580,6 +3581,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6877428735752279745}
+  - component: {fileID: 640575131}
+  - component: {fileID: 640575129}
+  - component: {fileID: 640575130}
   m_Layer: 0
   m_Name: CurrentPuff_prefab
   m_TagString: Untagged
@@ -3596,7 +3600,7 @@ Transform:
   m_GameObject: {fileID: 7578099292011947218}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.17730236, y: 5.9971514, z: 6.5230775}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 7, y: 7, z: 7}
   m_Children:
   - {fileID: 5347621651255596929}
   - {fileID: 9087709360006793086}
@@ -3610,6 +3614,64 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &640575131
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7578099292011947218}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 04a108ccdfda57a4eb765dc0305e8c8b, type: 3}
+  m_Controller: {fileID: 9100000, guid: 95dbac5f8079ce54ba5cb48e83983152, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &640575129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7578099292011947218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62a810005010b8e4aa63ee66f664813d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distanceToActivation: 40
+  isSwimming: 1
+  fish: {fileID: 0}
+  isPuffed: 0
+  swimSpd: 1
+  puffIncrease: 1
+  anim: {fileID: 640575131}
+  collide: {fileID: 7246699439661469658}
+--- !u!114 &640575130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7578099292011947218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5b83eecf53d58147b9316022ff8450d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  iFrames: 0
+  iFrameVal: 0
+  isFish: 0
+  isEnemy: 1
+  isParryable: 0
+  healthVal: 1
+  hasEscaped: 0
 --- !u!1 &7613797824189030347
 GameObject:
   m_ObjectHideFlags: 0
