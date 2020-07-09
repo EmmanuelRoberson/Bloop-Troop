@@ -143,6 +143,7 @@ GameObject:
   - component: {fileID: 1432166379515494793}
   - component: {fileID: 2100350234}
   - component: {fileID: 2793982740784001717}
+  - component: {fileID: 1429787143356775171}
   - component: {fileID: 2100350239}
   m_Layer: 0
   m_Name: Bloop
@@ -241,6 +242,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &2793982740784001717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3586756317227264262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79c502290b4f16641acf2fe913107f40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCollected: 1
+  totalActivateEffectTime: 2
+--- !u!114 &1429787143356775171
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -742,15 +757,15 @@ PrefabInstance:
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 861b4cf50ff31414aa0b95976f64908e, type: 3}
---- !u!54 &520025785726684516 stripped
-Rigidbody:
-  m_CorrespondingSourceObject: {fileID: 520025785241698221, guid: 861b4cf50ff31414aa0b95976f64908e,
-    type: 3}
-  m_PrefabInstance: {fileID: 588755657}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &8237777790031987808 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8237777789510629033, guid: 861b4cf50ff31414aa0b95976f64908e,
+    type: 3}
+  m_PrefabInstance: {fileID: 588755657}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &520025785726684516 stripped
+Rigidbody:
+  m_CorrespondingSourceObject: {fileID: 520025785241698221, guid: 861b4cf50ff31414aa0b95976f64908e,
     type: 3}
   m_PrefabInstance: {fileID: 588755657}
   m_PrefabAsset: {fileID: 0}
@@ -1444,15 +1459,15 @@ PrefabInstance:
         type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 861b4cf50ff31414aa0b95976f64908e, type: 3}
---- !u!4 &8237777790667219555 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8237777789510629033, guid: 861b4cf50ff31414aa0b95976f64908e,
-    type: 3}
-  m_PrefabInstance: {fileID: 1160795338}
-  m_PrefabAsset: {fileID: 0}
 --- !u!54 &520025784219315047 stripped
 Rigidbody:
   m_CorrespondingSourceObject: {fileID: 520025785241698221, guid: 861b4cf50ff31414aa0b95976f64908e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1160795338}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &8237777790667219555 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8237777789510629033, guid: 861b4cf50ff31414aa0b95976f64908e,
     type: 3}
   m_PrefabInstance: {fileID: 1160795338}
   m_PrefabAsset: {fileID: 0}

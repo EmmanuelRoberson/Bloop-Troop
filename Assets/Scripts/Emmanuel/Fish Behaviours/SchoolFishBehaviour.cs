@@ -36,22 +36,7 @@ public class SchoolFishBehaviour : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        /*
-        if (other.CompareTag("Enemy") || other.CompareTag("Parryable"))
-        {
-            collider.enabled = false;
-            GameEvents.current.LoseFishEvent(this);
-            return;
-        }
-        
-        CollectableFishBehaviour collectableFish = other.GetComponent<CollectableFishBehaviour>();
-        if (collectableFish != null)
-        {
-            GameEvents.current.CollectFishEvent(collectableFish.fishSprite);
-            
-            Destroy(collectableFish.gameObject);
-        }
-        */
+
     }
     
     public void Activate(Sprite newSprite)
