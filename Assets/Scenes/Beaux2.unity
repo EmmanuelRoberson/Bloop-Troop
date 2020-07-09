@@ -773,7 +773,7 @@ MonoBehaviour:
   fish: {fileID: 451115034}
   isPuffed: 0
   swimSpd: 1
-  puffIncrease: 5
+  puffIncrease: 1
   anim: {fileID: 1046699340}
   collide: {fileID: 1046699343}
 --- !u!114 &1046699342
