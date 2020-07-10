@@ -35,11 +35,7 @@ public class FollowBehaviour : MonoBehaviour
     void Start()
     {
         targetVisual = target.position;
-
-        if (spd == null)
-        {
-            spd = 1;
-        }
+        
     }
 
     // Update is called once per frame

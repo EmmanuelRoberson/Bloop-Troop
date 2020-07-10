@@ -8,13 +8,19 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: Assets/Scenes/Testing_Taylor.unity
+    guid: 84f340a25fbb21548bd653847f33cb50
   - enabled: 1
-    path: Assets/Scenes/GameOver.unity
-    guid: 63f3fd3a2bcfdb54fa7729bf997a8d04
+    path: Assets/Scenes/emmanuel.unity
+    guid: 9b98f5fd81e4c324c85999647076bb20
+  - enabled: 1
+    path: Assets/Scenes/GameWin.unity
+    guid: 79682b0293d442f47806a6edb1e921f2
   - enabled: 1
     path: Assets/Scenes/Beaux2.unity
     guid: b2e853e60bb27534a943d0d6439cfa8d
   - enabled: 1
-    path: Assets/Scenes/GameWin.unity
-    guid: 79682b0293d442f47806a6edb1e921f2
+    path: Assets/Scenes/GameOver.unity
+    guid: 63f3fd3a2bcfdb54fa7729bf997a8d04
   m_configObjects: {}

@@ -1,9 +1,6 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
 using Emmanuel;
-using TMPro;
-using UnityEditorInternal;
 using UnityEngine;
 
 public class SchoolFishBehaviour : MonoBehaviour
@@ -39,6 +36,7 @@ public class SchoolFishBehaviour : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
+        /*
         if (other.CompareTag("Enemy") || other.CompareTag("Parryable"))
         {
             collider.enabled = false;
@@ -53,6 +51,7 @@ public class SchoolFishBehaviour : MonoBehaviour
             
             Destroy(collectableFish.gameObject);
         }
+        */
     }
     
     public void Activate(Sprite newSprite)

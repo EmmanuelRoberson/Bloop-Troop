@@ -24,16 +24,22 @@ public class PufferBehaviour : MonoBehaviour
     float puffIncrease = 0.5f;
     //default is 0.5
 
+    [SerializeField]
+    Animator anim;
+
+    [SerializeField]
+    CapsuleCollider collide;
+
     void puff()
     {
-        transform.localScale = new Vector3((transform.localScale.x + puffIncrease), 
-                                (transform.localScale.y + puffIncrease), (transform.localScale.z + puffIncrease));
+        collide.radius = collide.radius + puffIncrease;
+        anim.SetBool("if_shake_anim_over", true);
     }
 
     // Start is called before the first frame update
     void Start()
     {
-
+        anim.SetBool("is_startled", true);
     }
 
     // Update is called once per frame

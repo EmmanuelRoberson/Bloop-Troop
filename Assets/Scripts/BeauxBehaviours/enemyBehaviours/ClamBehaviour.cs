@@ -49,6 +49,10 @@ public class ClamBehaviour : MonoBehaviour
         pearlShot.GetComponent<PearlBehaviour>().owner = this.transform.position;
 
         pearlShot.GetComponent<PearlBehaviour>().spd = spdOfPearls;
+
+        //6/25/2020
+        pearlShot.GetComponent<PearlBehaviour>().creator = GetComponent<Collider>();
+        //
     }
 
     // Start is called before the first frame update
