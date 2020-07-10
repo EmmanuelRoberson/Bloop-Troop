@@ -27,13 +27,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2145897794021440001}
-  m_LocalRotation: {x: -0.01318921, y: 0.010799468, z: 0.00014187861, w: -0.99985474}
+  m_LocalRotation: {x: 0.0131878825, y: -0.010798643, z: -0.00014550565, w: 0.99985474}
   m_LocalPosition: {x: 59.3, y: 1.8, z: 69}
-  m_LocalScale: {x: 1, y: 96.398964, z: 32.119762}
+  m_LocalScale: {x: -1.2599233, y: 79.173615, z: 27.985626}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 1.511, y: -1.238, z: -0.033}
 --- !u!114 &2145897794021440000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47,13 +47,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ObjectsToSpawn:
-  - {fileID: 8237777789510629039, guid: c99a4ab77ec4771449e95a8827e30b41, type: 3}
   - {fileID: 8237777789510629039, guid: 08dd117e92deb7643b4276d019d97d59, type: 3}
   - {fileID: 8237777789510629039, guid: aba88c8794745b344a4e72dc3ba3a40d, type: 3}
   - {fileID: 8237777789510629039, guid: ecd04b59790e01447b04ee79904d5f94, type: 3}
   - {fileID: 8237777789510629039, guid: d26beaf4f97c2c7428e1c6bb89a70f17, type: 3}
-  - {fileID: 8237777789510629039, guid: c99a4ab77ec4771449e95a8827e30b41, type: 3}
-  spawnChancePercent: 100
+  spawnChancePercent: 90
 --- !u!65 &2145897794021440004
 BoxCollider:
   m_ObjectHideFlags: 0

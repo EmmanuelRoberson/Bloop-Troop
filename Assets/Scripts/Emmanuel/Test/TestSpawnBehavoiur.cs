@@ -1,6 +1,5 @@
-﻿using System;
+﻿
 using System.Collections.Generic;
-using Emmanuel;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -8,17 +7,26 @@ public class TestSpawnBehavoiur : MonoBehaviour
 {
     public List<GameObject> ObjectsToSpawn;
     public float spawnChancePercent;
+
+    private int schoolSize = 17;
+    private int currentSize = 0;
     
     // Start is called before the first frame update
     void Start()
     {
+        GameEvents.current.onCollectFish += IncrementSize;
+        GameEvents.current.onLoseFish += DecrementSize;
     }
 
     private void SpawnObject(Vector3 spawnPosition)
     {
-        int index = (int)UnityEngine.Random.Range(0, ObjectsToSpawn.Count - 1);
-        GameObject obj = Instantiate(ObjectsToSpawn[index], spawnPosition, Quaternion.identity);
-        obj.GetComponent<CollectableFishBehaviour>().fishSprite = obj.GetComponentInChildren<SpriteRenderer>().sprite;
+        if (currentSize < schoolSize)
+        {
+            int index = (int) UnityEngine.Random.Range(0, ObjectsToSpawn.Count - 1);
+            GameObject obj = Instantiate(ObjectsToSpawn[index], spawnPosition, Quaternion.identity);
+            obj.GetComponent<CollectableFishBehaviour>().fishSprite =
+                obj.GetComponentInChildren<SpriteRenderer>().sprite;
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -32,4 +40,15 @@ public class TestSpawnBehavoiur : MonoBehaviour
             }
         }
     }
+
+    public void IncrementSize()
+    {
+        currentSize++;
+    }
+
+    public void DecrementSize()
+    {
+        currentSize--;
+    }
+    
 }

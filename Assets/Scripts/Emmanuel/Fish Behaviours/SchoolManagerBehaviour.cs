@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using Emmanuel;
 using UnityEngine;
-using UnityEngine.UIElements;
+
 using Random = UnityEngine.Random;
 
 public class SchoolManagerBehaviour : MonoBehaviour
@@ -53,7 +53,6 @@ public class SchoolManagerBehaviour : MonoBehaviour
     //When a fish dies, it will push its position to the top of the stack
     public void PushFishToActivate(SchoolFishBehaviour schoolFish)
     {
-        Debug.Log(schoolFish.name);
         fishStack.Push(schoolFish);
     }
 

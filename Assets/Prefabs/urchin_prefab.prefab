@@ -56,12 +56,14 @@ GameObject:
   - component: {fileID: 6432871368157893836}
   - component: {fileID: 2602272246644485882}
   - component: {fileID: 8584328978571055619}
+  - component: {fileID: 317698515295442451}
+  - component: {fileID: 1142428108}
   m_Layer: 0
-  m_Name: urchin_01
-  m_TagString: Untagged
+  m_Name: urchin_prefab
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &6432871368157893836
 Transform:
@@ -72,7 +74,7 @@ Transform:
   m_GameObject: {fileID: 8006696131646187231}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: -2.35, y: 5.0632, z: 6.45}
-  m_LocalScale: {x: 3.0396335, y: 3.0396335, z: 2.5157223}
+  m_LocalScale: {x: 63, y: 63, z: 53}
   m_Children:
   - {fileID: 2034662364131043504}
   - {fileID: 2222583852999143325}
@@ -127,6 +129,35 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+--- !u!135 &317698515295442451
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8006696131646187231}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.12891689
+  m_Center: {x: -0.0013616086, y: -0.0018017294, z: 0.000030517578}
+--- !u!114 &1142428108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8006696131646187231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16cfe84b7a2e615488f8b54a51714f34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distanceToActivation: 3
+  isDroppable: 1
+  fish: {fileID: 0}
+  fallSpd: 3
 --- !u!1001 &2541238665993162347
 PrefabInstance:
   m_ObjectHideFlags: 0

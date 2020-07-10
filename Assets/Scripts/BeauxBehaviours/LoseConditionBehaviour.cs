@@ -1,7 +1,7 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
+
 using BeauxBehaviours;
-using Emmanuel;
+
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Serialization;

@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace BeauxBehaviours
 {
@@ -45,6 +46,11 @@ namespace BeauxBehaviours
         
             //set the position to the part of the distance covered
             transform.position = Vector3.Lerp(startPosition, endPosition, portionOfJourney);
+
+            if (Vector3.Distance(transform.position, travelCheckpointList[travelCheckpointList.Count - 1].position) <= 3)
+            {
+                SceneManager.LoadScene("GameWin");
+            }
         }
     
         public void UpdateDestination()

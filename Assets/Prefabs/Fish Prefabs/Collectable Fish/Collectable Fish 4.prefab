@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 8237777789510629039}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 5}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 0.24803631, y: 0.24803631, z: 0.124018155}
   m_Children:
   - {fileID: 8237777791412704509}
   m_Father: {fileID: 0}
@@ -79,7 +79,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isDead: 0
   countdown: 0
+  isPlayer: 0
   isParrying: 0
+  loseScript: {fileID: 0}
 --- !u!114 &-5366482931144431946
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class SceneTransitionBehaviour : MonoBehaviour
@@ -19,7 +17,6 @@ public class SceneTransitionBehaviour : MonoBehaviour
 
     public void LoadScene(string scene)
     {
-        SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene());
         SceneManager.LoadScene(scene);
     }
 

@@ -1,6 +1,6 @@
-﻿using System;
+﻿
 using System.Collections;
-using System.Collections.Generic;
+
 using UnityEngine;
 
 public class SharkScootBehaviour : MonoBehaviour
@@ -8,24 +8,21 @@ public class SharkScootBehaviour : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        StartScoot();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            StartScoot();
-        }
+
     }
 
     public IEnumerator ScootUpCoroutine()
     {
         var time = 0f;
-        while (time <= 2)
+        while (time <= 6)
         {
-            transform.localPosition += new Vector3(5, 0, 0) * Time.deltaTime;
+            transform.localPosition += 0.2f * Time.deltaTime * new Vector3(5, 0, 0);
             time += Time.deltaTime;
             
             yield return 0;

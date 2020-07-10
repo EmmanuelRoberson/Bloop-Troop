@@ -18,6 +18,7 @@ public class PearlBehaviour : MonoBehaviour
     //avoids accidental trigger breaks
     public Collider creator;
 
+    [SerializeField]
     public float spd;
     
 
